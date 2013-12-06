@@ -1,0 +1,13 @@
+// Base profile colors, never use directly.
+$base1: #f00;
+$base1-light: lighten($base1, 20%);
+$base2: #0ff;
+$base3: #eee;
+$base4: #fff;
+$base5: #000;
+
+// Meaningful aliases for profile colors;
+$bg-color: $base4;
+
+$button-color: $base1;
+$button-hover-color: $base1-light;

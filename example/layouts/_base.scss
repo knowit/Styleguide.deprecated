@@ -1,0 +1,5 @@
+@import "components/grid";
+
+body {
+  @include main-column;
+}

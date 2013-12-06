@@ -1,0 +1,6 @@
+@import "components/colors";
+@import "components/buttons";
+
+button.cta {
+  @include button($button-color, $button-hover-color);
+}
