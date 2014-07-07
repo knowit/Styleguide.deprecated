@@ -10,7 +10,6 @@
  * Layouts outputs the different page layouts, with breakpoints in layout etc.
  * Templates define the rest of a page type's design; backgrounds and other presentational tweaks
  
-*Note: Never set global imports at a high level. Import all dependencies of each file.*
 
 ## Sass directory and file structure
 
