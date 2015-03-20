@@ -29,3 +29,17 @@ sass
 ├── Layouts
     └── _article.scss     - Composes the layout for an article page
 ```
+
+##BEM – meaning block, element, modifier
+
+The naming convention follows this pattern:
+
+.module {}              // represents the higher level of an abstraction or component.
+.module_element {}      // represents a descendent of .module that helps form .module as a whole.
+.module--modifier {}    // represents a different state or version of .module.
+
+
+###To BEM or not to BEM?
+[Getting your head round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+[Organizing CSS OOCSS SMACSS and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
+[SCSS styleguide with BEM OOCSS SMACSS](http://geek-rocket.de/frontend-development/scss-styleguide-with-bem-oocss-smacss/)
