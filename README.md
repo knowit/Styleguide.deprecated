@@ -27,6 +27,5 @@ sass
 │   ├── _buttons.scss     - Creating specific selectors targeting HTML
 │   └── _typography.scss  - Actual styling of typographic elements
 ├── Layouts
-    ├── _article.scss     - Composes the layout for an article page using _grid. Might also define custom, special grids
-    └── _images.scss      - Defines how images should behave etc.
+    └── _article.scss     - Composes the layout for an article page
 ```
