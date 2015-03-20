@@ -1,6 +1,13 @@
-@import "modules/buttons";
+@import 'helpers/buttons';
+@import 'helpers/box';
 
-@import "layouts/base";
-@import "layouts/article";
+@import 'settings/colors';
+@import 'settings/sizes';
+@import 'settings/grid';
+@import 'settings/typography';
 
-@import "templates/frontpage";
+@import 'modules/buttons';
+@import 'modules/typography';
+
+@import 'layouts/base';
+@import 'layouts/article';

@@ -1,5 +1,3 @@
-@import "components/grid";
-
-body {
-  @include main-column;
+.container {
+  @include outer-container;
 }
