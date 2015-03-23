@@ -1,0 +1,47 @@
+@each $value in $font-list {
+  #{nth($value, 1)},
+  .#{nth($value, 1)} {
+    font-size: nth($value, 3);
+    font-weight: nth($value, 6);
+    text-rendering: optimizelegibility;
+
+    @include media($tablet-portrait) {
+      font-size: nth($value, 4);
+    }
+    @include media($desktop) {
+      font-size: nth($value, 5);
+    }
+  }
+}
+
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &:active, &:focus {
+    color: $link-hover-color;
+    outline: none;
+  }
+}

@@ -1,6 +1,16 @@
-@import "components/colors";
-@import "components/buttons";
-
-button.cta {
-  @include button($button-color, $button-hover-color);
+.button,
+.btn {
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 8px 20px 8px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  display: inline-block;
+  @include button-variant($btn-default-color, $btn-default-bg);
+  &-disabled {
+    color: $btn-disabled-color;
+  }
+  &-rounded {
+    border-radius: $base-border-radius;
+  }
 }
