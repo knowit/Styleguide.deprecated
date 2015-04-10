@@ -1,0 +1,32 @@
+// http://davidwalsh.name/sass-color-variables-dont-suck
+
+// Profile colors, never use directly.
+// -------------------------
+
+$profile1: #428bca;
+$profile2: #5cb85c;
+$profile3: #f0ad4e;
+$profile4: #d9534f;
+$profile5: #5bc0de;
+$profile6: #428bca;
+$profile7: #5cb85c;
+$profile8: #ddd;
+
+// Meaningful aliases for profile colors;
+$bg-color: $profile8;
+
+$button-color: $profile1;
+$button-hover-color: darken($button-color, 10%);
+
+$link-color: $profile3;
+$link-hover-color: darken($link-color, 5%);
+$link-active-color: darken($link-color, 10%);
+
+
+// Telenor colours
+$button-color-green : #7FB000;
+$button-color-darkgreen : #4E6C00;
+
+$text-color-blue : #008FD4;
+
+$telenor-blue : #00A8E3;

@@ -1,0 +1,26 @@
+// Typography
+$base-font-family: Telenor, 'helvetica';
+$heading-font-family: Telenor;
+
+$heading-prefix: heading;
+
+
+// **, **, mobil, m-viewport, l-viewport, font-weight
+$font-list: (
+  (h1, $heading-prefix, 30px, 35px, 40px, 100),
+  (h2, $heading-prefix, 25px, 25px, 30px, 100),
+  (h3, $heading-prefix, 20px, 20px, 25px, 100),
+  (h4, $heading-prefix, 15px, 15px, 20px, 100),
+  (p, $heading-prefix, 13px, 15px, 18px, 100)
+);
+
+
+// Font sizes
+$base-font-size: 1em;
+
+// Font colors
+$base-font-color: #333;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;

@@ -1,0 +1,16 @@
+{
+  "name": "KnowitStyleGuide",
+  "repository": "https://github.knowit.no/kyber/Styleguide",
+  "version": "0.1.0",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browser-sync": "^2.1.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-kss": "git://github.com/curtisj44/grunt-kss",
+    "grunt-sass": "^0.18.1"
+  }
+}

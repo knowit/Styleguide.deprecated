@@ -1,0 +1,15 @@
+{
+  "name": "KnowitStyleGuide",
+  "version": "1.0.0",
+  "authors": [
+    "torhal <halseth.torleif@gmail.com>"
+  ],
+  "description": "Styleguide",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "neat": "~1.7.2",
+    "bourbon": "~4.2.1",
+    "font-awesome": "~4.3.0"
+  }
+}

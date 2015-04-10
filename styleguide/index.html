@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS: Living Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="css/styleguide.css">
+
+</head>
+<body id="kss-node">
+
+<svg id="svg-source" width="0" height="0" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+     <!-- viewBox="0 0 39 16" -->
+    <g id="arrow-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-182.000000, -833.000000)" fill="#ffffff">
+        <g transform="translate(37.000000, 264.000000)">
+          <g transform="translate(20.000000, 551.000000)">
+            <g transform="translate(125.000000, 17.000000)">
+              <path d="M36.3 9.4L0.8 9.4C0.4 9.4 0 9 0 8.5 0 8.1 0.4 7.7 0.8 7.7L36.2 7.7 36.2 7.7 30.9 2.4C30.6 2.1 30.6 1.6 30.9 1.2 31.2 0.9 31.7 0.9 32.1 1.2L38.8 7.9C38.9 8.1 39 8.3 39 8.5 39 8.8 38.9 9 38.8 9.2L32.1 15.9C31.7 16.2 31.2 16.2 30.9 15.9 30.6 15.6 30.6 15.1 30.9 14.7L36.3 9.4Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+</svg>
+<div class="kss-sidebar kss-style">
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">About</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+  <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+     <h1 id="style-guide">Style guide</h1>
+<ul>
+<li>Single quotes only; ie. @import &#39;some_module&#39;</li>
+<li>1TBS (the one true brace style) ftw!</li>
+<li>Empty line after every declaration block</li>
+<li>Most Sass should be reusable, isolated components.</li>
+<li>Helpers must either be mixins or placeholder selectors.</li>
+<li>Helpers don&#39;t output any CSS, modules do.</li>
+<li>Settings contain variables for colors, grid breakpoints, font sizes etc.</li>
+<li>Modules compose reusable UI modules.</li>
+<li>Layouts outputs the different page layouts, with breakpoints etc.</li>
+</ul>
+<h2 id="sass-directory-and-file-structure">Sass directory and file structure</h2>
+<p>This is an example structure with some example file names in them</p>
+<pre><code class="lang-bash">sass
+├── screen.scss - Actual output file that only imports from layouts and templates
+├── Helpers
+│   ├── _buttons.scss     - Mixins or placeholder selectors for generic amazebuttons
+├── Settings
+│   ├── _grid.scss        - Neat grid settings
+│   ├── _colors.scss      - Variables for site colors
+│   └── _typography.scss  - Variables for font sizes, families, etc.
+├── Modules
+│   ├── _buttons.scss     - Creating specific selectors targeting HTML
+│   └── _typography.scss  - Actual styling of typographic elements
+├── Layouts
+└── _article.scss     - Composes the layout for an article page
+</code></pre>
+<h2 id="bem-meaning-block-element-modifier">BEM – meaning block, element, modifier</h2>
+<p>The naming convention follows this pattern:</p>
+<p>.module {}              // represents the higher level of an abstraction or component.</p>
+<p>.module_element {}      // represents a descendent of .module that helps form .module as a whole.</p>
+<p>.module--modifier {}    // represents a different state or version of .module.</p>
+<h3 id="to-bem-or-not-to-bem-">To BEM or not to BEM?</h3>
+<p><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">Getting your head round BEM syntax</a></p>
+<p><a href="https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem">Organizing CSS OOCSS SMACSS and BEM</a></p>
+<p><a href="http://geek-rocket.de/frontend-development/scss-styleguide-with-bem-oocss-smacss/">SCSS styleguide with BEM OOCSS SMACSS</a></p>
+
+  </div>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+    <script type='text/javascript' id="__bs_script__">
+//<![CDATA[
+    document.write("<script async src='http://HOST:3333/browser-sync/browser-sync-client.2.4.0.js'><\/script>".replace("HOST", location.hostname));
+    //]]></script>
+</body>
+</html>
