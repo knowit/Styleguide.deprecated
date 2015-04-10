@@ -1,15 +1,15 @@
-// Buttons
-//
-// Markup: <button class="{{modifier_class}}">Text</button>
-//
-// :hover           - Highlight the button when hovering.
-// :active          - Push the button down when active.
-// .action          - Call to action
-// .action:hover    - Call to action hover
-// .action:active   - Call to action active
-// .danger          - Danger
-//
-// Styleguide 1.1
+/*Buttons
+
+Markup: <button class="{{modifier_class}}">Text</button>
+
+:hover           - Highlight the button when hovering.
+:active          - Push the button down when active.
+.action          - Call to action
+.action:hover    - Call to action hover
+.action:active   - Call to action active
+.danger          - Danger
+
+Styleguide 1.1*/
 
 button {
   @include appearance(none);
