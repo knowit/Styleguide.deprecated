@@ -4,13 +4,13 @@
 @import 'vendor/normalize';
 
 // Mixin library http://bourbon.io/
-@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import 'bourbon';
 
 // Grid framework library http://neat.bourbon.io/
-@import 'bower_components/neat/app/assets/stylesheets/neat';
+@import 'neat';
 
 // Font icons fontawesome.io
-@import 'bower_components/font-awesome/scss/font-awesome';
+@import '../node_modules/font-awesome/scss/font-awesome';
 
 @import 'helpers/helpers';
 @import 'settings/settings';
