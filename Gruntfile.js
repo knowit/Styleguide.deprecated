@@ -1,4 +1,8 @@
 /* global module: false */
+/*global require*/
+
+var sassIncludePaths = require('node-neat').includePaths;
+sassIncludePaths.push('sass/');
 
 module.exports = function(grunt) {
 	grunt.initConfig({
@@ -6,6 +10,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'css/screen.css': 'sass/screen.scss'
+				},
+				options: {
+				  includePaths: sassIncludePaths
 				}
 			},
 			dev: {
@@ -13,7 +20,10 @@ module.exports = function(grunt) {
 					'css/screen.css': 'sass/screen.scss'
 				}, {
 					'styleguide/css/styleguide.css': 'sass/styleguide.scss'
-				}]
+				}],
+				options: {
+				  includePaths: sassIncludePaths
+				}
 			}
 		},
 		kss: {
@@ -41,24 +51,24 @@ module.exports = function(grunt) {
 					},
 				}
 			},
-			dev: {
-				bsFiles: {
-					src: [
-						'web.config',
-						'obj/**/*.dll',
-						'css/screen.css',
-						'scripts/**/*.js',
-						'Views/**/*.cshtml',
-						'*.jsx'
-					]
-				},
-				options: {
-					open: false,
-					proxy: '[Local Hostname]',
-					watchTask: true,
-					port: 3000
-				}
-			}
+			// dev: {
+			// 	bsFiles: {
+			// 		src: [
+			// 			'web.config',
+			// 			'obj/**/*.dll',
+			// 			'css/screen.css',
+			// 			'scripts/**/*.js',
+			// 			'Views/**/*.cshtml',
+			// 			'*.jsx'
+			// 		]
+			// 	},
+			// 	options: {
+			// 		open: false,
+			// 		proxy: '[Local Hostname]',
+			// 		watchTask: true,
+			// 		port: 3000
+			// 	}
+			// }
 		},
 		watch: {
 			css: {
@@ -84,15 +94,7 @@ module.exports = function(grunt) {
 				src: 'css/screen.css',
 				dest: 'css/screen.css'
 			}
-		},
-		bower: {
-	    install: {
-	    	options: {
-	    			targetDir: 'bower_components'
-	       //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
-	    	}
-	    }
-  	}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-sass');
@@ -100,14 +102,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-kss');
 	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-bower-task');
-
-	grunt.registerTask('teamcity', ['bower:install']);
 
 	grunt.registerTask('build', ['sass:dev']);
 	grunt.registerTask('maps', ['sass:dev', 'autoprefixer']);
-	grunt.registerTask('styleguide', ['sass:dev', 'kss', 'browserSync:styleguide', 'watch']);
-	grunt.registerTask('default', ['sass:dev', 'autoprefixer', 'kss', 'browserSync:dev',
-		'watch'
-	]);
+	grunt.registerTask('default', ['sass:dev', 'kss', 'browserSync:styleguide', 'watch']);
+
+	// grunt.registerTask('default', ['sass:dev', 'autoprefixer', 'kss', 'browserSync:dev',
+	// 	'watch'
+	// ]);
 };
