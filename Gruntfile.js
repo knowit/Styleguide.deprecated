@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 				tasks: ['sass:dev']
 			},
       html: {
-          files: ['sass/modules/*.scss'],
+          files: ['sass/**/*.scss'],
           tasks: ['kss']
       },
 			configFiles: {
