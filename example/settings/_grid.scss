@@ -1,7 +1,0 @@
-$first-breakpoint-value: 480px;
-$second-breakpoint-value: 800px;
-
-$s-viewport: new-breakpoint(max-width $first-breakpoint-value);
-$m-viewport: new-breakpoint(min-width ($first-breakpoint-value) max-width ($second-breakpoint-value));
-$ml-viewport: new-breakpoint(min-width ($first-breakpoint-value));
-$l-viewport: new-breakpoint(min-width ($second-breakpoint-value + 1));

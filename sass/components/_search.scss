@@ -1,0 +1,96 @@
+// Search input
+//
+// Standard search input
+//
+// Markup:
+// <form class="searchbox-container">
+//     <button type="reset" class="searchbutton searchbutton--close fa fa-times"></button>
+//     <input type="search" class="searchbox" name="q" autocomplete="off" placeholder="Search" />
+//     <button type="submit" class="searchbutton searchbutton--search fa fa-search"></button>
+// </form>
+//
+// Styleguide 2.4
+
+$search-input-height: 40px;
+$search-input-padding: 0px 20px 0px 0px;
+$search-font-size: 20px;
+$search-line-height: 1;
+$search-input-icon-size: $search-font-size * $search-line-height;
+$background-color: lighten(#ddd, 7%);
+$search-background: none;
+$search-background-active: none;
+$search-color: #4d828e;
+$placeholder-color: #6d6d6d;
+$search-btn-active: $background-color;
+$search-close-btn-color: #6d6d6d;
+$search-close-btn-color-active: darken(#6d6d6d, 10%);
+
+.searchbox-container {
+  margin: 0 auto;
+  height: $search-input-height;
+  display: inline-block;
+}
+
+.searchbutton, input[type="search"].searchbox {
+  box-sizing: border-box;
+  font-size: $search-font-size;
+  line-height: $search-line-height;
+  color: $search-color;
+  border-radius: 0;
+  float: left;
+  height: $search-input-height;
+  outline: none;
+  background: $search-background;
+}
+
+input[type="search"].searchbox {
+  padding: $search-input-padding;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #979797;
+  width: auto;
+  box-shadow: none;
+  margin: 0;
+  @include transition(padding 150ms ease-in-out);
+  &:focus, &:hover {
+    background-color: $search-background-active;
+    + .searchbutton {
+      background-color: $search-background-active;
+    }
+  }
+  &:focus {
+    outline: thin dotted;
+    outline-offset: -1px;
+    box-shadow: none;
+    padding: 0px 20px 0px 20px;
+  }
+  @include input-placeholder {
+    color: $placeholder-color;
+  }
+}
+
+.searchbutton {
+  width: 50px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  &:hover, &:focus {
+    outline: thin dotted;
+    outline-offset: -1px;
+  }
+  &--close {
+    color: $search-close-btn-color;
+    &:active {
+      color: $search-close-btn-color-active;
+    }
+  }
+  &--search {
+    &:hover, &:focus {
+      background-color: $search-background-active;
+    }
+    &:active {
+      color: darken($search-btn-active, 20%);
+    }
+  }
+}
