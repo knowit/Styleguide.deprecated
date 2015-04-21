@@ -1,0 +1,23 @@
+// Links
+//
+// Markup: <a href="#">Klikk her!</a>
+//
+// a:hover    - When a link is hovered
+// a:active   - When a link is active
+// a:focus    - When a link is focused
+//
+// Styleguide 1.4
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $link-hover-color;
+  }
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+  &:active, &:focus {
+    color: $link-active-color;
+  }
+}

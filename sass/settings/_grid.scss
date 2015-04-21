@@ -1,5 +1,12 @@
+$total-columns: 12 !default;
 $first-breakpoint-value: 480px;
 $second-breakpoint-value: 800px;
+
+// Neat Overrides
+$column: 90px;
+$gutter: 30px;
+$grid-columns: $total-columns;
+$max-width: em(1088);
 
 $s-viewport: new-breakpoint(max-width $first-breakpoint-value);
 $m-viewport: new-breakpoint(min-width ($first-breakpoint-value) max-width ($second-breakpoint-value));

@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'styleguide': ['sass/modules']
+					'styleguide': ['sass']
 				}
 			}
 		},

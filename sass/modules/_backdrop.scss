@@ -1,0 +1,16 @@
+.backdrop {
+  z-index: map-get($zindex, backdrop);
+  background-color: rgba(0,0,0,.2);
+  height: 100%;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  position: fixed;
+  opacity: 0;
+  @include transition(opacity 300ms linear);
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}

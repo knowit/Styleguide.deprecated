@@ -6,262 +6,740 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS: Living Style Guide</title>
+  <title>Styleguide</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width">
+
   <link rel="stylesheet" href="public/kss.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
   <link rel="stylesheet" href="css/styleguide.css">
 
 </head>
-<body id="kss-node">
+<body>
 
-<svg id="svg-source" width="0" height="0" version="1.1"
-     xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-     <!-- viewBox="0 0 39 16" -->
-    <g id="arrow-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <g transform="translate(-182.000000, -833.000000)" fill="#ffffff">
-        <g transform="translate(37.000000, 264.000000)">
-          <g transform="translate(20.000000, 551.000000)">
-            <g transform="translate(125.000000, 17.000000)">
-              <path d="M36.3 9.4L0.8 9.4C0.4 9.4 0 9 0 8.5 0 8.1 0.4 7.7 0.8 7.7L36.2 7.7 36.2 7.7 30.9 2.4C30.6 2.1 30.6 1.6 30.9 1.2 31.2 0.9 31.7 0.9 32.1 1.2L38.8 7.9C38.9 8.1 39 8.3 39 8.5 39 8.8 38.9 9 38.8 9.2L32.1 15.9C31.7 16.2 31.2 16.2 30.9 15.9 30.6 15.6 30.6 15.1 30.9 14.7L36.3 9.4Z"/>
-            </g>
-          </g>
-        </g>
-      </g>
+  <svg id="svg-source" width="0" height="0" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--viewBox="0 0 8 18"-->
+  <g  id="arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-334.000000, -345.000000)">
+      <path d="M335.98 362.45L341.74 354.82C341.94 354.56 342 354.23 342 354 342 353.77 341.94 353.44 341.74 353.18L335.98 345.55C335.58 345.02 334.88 344.84 334.4 345.15 333.93 345.46 333.87 346.14 334.26 346.66L339.68 354 334.26 361.34C333.87 361.86 333.93 362.54 334.4 362.85 334.88 363.16 335.58 362.98 335.98 362.45L335.98 362.45Z"/>
     </g>
+  </g>
+  <!-- viewBox="0 0 17 18" -->
+    <g id="icon-phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-329.000000, -439.000000)" fill="#565656">
+      <path d="M329 443.19C329 442.43 329.2 441.67 329.61 440.89 330.05 440.06 330.47 439.56 330.87 439.38 331.07 439.29 331.34 439.21 331.69 439.12 332.03 439.04 332.31 439 332.52 439 332.64 439 332.72 439.01 332.77 439.04 332.92 439.09 333.13 439.4 333.41 439.98 333.49 440.13 333.61 440.36 333.76 440.64 333.91 440.93 334.05 441.19 334.18 441.43 334.31 441.66 334.43 441.88 334.55 442.09 334.57 442.12 334.64 442.23 334.76 442.4 334.87 442.57 334.96 442.72 335.01 442.84 335.07 442.96 335.1 443.07 335.1 443.19 335.1 443.36 334.98 443.56 334.76 443.81 334.53 444.06 334.29 444.28 334.02 444.49 333.75 444.69 333.51 444.91 333.28 445.14 333.05 445.37 332.94 445.56 332.94 445.71 332.94 445.79 332.96 445.88 333 445.99 333.04 446.1 333.07 446.19 333.1 446.24 333.13 446.3 333.19 446.4 333.27 446.54 333.35 446.68 333.4 446.76 333.41 446.78 334.01 447.9 334.7 448.87 335.48 449.68 336.26 450.49 337.19 451.2 338.27 451.83 338.29 451.84 338.37 451.89 338.5 451.97 338.64 452.06 338.73 452.12 338.79 452.15 338.84 452.18 338.92 452.21 339.03 452.25 339.14 452.29 339.23 452.31 339.3 452.31 339.44 452.31 339.62 452.2 339.85 451.96 340.07 451.73 340.28 451.47 340.48 451.19 340.68 450.92 340.89 450.66 341.13 450.43 341.37 450.19 341.57 450.08 341.73 450.08 341.84 450.08 341.95 450.1 342.07 450.16 342.18 450.22 342.32 450.31 342.49 450.43 342.66 450.55 342.75 450.62 342.79 450.65 342.98 450.77 343.2 450.9 343.42 451.03 343.65 451.16 343.9 451.31 344.18 451.46 344.46 451.62 344.67 451.74 344.82 451.83 345.38 452.12 345.68 452.34 345.73 452.49 345.75 452.55 345.76 452.63 345.76 452.75 345.76 452.97 345.72 453.26 345.64 453.62 345.56 453.98 345.48 454.26 345.39 454.46 345.23 454.88 344.74 455.31 343.94 455.78 343.19 456.2 342.46 456.41 341.73 456.41 341.51 456.41 341.3 456.39 341.1 456.36 340.9 456.33 340.67 456.28 340.42 456.21 340.16 456.13 339.97 456.07 339.85 456.03 339.73 455.98 339.51 455.9 339.19 455.78 338.87 455.65 338.68 455.58 338.61 455.55 337.83 455.26 337.13 454.92 336.52 454.53 335.51 453.88 334.46 452.99 333.37 451.86 332.29 450.74 331.44 449.65 330.81 448.59 330.43 447.96 330.1 447.24 329.82 446.43 329.8 446.36 329.73 446.15 329.61 445.82 329.49 445.49 329.41 445.27 329.36 445.14 329.32 445.01 329.26 444.81 329.19 444.55 329.12 444.29 329.07 444.05 329.04 443.84 329.01 443.63 329 443.41 329 443.19L329 443.19"/>
+    </g>
+  </g>
+  <!-- viewBox="0 0 12 18" -->
+  <g id="icon-mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-332.000000, -392.000000)" fill="#565656">
+        <path d="M341.97 410L334.03 410C332.91 410 332 409.15 332 408.1L332 393.88C332 392.83 332.91 392 334.03 392L341.97 392C343.09 392 344 392.83 344 393.88L344 408.1C344 409.15 343.09 410 341.97 410L341.97 410ZM338 409.23C338.37 409.23 338.8 408.85 338.8 408.5 338.8 408.15 338.37 407.74 338 407.74 337.63 407.74 337.19 408.17 337.19 408.52 337.19 408.87 337.63 409.23 338 409.23L338 409.23ZM342.43 393.46L333.58 393.45 333.58 407.01 342.45 407.01 342.43 393.46 342.43 393.46Z"/>
+      </g>
+  </g>
 </svg>
-<div class="kss-sidebar kss-style">
-  <nav class="kss-nav">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
+
+
+<div class="styleguide-header">
+  <div class="styleguide-menutoggler">
+    <i class="fa fa-chevron-circle-right"></i> OPEN STYLEGUIDE MENU
+  </div>
+  <nav>
+    <ul class="styleguide-menu">
+      <li>
         <a href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">About</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-1.html">
-          <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Modules</span>
-        </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-1.html#kssref-1.1">
-                <span class="kss-nav__ref">1.1</span
-                ><span class="kss-nav__name">Buttons</span>
-              </a>
+          <span class="styleguide-number">0</span
+            ><span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="section-1.html">
+            <span class="styleguide-number">1</span
+              ><span>Modules</span>
+            </a>
+            <ul>
+              <li>
+                <a href="section-1.html#kssref-1.1">
+                  <span class="styleguide-number">1.1</span
+                    ><span>Buttons</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.2">
+                  <span class="styleguide-number">1.2</span
+                    ><span>Typography</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.2">
+                  <span class="styleguide-number">1.2</span
+                    ><span>Headings</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.3">
+                  <span class="styleguide-number">1.3</span
+                    ><span>Social icons</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.3">
+                  <span class="styleguide-number">1.3</span
+                    ><span>Paragraph</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.4">
+                  <span class="styleguide-number">1.4</span
+                    ><span>Links</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.5">
+                  <span class="styleguide-number">1.5</span
+                    ><span>List Types</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.6">
+                  <span class="styleguide-number">1.6</span
+                    ><span>Fieldsets and Form Elements</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.7">
+                  <span class="styleguide-number">1.7</span
+                    ><span>Tables</span>
+                  </a>
+                </li>
+              <li>
+                <a href="section-1.html#kssref-1.10">
+                  <span class="styleguide-number">1.10</span
+                    ><span>Hamburger with bacon</span>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-1.html#kssref-1.2">
-                <span class="kss-nav__ref">1.2</span
-                ><span class="kss-nav__name">Typography</span>
-              </a>
+        <li>
+          <a href="section-2.html">
+            <span class="styleguide-number">2</span
+              ><span>Components</span>
+            </a>
             </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-1.html#kssref-1.3">
-                <span class="kss-nav__ref">1.3</span
-                ><span class="kss-nav__name">Social icons</span>
-              </a>
-            </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</div>
-<article role="main" class="kss-main">
-
-      <div     id="kssref-1" class="kss-section kss-section--depth-1">
-
-    <div class="kss-style">
-      <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-1">
-          <span class="kss-title__ref">1</span
-          >Modules
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-      </h1>
-
-
-    </div>
-
-
-      </div>
-      <section id="kssref-1.1" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-1.1">
-          <span class="kss-title__ref">1.1</span
-          >Buttons
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-      </h2>
-
-
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
-        </div>
-        <div class="kss-modifier__example">
-          <button class="">Text</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          :hover
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Highlight the button when hovering.
-        </div>
-        <div class="kss-modifier__example">
-          <button class="pseudo-class-hover">Text</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          :active
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Push the button down when active.
-        </div>
-        <div class="kss-modifier__example">
-          <button class="pseudo-class-active">Text</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .action
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Call to action
-        </div>
-        <div class="kss-modifier__example">
-          <button class="action">Text</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .action:hover
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Call to action hover
-        </div>
-        <div class="kss-modifier__example">
-          <button class="action pseudo-class-hover">Text</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .action:active
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Call to action active
-        </div>
-        <div class="kss-modifier__example">
-          <button class="action pseudo-class-active">Text</button>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .danger
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Danger
-        </div>
-        <div class="kss-modifier__example">
-          <button class="danger">Text</button>
-        </div>
+          </ul>
+        </nav>
       </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;&quot;&gt;Text&lt;/button&gt;</code></pre>
+      <div role="main">
+        <div class="container">
       </div>
 
-      </section>
-      <section id="kssref-1.2" class="kss-section kss-section--depth-2">
+      <div class="container">
+        <div id="kssref-1" class="kss-section--depth-1">
 
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-1.2">
-          <span class="kss-title__ref">1.2</span
-          >Typography
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-      </h2>
+            <a class="kss-title__permalink" href="#kssref-1" style="display:none;">
+              <span class="kss-title__ref">1</span
+                >Modules
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-main">Modules</span>
 
 
-      <div class="kss-description">
-        <p><h1>Heading 1</h1></p>
+              <div class="styleguide-description">
+                <p>Simple reusable UI modules.</p>
+
+              </div>
+            </div>
+          <section id="kssref-1.1" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.1" style="display:none;">
+              <span class="kss-title__ref">1.1</span
+                >Buttons
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Buttons</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+            <div class="styleguide-modifiername default">
+              Default styling
+            </div>
+          </div>
+          <div class="styleguide-modifierexample">
+            <button class="">Text</button>
+          </div>
+          <div class="styleguide-modifiername">
+            .btn--default
+          </div>
+          <div class="styleguide-modifierdescription">
+            Call to action
+          </div>
+          <div class="styleguide-modifierexample">
+            <button class="btn--default">Text</button>
+          </div>
+          <div class="styleguide-modifiername">
+            .btn--default:hover
+          </div>
+          <div class="styleguide-modifierdescription">
+            Call to action hover
+          </div>
+          <div class="styleguide-modifierexample">
+            <button class="btn--default pseudo-class-hover">Text</button>
+          </div>
+          <div class="styleguide-modifiername">
+            .btn--default:active
+          </div>
+          <div class="styleguide-modifierdescription">
+            Call to action active
+          </div>
+          <div class="styleguide-modifierexample">
+            <button class="btn--default pseudo-class-active">Text</button>
+          </div>
+          <div class="styleguide-modifiername">
+            .btn--disabled
+          </div>
+          <div class="styleguide-modifierdescription">
+            Disabled button
+          </div>
+          <div class="styleguide-modifierexample">
+            <button class="btn--disabled">Text</button>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;&quot;&gt;Text&lt;/button&gt;</code></pre>
+          </div>
+          <section id="kssref-1.2" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.2" style="display:none;">
+              <span class="kss-title__ref">1.2</span
+                >Typography
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Typography</span>
+
+
+              <div class="styleguide-description">
+                <p><h1>Heading 1</h1></p>
 <p><h2>Heading 2</h2></p>
 <p><h3>Heading 3</h3></p>
 <p><h4>Heading 4</h4></p>
 <p><hr></p>
 <h3 id="body-text">Body text</h3>
 <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Cras sagittis. Etiam sit amet orci eget eros faucibus tincidunt.</p>
-      </div>
-    </div>
+              </div>
+          </section>
+          <section id="kssref-1.2" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.2" style="display:none;">
+              <span class="kss-title__ref">1.2</span
+                >Headings
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Headings</span>
 
 
-      </section>
-      <section id="kssref-1.3" class="kss-section kss-section--depth-2">
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+          </div>
 
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-1.3">
-          <span class="kss-title__ref">1.3</span
-          >Social icons
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-      </h2>
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+          </div>
+          <section id="kssref-1.3" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.3" style="display:none;">
+              <span class="kss-title__ref">1.3</span
+                >Social icons
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Social icons</span>
 
 
-    </div>
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Cras sagittis. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+          </div>
 
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Cras sagittis. Etiam sit amet orci eget eros faucibus tincidunt.&lt;/p&gt;</code></pre>
+          </div>
+          <section id="kssref-1.3" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.3" style="display:none;">
+              <span class="kss-title__ref">1.3</span
+                >Paragraph
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Paragraph</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Cras sagittis. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Cras sagittis. Etiam sit amet orci eget eros faucibus tincidunt.&lt;/p&gt;</code></pre>
+          </div>
+          <section id="kssref-1.4" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.4" style="display:none;">
+              <span class="kss-title__ref">1.4</span
+                >Links
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Links</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+            <div class="styleguide-modifiername default">
+              Default styling
+            </div>
+          </div>
+          <div class="styleguide-modifierexample">
+            <a href="#">Klikk her!</a>
+          </div>
+          <div class="styleguide-modifiername">
+            a:hover
+          </div>
+          <div class="styleguide-modifierdescription">
+            When a link is hovered
+          </div>
+          <div class="styleguide-modifierexample">
+            <a href="#">Klikk her!</a>
+          </div>
+          <div class="styleguide-modifiername">
+            a:active
+          </div>
+          <div class="styleguide-modifierdescription">
+            When a link is active
+          </div>
+          <div class="styleguide-modifierexample">
+            <a href="#">Klikk her!</a>
+          </div>
+          <div class="styleguide-modifiername">
+            a:focus
+          </div>
+          <div class="styleguide-modifierdescription">
+            When a link is focused
+          </div>
+          <div class="styleguide-modifierexample">
+            <a href="#">Klikk her!</a>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot;&gt;Klikk her!&lt;/a&gt;</code></pre>
+          </div>
+          <section id="kssref-1.5" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.5" style="display:none;">
+              <span class="kss-title__ref">1.5</span
+                >List Types
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">List Types</span>
+
+
+              <div class="styleguide-description">
+                <p>Different types of lists</p>
+
+              </div>
+          </section>
+          <section id="kssref-1.5.1" class="kss-section--depth-3">
+
+            <a class="kss-title__permalink" href="#kssref-1.5.1" style="display:none;">
+              <span class="kss-title__ref">1.5.1</span
+                >Ordered List
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Ordered List</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ol>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+          </div>
+          <section id="kssref-1.5.2" class="kss-section--depth-3">
+
+            <a class="kss-title__permalink" href="#kssref-1.5.2" style="display:none;">
+              <span class="kss-title__ref">1.5.2</span
+                >Unordered List
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Unordered List</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ul>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </div>
+          <section id="kssref-1.5.3" class="kss-section--depth-3">
+
+            <a class="kss-title__permalink" href="#kssref-1.5.3" style="display:none;">
+              <span class="kss-title__ref">1.5.3</span
+                >Defenition List
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Defenition List</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <dl>
+  <dt>Definition List Title</dt>
+  <dd>This is a definition list division.</dd>
+</dl>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;dl&gt;
+  &lt;dt&gt;Definition List Title&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+          </div>
+          <section id="kssref-1.6" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.6" style="display:none;">
+              <span class="kss-title__ref">1.6</span
+                >Fieldsets and Form Elements
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Fieldsets and Form Elements</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <fieldset>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+    <form>
+        <h2>Form Element</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+        <p>
+            <label for="text_field">Text Field:</label>
+            <input type="text" id="text_field" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+        </p>
+        <p>
+            <label for="text_area">Text Area:</label>
+            <textarea id="text_area"></textarea>
+        </p>
+        <p>
+            <label for="select_element">Select Element:</label>
+            <select name="select_element">
+                <optgroup label="Option Group 1">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </optgroup>
+                <optgroup label="Option Group 2">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="radio_buttons">Radio Buttons:</label>
+            <label>
+                <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
+            </label>
+            <label>
+                <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
+            </label>
+            <label>
+                <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
+            </label>
+        </p>
+        <p>
+            <label for="checkboxes">Checkboxes:</label>
+            <label>
+                <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Checkbox 2
+            </label>
+            <label>
+                <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Checkbox 3
+            </label>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" class="password" name="password" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+        </p>
+        <p>
+            <label for="file">File Input:</label>
+            <input type="file" class="file" name="file">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</fieldset>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;fieldset&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.&lt;/p&gt;
+    &lt;form&gt;
+        &lt;h2&gt;Form Element&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.&lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;text_field&quot;&gt;Text Field:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;text_field&quot; autocomplete=&quot;off&quot; style=&quot;cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;&quot;&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;text_area&quot;&gt;Text Area:&lt;/label&gt;
+            &lt;textarea id=&quot;text_area&quot;&gt;&lt;/textarea&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;select_element&quot;&gt;Select Element:&lt;/label&gt;
+            &lt;select name=&quot;select_element&quot;&gt;
+                &lt;optgroup label=&quot;Option Group 1&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                &lt;/optgroup&gt;
+                &lt;optgroup label=&quot;Option Group 2&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                &lt;/optgroup&gt;
+            &lt;/select&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;radio_buttons&quot;&gt;Radio Buttons:&lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; name=&quot;radio_button&quot; value=&quot;radio_1&quot;&gt; Radio 1
+            &lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; name=&quot;radio_button&quot; value=&quot;radio_2&quot;&gt; Radio 2
+            &lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; name=&quot;radio_button&quot; value=&quot;radio_3&quot;&gt; Radio 3
+            &lt;/label&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;checkboxes&quot;&gt;Checkboxes:&lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; name=&quot;checkboxes&quot; value=&quot;check_1&quot;&gt; Checkbox 1
+            &lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; name=&quot;checkboxes&quot; value=&quot;check_2&quot;&gt; Checkbox 2
+            &lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; name=&quot;checkboxes&quot; value=&quot;check_3&quot;&gt; Checkbox 3
+            &lt;/label&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;
+            &lt;input type=&quot;password&quot; class=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;off&quot; style=&quot;cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;&quot;&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for=&quot;file&quot;&gt;File Input:&lt;/label&gt;
+            &lt;input type=&quot;file&quot; class=&quot;file&quot; name=&quot;file&quot;&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/fieldset&gt;</code></pre>
+          </div>
+          <section id="kssref-1.7" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.7" style="display:none;">
+              <span class="kss-title__ref">1.7</span
+                >Tables
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Tables</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+            <table cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr class="even">
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+  </tbody></table>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+      &lt;th&gt;Table Header 1&lt;/th&gt;&lt;th&gt;Table Header 2&lt;/th&gt;&lt;th&gt;Table Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Division 1&lt;/td&gt;&lt;td&gt;Division 2&lt;/td&gt;&lt;td&gt;Division 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;even&quot;&gt;
+      &lt;td&gt;Division 1&lt;/td&gt;&lt;td&gt;Division 2&lt;/td&gt;&lt;td&gt;Division 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Division 1&lt;/td&gt;&lt;td&gt;Division 2&lt;/td&gt;&lt;td&gt;Division 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;&lt;/table&gt;</code></pre>
+          </div>
+          <section id="kssref-1.10" class="kss-section--depth-2">
+
+            <a class="kss-title__permalink" href="#kssref-1.10" style="display:none;">
+              <span class="kss-title__ref">1.10</span
+                >Hamburger with bacon
+                <span class="kss-title__permalink-hash">#permalink</span>
+              </a>
+
+              <span class="styleguide-pageheader-sub">Hamburger with bacon</span>
+
+
+          </section>
+          <div class="styleguide-wrapperblock">
+          </div>
+          <div class="styleguide-modifierexample">
+             <div class="hamburger">
+     <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
+ </div>
+          </div>
+
+          <div class="styleguide-markup">
+            <pre class="prettyprint linenums lang-html"><code data-language="html"> &lt;div class=&quot;hamburger&quot;&gt;
+     &lt;i class=&quot;hamburger-meat&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hamburger-side&quot;&gt;Meny&lt;/span&gt;
+ &lt;/div&gt;</code></pre>
+          </div>
         </div>
-        <div class="kss-modifier__example">
-          <a class="icon-link facebook fill"><i class="fa fa-facebook"></i></a>
-<a class="icon-link tumblr fill"><i class="fa fa-tumblr"></i></a>
-<a class="icon-link linkedin fill"><i class="fa fa-linkedin"></i></a>
-<a class="icon-link twitter fill"><i class="fa fa-twitter"></i></a>
-<a class="icon-link google-plus fill"><i class="fa fa-google-plus"></i></a>
-<a class="icon-link reddit fill"><i class="fa fa-reddit"></i></a>
-<a class="icon-link youtube fill"><i class="fa fa-youtube"></i></a>
-<a class="icon-link pinterest fill"><i class="fa fa-pinterest"></i></a>
-<a class="icon-link github fill"><i class="fa fa-github"></i></a>
-<a class="icon-link envelope fill"><i class="fa fa-envelope"></i></a>
-<a class="icon-link soundcloud fill"><i class="fa fa-soundcloud"></i></a>
-        </div>
-      </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a class=&quot;icon-link facebook fill&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link tumblr fill&quot;&gt;&lt;i class=&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link linkedin fill&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link twitter fill&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link google-plus fill&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link reddit fill&quot;&gt;&lt;i class=&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link youtube fill&quot;&gt;&lt;i class=&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link pinterest fill&quot;&gt;&lt;i class=&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link github fill&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link envelope fill&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;icon-link soundcloud fill&quot;&gt;&lt;i class=&quot;fa fa-soundcloud&quot;&gt;&lt;/i&gt;&lt;/a&gt;</code></pre>
-      </div>
-
-      </section>
-</article>
-
-<!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
-<script>
-  prettyPrint();
-</script>
+        <!-- SCRIPTS -->
+        <script src="public/kss.js"></script>
+        <script src="public/prettify.js"></script>
+        <script>
+          prettyPrint();
+        </script>
+        
 
 
-
-<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
-    <script type='text/javascript' id="__bs_script__">
+        <!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+        <script type='text/javascript' id="__bs_script__">
 //<![CDATA[
-    document.write("<script async src='http://HOST:3333/browser-sync/browser-sync-client.2.4.0.js'><\/script>".replace("HOST", location.hostname));
+    // document.write("<script async src='http://HOST:3333/browser-sync/browser-sync-client.2.4.0.js'><\/script>".replace("HOST", location.hostname));
     //]]></script>
+
+    <!-- Styleguide menu navigation -->
+    <script>
+      $('.styleguide-menutoggler').on('click', function(){
+        if(!$(this).hasClass('active')){
+          $(this).html('<i class="fa fa-chevron-circle-down"></i> CLOSE STYLEGUIDE MENU');
+        } else {
+          $(this).html('<i class="fa fa-chevron-circle-right"></i> OPEN STYLEGUIDE MENU');
+        }
+        $('.styleguide-menu').toggleClass('open');
+        $(this).toggleClass('active');
+      });
+      $('.styleguide-menu').on('click', function(){
+        $('.styleguide-menutoggler').trigger('click');
+      });
+    // Main menu phone
+    $('.mobile-only').on('click', function(e){
+      var $this = $(this);
+      if($this.data('linkedto')){
+        if($this.hasClass('active')){
+          $this.removeClass('active');
+          $('#' + $this.data('linkedto')).removeClass('active');
+        } else {
+          var $activeSibling = $this.parent().find('.active').removeClass('active');
+          $this.addClass('active');
+          $('#' + $activeSibling.data('linkedto')).removeClass('active');
+          $('#' + $this.data('linkedto')).addClass('active');
+        }
+        e.preventDefault();
+      }
+    });
+    // input field focus event main search field
+    $('#searchSiteDesktop').on('focusin', function(){
+      $(this).parent().find('i').addClass('focus');
+    }).on('focusout', function(){
+      $(this).parent().find('i').removeClass('focus');
+    });
+    // Mobile menu open/close on arrows
+    $('#navigation-mobile').on('click', 'i', function(e){
+      $(this).closest('li').toggleClass('active');
+      e.preventDefault();
+    });
+  </script>
 </body>
 </html>

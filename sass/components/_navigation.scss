@@ -1,0 +1,88 @@
+// Navigation
+//
+// Main navigation
+//
+// Markup:
+// <nav role="navigation" class="navigation">
+//     <ul class="navigation_list">
+//         <li class="navigation_element"><a href="#">Element 1</a></li>
+//         <li class="navigation_element"><a href="#">Element 2</a></li>
+//         <li class="navigation_element navigation_element--active">
+//              <a href="#">
+//                  <span class="navigation_element_text">Element 3</span>
+//                  <svg class="navigation_element_arrow" viewbox="0 0 8 18">
+//                      <use xlink:href="#arrow-right"></use>
+//                  </svg>
+//              </a>
+//          </li>
+//         <li class="navigation_element"><a href="#">Element 4</a></li>
+//         <li class="navigation_element"><a href="#">Element 5</a></li>
+//     </ul>
+// </nav>
+//
+// Styleguide 2.1
+
+$navigation-background: #fff;
+
+.navigation {
+  width: $sidenav-width;
+  z-index: map-get($zindex, sidenav);
+  overflow-y: auto;
+  visibility: visible;
+  box-shadow: 1px 0px 2px 0px rgba(0, 0, 0, 0.3);
+  background: $navigation-background;
+  @include transform-style(preserve-3d);
+  @include transition(all 200ms ease);
+  @include transform(translate3d(-100%, 0, 0));
+  @include media($ml-viewport) {
+    @include transform(translate3d(0, 0, 0));
+    @include transition(none);
+  }
+
+  &.active {
+    @include transform(translate3d(0, 0, 0));
+  }
+  &_list {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include outer-container;
+  }
+  &_element {
+    display: block;
+    a {
+      display: block;
+      padding: 10px 10px 10px 40px;
+      @include user-select(none);
+      line-height: 1;
+      text-decoration: none;
+      color: $navigation-link-color;
+      &:hover {
+        color: $navigation-link-color-hover;
+        background: $navigation-link-background-hover;
+      }
+      &:focus {
+        color: $navigation-link-color-focus;
+        background: $navigation-link-background-focus;
+      }
+      &:active {
+        color: $navigation-link-color-active;
+        background: $navigation-link-background-active;
+      }
+    }
+    &--active a {
+      color: $navigation-link-color-active;
+      &_arrow {
+        fill: green;
+      }
+    }
+    &_arrow {
+      width: 8px;
+      height: 20px;
+      fill: #4d828e;
+      float: right;
+      position: relative;
+      top: -2px;
+    }
+  }
+}

@@ -3,30 +3,40 @@
 // Profile colors, never use directly.
 // -------------------------
 
-$profile1: #428bca;
-$profile2: #5cb85c;
-$profile3: #f0ad4e;
-$profile4: #d9534f;
-$profile5: #5bc0de;
-$profile6: #428bca;
-$profile7: #5cb85c;
-$profile8: #ddd;
+$profile1: #4D828E;
+$profile2: #096F7C;
+$profile3: #186F7A;
+$profile4: #59BAD0;
+$profile5: #AFD9E6;
 
 // Meaningful aliases for profile colors;
-$bg-color: $profile8;
+$bg-color: none;
 
-$button-color: $profile1;
-$button-hover-color: darken($button-color, 10%);
-
-$link-color: $profile3;
+$link-color: $profile2;
 $link-hover-color: darken($link-color, 5%);
 $link-active-color: darken($link-color, 10%);
 
+// Font Colors
+$base-font-color: #575757;
 
-// Telenor colours
-$button-color-green : #7FB000;
-$button-color-darkgreen : #4E6C00;
+// Border
+$base-border-color: #979797;
+$base-border: 1px solid $base-border-color;
 
-$text-color-blue : #008FD4;
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: lighten($base-border-color, 40%);
 
-$telenor-blue : #00A8E3;
+//Main Heading
+$header-background: #f8f8f8;
+
+
+//Navigation
+$navigation-link-color:           #565656;
+$navigation-link-color-hover:     #096F7C;
+$navigation-link-color-focus:     $navigation-link-color-hover;
+$navigation-link-color-active:    $navigation-link-color-hover;
+
+$navigation-link-background-hover: none;//lighten($profile1, 10%);
+$navigation-link-background-active: none;//darken($navigation-link-background-hover, 5%);
+$navigation-link-background-focus: none;//$navigation-link-background-active;

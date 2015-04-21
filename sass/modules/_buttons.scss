@@ -2,93 +2,27 @@
 //
 // Markup: <button class="{{modifier_class}}">Text</button>
 //
-// :hover           - Highlight the button when hovering.
-// :active          - Push the button down when active.
-// .action          - Call to action
-// .action:hover    - Call to action hover
-// .action:active   - Call to action active
-// .danger          - Danger
+// .btn--default          - Call to action
+// .btn--default:hover    - Call to action hover
+// .btn--default:active   - Call to action active
+// .btn--disabled         - Disabled button
 //
 // Styleguide 1.1
 
-button {
-  @include appearance(none);
-  -webkit-font-smoothing: antialiased;
-  background-color: $button-color;
-  border-radius: 5px;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.75em 1em;
-  text-decoration: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+button, .btn {
+ @include custom-button;
 
-  &:hover,
-  &:focus {
-    background-color: darken($button-color, 15%);
-    color: #fff;
-  }
-
-  &:disabled {
+  &--disabled {
+    @extend .btn;
     cursor: not-allowed;
     opacity: 0.5;
   }
+
+  &--default {
+    @extend .btn;
+  }
 }
 
-.btn {
-
-  border: none;
-  cursor: pointer;
-  border-radius : 5px;
-  color : #fff;
-
-  // colours for buttons
-  &.green {
-    background : $button-color-green;
-    &:hover {
-      background : darken($button-color-green, 5%);
-    }
-  }
-  &.darkgreen {
-    background : $button-color-darkgreen;
-    &:hover {
-      background : darken($button-color-darkgreen, 5%);
-    }
-  }
-
-  // arrows for buttons
-  .svg-arrow {
-      width : 39px;
-      height : 16px;
-      margin-left : 5px;
-      position : relative;
-      left : 0;
-      @include transition ( left 0.3s );
-  }
-
-  &:hover {
-    .svg-arrow {
-      left : 4px;
-    }
-  }
-
-  &.small {
-    svg {
-      width : 30px;
-      height : 12px;
-    }
-  }
-
-  @include media ($s-viewport) {
-    svg {
-      display : none;
-    }
-  }
+input[type="submit"], input[type="button"] {
+  @extend .btn;
 }

@@ -1,0 +1,44 @@
+// Tables
+//
+// Markup:
+// <table cellspacing="0" cellpadding="0">
+//     <tbody><tr>
+//       <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+//     </tr>
+//     <tr>
+//       <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+//     </tr>
+//     <tr class="even">
+//       <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+//     </tr>
+//     <tr>
+//       <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+//     </tr>
+//   </tbody></table>
+//
+// Styleguide 1.7
+
+table {
+  border-collapse: collapse;
+  margin: $small-spacing 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($base-border-color, 15%);
+  font-weight: 600;
+  padding: $small-spacing 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: $base-border;
+  padding: $small-spacing 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
