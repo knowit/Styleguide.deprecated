@@ -1,14 +1,15 @@
 # Style guide
 
- * Single quotes only; ie. @import 'some_module'
- * 1TBS (the one true brace style) ftw!
- * Empty line after every declaration block
- * Most Sass should be reusable, isolated components.
- * Helpers must either be mixins or placeholder selectors.
- * Helpers don't output any CSS, modules do.
- * Settings contain variables for colors, grid breakpoints, font sizes etc.
- * Modules compose reusable UI modules.
- * Layouts outputs the different page layouts, with breakpoints etc.
+* Single quotes only; ie. @import 'some_module'
+* 1TBS (the one true brace style) ftw!
+* Empty line after every declaration block
+* Most Sass should be reusable, isolated components.
+* Helpers must either be mixins or placeholder selectors.
+* Helpers don't output any CSS, modules do.
+* Settings contain variables for colors, grid breakpoints, font sizes etc.
+* Modules compose reusable UI modules.
+* Components compose complex reusable UI components.
+* Layouts outputs the different page layouts, with breakpoints etc.
 
 ## Sass directory and file structure
 
@@ -24,10 +25,17 @@ sass
 │   ├── _colors.scss      - Variables for site colors
 │   └── _typography.scss  - Variables for font sizes, families, etc.
 ├── Modules
-│   ├── _buttons.scss     - Creating specific selectors targeting HTML
-│   └── _typography.scss  - Actual styling of typographic elements
+│   ├── _buttons.scss
+│   ├── _lists.scss
+│   ├── _tables.scss
+│   ├── _hamburger.scss
+│   └── _typography.scss
+├── Components
+│   ├── _social-icons.scss
+│   ├── _office-card.scss
+│   └── _navigation.scss
 ├── Layouts
-    └── _article.scss     - Composes the layout for an article page
+└── _article.scss     - Composes the layout for an article page
 ```
 
 ##BEM – meaning block, element, modifier
