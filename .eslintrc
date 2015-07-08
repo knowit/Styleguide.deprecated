@@ -1,0 +1,15 @@
+{
+  "env" : {
+    "browser" : 1
+  },
+  "globals": {
+    "console": false,
+    "module": false,
+    "require": false,
+    "__dirname" : false
+  },
+  "rules": {
+   "quotes": [2, "single"],
+   "strict": 0
+  }
+}
