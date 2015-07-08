@@ -34,7 +34,7 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(sourcemaps.init())
     .pipe(autoprefixer())
-    .pipe(concat('concat.css'))
+    .pipe(concat(style.cssFileName))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(style.cssDirectory));
 });
@@ -61,5 +61,5 @@ gulp.task('kss', function () {
 
 gulp.task('default', ['sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
   gulp.watch('./sass/**/*.scss', ['sass', 'sass-styleguide', 'kss']);
-  gulp.watch('./styleguide/**/*.html').on('change', browserSync.reload);
+  gulp.watch('./styleguide/index.html').on('change', browserSync.reload);
 });
