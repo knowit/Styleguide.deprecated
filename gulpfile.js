@@ -29,10 +29,10 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function () {
   gulp.src(style.sassFilePath)
+    .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: require('node-neat').includePaths
     }).on('error', sass.logError))
-    .pipe(sourcemaps.init())
     .pipe(autoprefixer())
     .pipe(concat(style.cssFileName))
     .pipe(sourcemaps.write('.'))
