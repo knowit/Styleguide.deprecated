@@ -52,10 +52,10 @@ gulp.task('sass-styleguide', function () {
 });
 
 gulp.task('kss', function () {
-  exec('npm run kss', function (err, stdout, stderr) {
-    console.log(err);
-    console.log(stdout);
-    console.log(stderr);
+  exec('npm run kss', function (err) {
+    if(err !== null) {
+      console.log(err);
+    }
   });
 });
 
