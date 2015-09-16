@@ -1,0 +1,9 @@
+# Kyber Boilerplate ignores
+
+#Styling - Ignore styling because it should be compiled by the build server
+/css/screen.css
+/css/screen.css.map
+/styleguide
+
+#NPM
+/node_modules

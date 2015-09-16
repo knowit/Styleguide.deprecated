@@ -1,0 +1,22 @@
+// Typography
+$base-font-family: 'Arial';
+$heading-font-family: 'Arial';
+
+// **, **, mobil, m-viewport, l-viewport, font-weight
+$font-list: (
+  (h1, em(35px), em(40px), em(47px), 100),
+  (h2, em(25px), em(25px), em(30px), 100),
+  (h3, em(20px), em(20px), em(24px), 100),
+  (h4, em(18px), em(18px), em(20px), 100),
+  (h5, em(15px), em(15px), em(15px), 100),
+  (h6, em(14px), em(14px), em(14px), 100)
+);
+
+// Font Colors
+$base-font-color: #575757;
+// Font sizes
+$base-font-size: em(16px);
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;

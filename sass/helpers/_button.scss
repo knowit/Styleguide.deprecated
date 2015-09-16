@@ -1,0 +1,22 @@
+@mixin custom-button($border-radius: 11px) {
+  border: 1px solid #979797;
+  color: #565656;
+  border-radius: $border-radius;
+  line-height: 1;
+  padding: 5px 10px;
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: #fff;
+  &:hover, &:active, &:focus {
+    color: #186F7A;
+    text-decoration: none;
+  }
+}

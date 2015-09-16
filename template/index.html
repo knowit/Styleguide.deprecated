@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="css/styleguide.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  {{{styles}}}
+</head>
+
+<body>
+  <div class="styleguide-header">
+    <div class="styleguide-menutoggler">
+      <i class="fa fa-chevron-circle-right"></i> OPEN STYLEGUIDE MENU
+    </div>
+    <nav>
+      <ul class="styleguide-menu">
+        <li>
+          <a href="./">
+            <span class="styleguide-number">0</span>
+            <span>Overview</span>
+          </a>
+        </li>
+        {{#eachRoot}}
+        <li>
+          <a href="section-{{referenceURI}}.html">
+            <span class="styleguide-number">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>
+            <span>{{header}}</span>
+          </a>
+          {{#ifReference ../rootName}}
+          <ul>
+            {{#eachSection reference}} {{#ifDepth 2}}
+            <li>
+              <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
+                <span class="styleguide-number">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>
+                <span>{{header}}</span>
+              </a>
+            </li>
+            {{/ifDepth}} {{/eachSection}}
+          </ul>
+          {{/ifReference}}
+        </li>
+        {{/eachRoot}}
+      </ul>
+    </nav>
+  </div>
+  <div role="main">
+    <div class="container">
+      {{#if homepage}}
+      <div id="kssref-0">
+        {{{homepage}}}
+      </div>
+      {{else}} {{! Display each section, in order. The "root" element comes first in this loop, and can be detected using the "#ifDepth 1" block as seen below. }}
+    </div>
+    <div class="container">
+      {{#eachSection rootName}} {{#ifDepth 1}}
+      <div id="kssref-{{referenceURI}}" class="kss-section--depth-{{depth}}">
+        {{else}}
+        <section id="kssref-{{referenceURI}}" class="kss-section--depth-{{depth}}">
+          {{/ifDepth}}
+          <a class="kss-title__permalink" href="#kssref-{{referenceURI}}" style="display:none;">
+            <span class="kss-title__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>{{header}}
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          {{#ifDepth 1}}
+          <span class="styleguide-pageheader-main">{{header}}</span>
+          {{else}}
+          <span class="styleguide-pageheader-sub">{{header}}</span>
+          {{/ifDepth}} {{#if parameters}}
+          <ul class="kss-parameters">
+            {{#eachParameter}}
+            <li class="kss-parameters__item">
+              <code class="kss-parameters__name">{{name}}</code>
+              <div class="kss-parameters__description">{{{description}}}</div>
+            </li>
+            {{/eachParameter}}
+          </ul>
+          {{/if}} {{#if description}}
+          <div class="styleguide-description">
+            {{{description}}}
+          </div>
+          {{/if}} {{#ifDepth 1}}
+      </div>
+      {{else}}
+      </section>
+      {{/ifDepth}} {{#if markup}}
+      <div class="styleguide-wrapperblock">
+        {{#if modifiers}}
+        <div class="styleguide-modifiername default">
+          Default styling
+        </div>
+        {{/if}}
+      </div>
+      <div class="styleguide-modifierexample">
+        {{{markup}}}
+      </div>
+      {{#eachModifier}}
+      <div class="styleguide-modifiername">
+        {{name}}
+      </div>
+      <div class="styleguide-modifierdescription">
+        {{{description}}}
+      </div>
+      <div class="styleguide-modifierexample">
+        {{{markup}}}
+      </div>
+      {{/eachModifier}}
+      <div class="styleguide-markup">
+        <pre class="prettyprint linenums lang-html">
+          <code data-language="html">{{markup}}</code>
+        </pre>
+      </div>
+      {{/if}} {{/eachSection}}
+    </div>
+    {{/if}}
+    <!-- SCRIPTS -->
+    <script src="public/kss.js"></script>
+    <script src="public/prettify.js"></script>
+    <script>
+      prettyPrint();
+    </script>
+    <script type='text/javascript' id="__bs_script__">
+      <!-- Styleguide menu navigation -->
+      < script >
+        $('.styleguide-menutoggler').on('click', function() {
+          if (!$(this).hasClass('active')) {
+            $(this).html('<i class="fa fa-chevron-circle-down"></i> CLOSE STYLEGUIDE MENU');
+          } else {
+            $(this).html('<i class="fa fa-chevron-circle-right"></i> OPEN STYLEGUIDE MENU');
+          }
+          $('.styleguide-menu').toggleClass('open');
+          $(this).toggleClass('active');
+        });
+      $('.styleguide-menu').on('click', function() {
+        $('.styleguide-menutoggler').trigger('click');
+      });
+      // Main menu phone
+      $('.mobile-only').on('click', function(e) {
+        var $this = $(this);
+        if ($this.data('linkedto')) {
+          if ($this.hasClass('active')) {
+            $this.removeClass('active');
+            $('#' + $this.data('linkedto')).removeClass('active');
+          } else {
+            var $activeSibling = $this.parent().find('.active').removeClass('active');
+            $this.addClass('active');
+            $('#' + $activeSibling.data('linkedto')).removeClass('active');
+            $('#' + $this.data('linkedto')).addClass('active');
+          }
+          e.preventDefault();
+        }
+      });
+      // input field focus event main search field
+      $('#searchSiteDesktop').on('focusin', function() {
+        $(this).parent().find('i').addClass('focus');
+      }).on('focusout', function() {
+        $(this).parent().find('i').removeClass('focus');
+      });
+      // Mobile menu open/close on arrows
+      $('#navigation-mobile').on('click', 'i', function(e) {
+        $(this).closest('li').toggleClass('active');
+        e.preventDefault();
+      });
+    </script>
+</body>
+</html>

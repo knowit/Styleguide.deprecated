@@ -1,0 +1,52 @@
+// Hamburger with bacon
+//
+//  Markup:
+//  <div class="hamburger">
+//      <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
+//  </div>
+//
+// Styleguide 1.10
+
+$hamburger-width: 30px;
+$hamburger-height: 25px;
+$hamburger-color: #565656;
+
+.hamburger {
+    display: table-cell;
+    height: $header-height;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+
+    &-meat, &-side {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &-meat {
+        width: $hamburger-width;
+        height: $hamburger-height;
+        background: $hamburger-color;
+        position: relative;
+        &::before, &::after {
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            left: 0;
+            content: '';
+            background-color: $header-background;
+        }
+        &::before {
+            top: 20%;
+        }
+        &::after {
+            top: 60%;
+        }
+    }
+    &-side {
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1;
+        color: lighten($hamburger-color, 5%);
+    }
+}

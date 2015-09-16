@@ -1,0 +1,317 @@
+// ------------------------------------------------------------------------------
+//   @group Variables - Colors, Fonts, etc.
+// ------------------------------------------------------------------------------
+$kss-colors-background     : #fff;
+
+$kss-colors-foreground     : #444;
+$kss-colors-heading        : #111;
+$kss-colors-quotes         : #666;
+
+$kss-colors-link           : #0645ad;
+$kss-colors-link-visited   : #0645ad;
+$kss-colors-link-hover     : lighten($kss-colors-link, 20%);
+$kss-colors-link-active    : #faa700;
+
+$kss-font-body             : Helvetica, 'Helvetica Neue', Arial, sans-serif;
+$kss-font-code             : Menlo, 'Ubuntu Mono', 'Lucida Console', 'Courier New', Courier, monospace;
+
+$kss-font-size             : 16px;
+$kss-vertical-rhythm       : $kss-font-size * 1.5;
+
+/**** UI for Styleguides ****/
+body {
+  margin: 0;
+  padding: 100px 0 0 0;
+}
+
+/**** Styleguide menu ****/
+.styleguide-header {
+  width: 100%;
+  height: 40px;
+  background: #333;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  .styleguide-menutoggler {
+    padding: 8px;
+    color: #999;
+    background: #333;
+    height: 40px;
+    cursor: pointer;
+    &.active, &:hover {
+      background: #051020;
+      color: #fff;
+    }
+    @include transition(all 400ms ease);
+  }
+  .styleguide-menu {
+    // default this is hidden
+    display: none;
+    opacity: 0;
+    @include transition(opacity 400ms ease);
+    a {
+      @include transition(background 400ms ease);
+    }
+    &.open {
+      display: block;
+      opacity: 1;
+    }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    li {
+      margin: 0;
+      padding: 0;
+      display: block;
+      border-bottom: 1px solid darken(#25426a, 10%);
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        background: #25426a;
+        color: #fff;
+        font-size: 18px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            background: #6681a5;
+            padding: 5px;
+            font-size: 15px;
+            color: #ccc;
+            &:hover {
+              background: darken(#6681a5, 10%);
+            }
+          }
+        }
+      }
+      a:hover {
+        background: darken(#25426a, 10%);
+      }
+    }
+  }
+  .styleguide-number {
+    font-size: 10px;
+    margin-right: 4px;
+    color: #ccc;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+  }
+}
+
+/**** Code examples ****/
+.styleguide-markup {
+  padding: 20px 0;
+  margin: 20px 0 60px 0;
+  -moz-tab-size: 3;
+  -o-tab-size: 3;
+  tab-size: 3;
+  &:before {
+    content: "Markup code:";
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 12px;
+    color: #ffffff;
+    background: #25426a;
+    border-radius: 4px;
+  }
+  .linenums {
+    border : 1px solid #eee;
+  }
+}
+
+/**** Header for each page ****/
+.styleguide-pageheader-main {
+  @extend .h1;
+}
+
+.styleguide-pageheader-sub {
+  @extend .h2;
+}
+
+/**** Descriptions for each page ****/
+.styleguide-description {
+  background: #f3d8d8;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+  color: #976666;
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    color: #976666;
+    display: inline-block !important;
+  }
+  &:before {
+    font-family: FontAwesome;
+    content: "\f05a";
+    display: inline-block;
+    color: #976666;
+    font-size: 18px;
+  }
+}
+
+/**** space + borders between elements ****/
+.styleguide-wrapperblock {
+  margin: 0;
+  padding: 0;
+}
+
+.styleguide-modifiername {
+  margin-top: 20px;
+  padding-top: 20px;
+  &:not(.default) {
+    border-top: 2px solid #ddd;
+  }
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+.styleguide-modifierdescription {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: oblique;
+}
+
+.styleguide-modifierexample {
+  margin-top: 20px;
+  @include outer-container;
+}
+
+// ------------------------------------------------------------------------------
+//   @group prettyprint.js styling
+// ------------------------------------------------------------------------------
+/* Pretty printing styles. Used with prettify.js. */
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln {
+  color: #000;
+}
+
+/* plain text */
+.str {
+  color: #080;
+}
+
+/* string content */
+.kwd {
+  color: #008;
+}
+
+/* a keyword */
+.com {
+  color: #800;
+}
+
+/* a comment */
+.typ {
+  color: #606;
+}
+
+/* a type name */
+.lit {
+  color: #066;
+}
+
+/* a literal value */
+/* punctuation, lisp open bracket, lisp close bracket */
+.pun, .opn, .clo {
+  color: #660;
+}
+
+.tag {
+  color: #008;
+}
+
+/* a markup tag name */
+.atn {
+  color: #606;
+}
+
+/* a markup attribute name */
+.atv {
+  color: #080;
+}
+
+/* a markup attribute value */
+.dec, .var {
+  color: #606;
+}
+
+/* a declaration; a variable name */
+.fun {
+  color: red;
+}
+
+/* a function name */
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str {
+    color: #060;
+  }
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+  .lit {
+    color: #044;
+  }
+  .pun, .opn, .clo {
+    color: #440;
+  }
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+  .atn {
+    color: #404;
+  }
+  .atv {
+    color: #060;
+  }
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    min-height: $kss-vertical-rhythm;
+    padding: 0 10px;
+    background: #fff;
+    ~ li {
+      border-top: 1px solid #eee;
+    }
+    &:first-child {
+      padding-top: 3px;
+    }
+  }
+  /* Alternate shading for lines */
+  li.L0,
+  li.L2,
+  li.L4,
+  li.L6,
+  li.L8 {
+    background: #fcfcfc;
+  }
+}
