@@ -1,6 +1,7 @@
-# Style guide ignores
-
-.sass-cache
+#Styling - Ignore styling because it should be compiled by the build server*.css
 *.css.map
-node_modules
+/styleguide
+
+#npm
+/node_modules
 *.log

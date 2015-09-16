@@ -17,19 +17,18 @@
 //          </li>
 //         <li class="navigation_element"><a href="#">Element 4</a></li>
 //         <li class="navigation_element"><a href="#">Element 5</a></li>
+//         <li class="navigation_element"><a href="#">Element 6</a></li>
 //     </ul>
 // </nav>
 //
 // Styleguide 2.1
-
 $navigation-background: #fff;
-
 .navigation {
   width: $sidenav-width;
   z-index: map-get($zindex, sidenav);
   overflow-y: auto;
   visibility: visible;
-  box-shadow: 1px 0px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.3);
   background: $navigation-background;
   @include transform-style(preserve-3d);
   @include transition(all 200ms ease);
@@ -38,7 +37,6 @@ $navigation-background: #fff;
     @include transform(translate3d(0, 0, 0));
     @include transition(none);
   }
-
   &.active {
     @include transform(translate3d(0, 0, 0));
   }
