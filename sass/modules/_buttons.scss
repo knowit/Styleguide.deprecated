@@ -1,28 +1,27 @@
 // Buttons
 //
-// Markup: <button class="{{modifier_class}}">Text</button>
+// Markup: buttons.hbs
 //
 // .btn--default          - Call to action
 // .btn--default:hover    - Call to action hover
 // .btn--default:active   - Call to action active
 // .btn--disabled         - Disabled button
 //
-// Styleguide 1.1
+// Style guide: modules.buttons
 
-button, .btn {
- @include custom-button;
-
+button,
+.btn {
+  @include custom-button;
   &--disabled {
     @extend .btn;
     cursor: not-allowed;
     opacity: 0.5;
   }
-
   &--default {
     @extend .btn;
   }
 }
-
-input[type="submit"], input[type="button"] {
+input[type="submit"],
+input[type="button"] {
   @extend .btn;
 }

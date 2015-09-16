@@ -1,84 +1,18 @@
 // Fieldsets and Form Elements
 //
-// Markup:
-// <fieldset>
-//     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
-//     <form>
-//         <h2>Form Element</h2>
-//         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
-//         <p>
-//             <label for="text_field">Text Field:</label>
-//             <input type="text" id="text_field" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
-//         </p>
-//         <p>
-//             <label for="text_area">Text Area:</label>
-//             <textarea id="text_area"></textarea>
-//         </p>
-//         <p>
-//             <label for="select_element">Select Element:</label>
-//             <select name="select_element">
-//                 <optgroup label="Option Group 1">
-//                     <option value="1">Option 1</option>
-//                     <option value="2">Option 2</option>
-//                     <option value="3">Option 3</option>
-//                 </optgroup>
-//                 <optgroup label="Option Group 2">
-//                     <option value="1">Option 1</option>
-//                     <option value="2">Option 2</option>
-//                     <option value="3">Option 3</option>
-//                 </optgroup>
-//             </select>
-//         </p>
-//         <p>
-//             <label for="radio_buttons">Radio Buttons:</label>
-//             <label>
-//                 <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
-//             </label>
-//             <label>
-//                 <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
-//             </label>
-//             <label>
-//                 <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
-//             </label>
-//         </p>
-//         <p>
-//             <label for="checkboxes">Checkboxes:</label>
-//             <label>
-//                 <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
-//             </label>
-//             <label>
-//                 <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Checkbox 2
-//             </label>
-//             <label>
-//                 <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Checkbox 3
-//             </label>
-//         </p>
-//         <p>
-//             <label for="password">Password:</label>
-//             <input type="password" class="password" name="password" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
-//         </p>
-//         <p>
-//             <label for="file">File Input:</label>
-//             <input type="file" class="file" name="file">
-//         </p>
-//         <p>
-//             <input type="submit" value="Submit">
-//         </p>
-//     </form>
-// </fieldset>
+// Markup: form.hbs
 //
-// Styleguide 1.6
+// Style guide: modules.form 
+
 $action-color: $profile1;
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-
 fieldset {
   background-color: $secondary-background-color;
   border: $base-border;
   margin: 0 0 $small-spacing;
   padding: $base-spacing;
 }
-
 input,
 label,
 select {
@@ -86,20 +20,16 @@ select {
   font-family: $base-font-family;
   font-size: $base-font-size;
 }
-
 label {
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
-
   &.required::after {
     content: "*";
   }
-
   abbr {
     display: none;
   }
 }
-
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
@@ -114,46 +44,37 @@ textarea {
   padding: $base-spacing / 3;
   transition: border-color;
   width: 100%;
-
   &:hover {
     border-color: darken($base-border-color, 10%);
   }
-
   &:focus {
     border-color: $action-color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
-
   &:disabled {
     background-color: darken($base-background-color, 6%);
     cursor: not-allowed;
-
     &:hover {
       border: $base-border;
     }
   }
 }
-
 textarea {
   resize: vertical;
 }
-
 input[type="search"] {
   @include appearance(none);
 }
-
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: $small-spacing / 2;
 }
-
 input[type="file"] {
   padding-bottom: $small-spacing;
   width: 100%;
 }
-
 select {
   margin-bottom: $base-spacing;
   max-width: 100%;

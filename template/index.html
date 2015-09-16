@@ -75,9 +75,9 @@
             <span class="kss-title__permalink-hash">#permalink</span>
           </a>
           {{#ifDepth 1}}
-          <span class="styleguide-pageheader-main">{{header}}</span>
+          <h2 class="styleguide-pageheader-main">{{header}}</h2>
           {{else}}
-          <span class="styleguide-pageheader-sub">{{header}}</span>
+          <h2 class="styleguide-pageheader-sub">{{header}}</h2>
           {{/ifDepth}} {{#if parameters}}
           <ul class="kss-parameters">
             {{#eachParameter}}
@@ -95,34 +95,38 @@
       </div>
       {{else}}
       </section>
-      {{/ifDepth}} {{#if markup}}
-      <div class="styleguide-wrapperblock">
+      {{/ifDepth}}
+      {{#if markup}}
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            {{#if modifiers}}{{/if}}
+          </div>
         {{#if modifiers}}
-        <div class="styleguide-modifiername default">
-          Default styling
-        </div>
+          <div class="kss-modifier__default-name kss-style">
+            Default styling
+          </div>
         {{/if}}
-      </div>
-      <div class="styleguide-modifierexample">
-        {{{markup}}}
-      </div>
-      {{#eachModifier}}
-      <div class="styleguide-modifiername">
-        {{name}}
-      </div>
-      <div class="styleguide-modifierdescription">
-        {{{description}}}
-      </div>
-      <div class="styleguide-modifierexample">
-        {{{markup}}}
-      </div>
-      {{/eachModifier}}
-      <div class="styleguide-markup">
-        <pre class="prettyprint linenums lang-html">
-          <code data-language="html">{{markup}}</code>
-        </pre>
-      </div>
-      {{/if}} {{/eachSection}}
+          <div class="kss-modifier__example">
+            {{{markup}}}
+          </div>
+        {{#eachModifier}}
+          <p class="kss-modifier__name kss-style">
+            {{name}}
+          </p>
+          <p class="kss-modifier__description kss-style">
+            {{{description}}}
+          </p>
+          <div class="kss-modifier__example">
+            {{{markup}}}
+          </div>
+        {{/eachModifier}}
+        </div>
+
+        <div class="kss-markup kss-style">
+          <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
+        </div>
+      {{/if}}
+      {{/eachSection}}
     </div>
     {{/if}}
     <!-- SCRIPTS -->

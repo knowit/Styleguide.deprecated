@@ -65,6 +65,6 @@ gulp.task('kss', function () {
 });
 
 gulp.task('default', ['fonts', 'sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
-  gulp.watch('./sass/**/*.scss', ['sass', 'sass-styleguide', 'kss']);
+  gulp.watch(['./sass/**/*.scss', './sass/**/*.hbs', './template/index.html'], ['sass', 'sass-styleguide', 'kss']);
   gulp.watch('./styleguide/index.html').on('change', browserSync.reload);
 });

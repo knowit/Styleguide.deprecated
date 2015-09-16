@@ -2,29 +2,9 @@
 //
 // Group of tags / relations
 //
-// Markup:
-// <ul class="pills">
-//   <li>
-//     <button class="pill--active">Alt innhold</button>
-//   </li>
-//   <li>
-//     <button class="pill">Juridisk</button>
-//   </li>
-//   <li>
-//     <button class="pill">Kurs</button>
-//   </li>
-//   <li>
-//     <button class="pill">Bolig</button>
-//   </li>
-//   <li>
-//     <button class="pill">Video</button>
-//   </li>
-//   <li>
-//     <button class="pill">Bil</button>
-//   </li>
-// </ul>
+// Markup: pills.hbs
 //
-// Styleguide 2.5
+// Style guide: components.pills
 
 .pill {
   @include custom-button;
