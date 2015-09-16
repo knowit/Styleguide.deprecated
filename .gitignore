@@ -1,5 +1,6 @@
 #Styling - Ignore styling because it should be compiled by the build server*.css
 *.css.map
+*.css
 /styleguide
 
 #npm
