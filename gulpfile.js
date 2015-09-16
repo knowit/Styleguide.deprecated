@@ -19,6 +19,11 @@ var style = {
   cssFileName: 'screen.css'
 };
 
+gulp.task('fonts', function() {
+  gulp.src('./node_modules/font-awesome/fonts/*.*')
+    .pipe(gulp.dest('./styleguide/fonts'));
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -59,7 +64,7 @@ gulp.task('kss', function () {
   });
 });
 
-gulp.task('default', ['sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
+gulp.task('default', ['fonts', 'sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
   gulp.watch('./sass/**/*.scss', ['sass', 'sass-styleguide', 'kss']);
   gulp.watch('./styleguide/index.html').on('change', browserSync.reload);
 });
