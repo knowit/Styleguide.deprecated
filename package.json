@@ -1,23 +1,41 @@
 {
-  "name": "KnowitStyleGuide",
-  "repository": "https://github.knowit.no/kyber/Styleguide",
-  "version": "0.1.0",
+  "name": "KnowitStyleguide",
+  "repository": "https://github.knowit.no/knowit/Styleguide/",
+  "version": "0.2.0",
+  "description": "Base styleguide with browser-sync, source-maps, autoprefixer, concat and kss (styleguide)",
+  "author": {
+    "name": "Torleif Halseth, Tomas Osland, Jesper Haug Karsrud"
+  },
+  "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
-    "gulp-exec": "^2.1.1",
-    "gulp-sass": "^2.0.3",
-    "gulp-sourcemaps": "^1.5.2",
+    "gulp-exec": "^2.1.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
     "kss": "^2.1.0",
-    "node-bourbon": "^4.2.1-beta1",
-    "node-neat": "^1.7.1-beta1"
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "kss": "kss-node sass styleguide --template template"
   },
   "dependencies": {
     "font-awesome": "^4.4.0"
-  }
+  },
+  "keywords": [
+    "browser sync",
+    "css",
+    "live reload",
+    "sync",
+    "autoprefixer",
+    "source-maps",
+    "styleguide",
+    "kss"
+  ]
 }
