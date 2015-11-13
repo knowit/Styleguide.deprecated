@@ -1,4 +1,20 @@
-# Style guide
+# Living Style Guide Kickstarter
+
+## Benefits
+
+- Useful in both development and maintenance
+- Prevent lack of consistency in design
+- Timesaving
+- Simplified testing
+- Represents a UI component toolkit
+- Checklist for necessary components
+- Encourages the creation of independent building blocks for the interface
+- Reuse
+- More accurate estimates
+- Easier to distribute work amongst the team
+- Bridge between the designers and developers
+
+## Conventions
 
 * Single quotes only; ie. @import 'some_module'
 * 1TBS (the one true brace style) ftw!
@@ -11,19 +27,17 @@
 * Components compose complex reusable UI components.
 * Layouts outputs the different page layouts, with breakpoints etc.
 
-## Sass directory and file structure
-
-This is an example structure with some example file names in them
-
+## Structure
+This is an example structure. Take a closer look inside the style guide structure to get a deeper understanding.
 ```bash
 sass
-├── screen.scss - Actual output file that only imports from layouts and templates
+├── screen.scss
 ├── Helpers
-│   ├── _buttons.scss     - Mixins or placeholder selectors for generic amazebuttons
+│   ├── _buttons.scss
 ├── Settings
-│   ├── _grid.scss        - Neat grid settings
-│   ├── _colors.scss      - Variables for site colors
-│   └── _typography.scss  - Variables for font sizes, families, etc.
+│   ├── _grid.scss
+│   ├── _colors.scss
+│   └── _typography.scss
 ├── Modules
 │   ├── _buttons.scss
 │   ├── _lists.scss
@@ -35,24 +49,41 @@ sass
 │   ├── _office-card.scss
 │   └── _navigation.scss
 ├── Layouts
-└── _article.scss     - Composes the layout for an article page
+└── _article.scss
 ```
 
-##BEM – meaning block, element, modifier
+## Naming Pattern
 
-The naming convention follows this pattern:
+BEM (block, element, modifier)
 
-.module {}              // represents the higher level of an abstraction or component.
+#### The higher level of an module.
+```css
+.module {}
+```
+#### Descendent that helps form .module as a whole
+```css
+.module_element {}
+```
+#### Different state or version of .module
+```css
+.module--modifier {}
+```
 
-.module_element {}      // represents a descendent of .module that helps form .module as a whole.
+## Install
+```js
+git clone [repo]
+```
 
-.module--modifier {}    // represents a different state or version of .module.
+```js
+npm install
+```
+```js
+gulp
 
+```
 
-###To BEM or not to BEM?
+### To BE(M) or not to BE(M)?
 
-[Getting your head round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
-
-[Organizing CSS OOCSS SMACSS and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
-
-[SCSS styleguide with BEM OOCSS SMACSS](http://geek-rocket.de/frontend-development/scss-styleguide-with-bem-oocss-smacss/)
+- [Getting your head round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+- [Organizing CSS OOCSS SMACSS and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
+- [SCSS styleguide with BEM OOCSS SMACSS](http://geek-rocket.de/frontend-development/scss-styleguide-with-bem-oocss-smacss/)

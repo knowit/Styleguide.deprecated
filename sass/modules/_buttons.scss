@@ -2,10 +2,11 @@
 //
 // Markup: buttons.hbs
 //
-// .btn--default          - Call to action
-// .btn--default:hover    - Call to action hover
-// .btn--default:active   - Call to action active
-// .btn--disabled         - Disabled button
+// .btn             - Call to action
+// .btn:hover       - Call to action hover
+// .btn:active      - Call to action active
+// .btn--disabled   - Disabled button
+// .btn--large      - Large button
 //
 // Weight: 2.5
 //
@@ -18,9 +19,6 @@ button,
     @extend .btn;
     cursor: not-allowed;
     opacity: 0.5;
-  }
-  &--default {
-    @extend .btn;
   }
 }
 input[type="submit"],

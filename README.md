@@ -1,18 +1,5 @@
 # Living Style Guide Kickstarter
 
-## Install
-```js
-git clone [repo]
-```
-
-```js
-npm install
-```
-```js
-gulp
-
-```
-
 ## Benefits
 
 - Useful in both development and maintenance
@@ -80,6 +67,19 @@ BEM (block, element, modifier)
 #### Different state or version of .module
 ```css
 .module--modifier {}
+```
+
+## Install
+```js
+git clone [repo]
+```
+
+```js
+npm install
+```
+```js
+gulp
+
 ```
 
 ### To BE(M) or not to BE(M)?
