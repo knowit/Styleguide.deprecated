@@ -16,14 +16,13 @@ gulp
 ## Benefits
 
 - Useful in both development and maintenance
-- Require changes in people’s mindsets.
 - Prevent lack of consistency in design
 - Timesaving
 - Simplified testing
 - Represents a UI component toolkit
 - Checklist for necessary components
 - Encourages the creation of independent building blocks for the interface
-- Code reuse
+- Reuse
 - More accurate estimates
 - Easier to distribute work amongst the team
 - Bridge between the designers and developers
