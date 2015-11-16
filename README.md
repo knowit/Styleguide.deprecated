@@ -24,8 +24,10 @@
 * Helpers don't output any CSS, modules do.
 * Settings contain variables for colors, grid breakpoints, font sizes etc.
 * Modules compose reusable UI modules.
-* Components compose complex reusable UI components.
-* Layouts outputs the different page layouts, with breakpoints etc.
+* Components compose complex/larger reusable UI components. Components is often composed by modules.
+* Layouts outputs the different page layouts, with breakpoints and other specifications.
+You should be able to use a component across layouts.
+If you need to specify a component values (background, width etc.) in a layout you should do that inside the specific layout file **NOT** globally in the component file.
 
 ## Structure
 This is an example structure. Take a closer look inside the style guide structure to get a deeper understanding.
