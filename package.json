@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "description": "Base styleguide with browser-sync, source-maps, autoprefixer, concat and kss (styleguide)",
   "author": {
-    "name": "Tomas Osland, Jesper Haug Karsrud, Torleif Halseth, Øyvind Kristiansen, David Mellum"
+    "name": "Jesper Haug Karsrud, Torleif Halseth, David Mellum"
   },
   "license": "Apache-2.0",
   "devDependencies": {
