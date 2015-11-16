@@ -1,0 +1,29 @@
+// Avatar
+//
+// Awesome avatars
+//
+// Markup: avatar.hbs
+//
+// .avatar--male  - Male presentation
+// .avatar--female  - Female presentation
+//
+// Weight: 100
+//
+// Style guide: modules.avatar
+
+.avatar {
+  $size: 100px;
+  background-color: white;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  &--male {
+    background: url('http://www.knowit.no/Global/Knowit%20NO/Medarbeidere/Bergen/Torleif_Halseth.jpg');
+    background-size: cover;
+  }
+  &--female {
+    background: url('http://www.knowit.no/Global/Knowit%20NO/Medarbeidere/Bergen/Kristin%20L%c3%b6fgren.jpg');
+    background-size: cover;
+  }
+}
