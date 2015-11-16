@@ -23,7 +23,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "kss": "kss-node sass styleguide --template template"
+    "kss": "kss-node sass styleguide --template template --homepage '../readme.md'"
   },
   "dependencies": {
     "font-awesome": "^4.4.0"
