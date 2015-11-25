@@ -6,8 +6,6 @@
 //
 // Style guide: components.office-card
 
-$office-card-box-shadow: $box-shadow;
-
 .link {
   display: inline-block;
   &_icon, &_text {
@@ -42,7 +40,7 @@ $office-card-box-shadow: $box-shadow;
   }
   &_section {
     background: #fff;
-    box-shadow: $office-card-box-shadow;
+    border: 1px solid black;
     padding: 20px;
     height: 180px;
   }

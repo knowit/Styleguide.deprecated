@@ -1,4 +1,4 @@
-@mixin custom-button($border-radius: 5px) {
+@mixin custom-button($border-radius: 0) {
   box-sizing: border-box;
   border: 1px solid #979797;
   color: #565656;

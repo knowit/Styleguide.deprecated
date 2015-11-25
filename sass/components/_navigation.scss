@@ -12,7 +12,6 @@ $navigation-background: #fff;
   z-index: map-get($zindex, sidenav);
   overflow-y: auto;
   visibility: visible;
-  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.3);
   background: $navigation-background;
   @include transform-style(preserve-3d);
   @include transition(all 200ms ease);

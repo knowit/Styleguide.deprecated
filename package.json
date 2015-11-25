@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "description": "Base styleguide with browser-sync, source-maps, autoprefixer, concat and kss (styleguide)",
   "author": {
-    "name": "Jesper Haug Karsrud, Torleif Halseth, David Mellum"
+    "name": "Jesper Haug Karsrud, Torleif Halseth, David Mellum, Ivar Borthen"
   },
   "license": "Apache-2.0",
   "devDependencies": {
@@ -15,7 +15,7 @@
     "gulp-exec": "^2.1.2",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
-    "kss": "git://github.com/RobLoach/kss-node.git#xdemo",
+    "kss": "^2.1.1",
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2"
   },
