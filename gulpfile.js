@@ -41,7 +41,8 @@ gulp.task('sass', function () {
     .pipe(autoprefixer())
     .pipe(concat(style.cssFileName))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(style.cssDirectory));
+    .pipe(gulp.dest(style.cssDirectory))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('sass-styleguide', function () {
@@ -53,7 +54,8 @@ gulp.task('sass-styleguide', function () {
     .pipe(autoprefixer())
     .pipe(concat(styleguide.cssFileName))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(styleguide.cssDirectory));
+    .pipe(gulp.dest(styleguide.cssDirectory))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('kss', function () {
@@ -65,7 +67,8 @@ gulp.task('kss', function () {
 });
 
 gulp.task('default', ['fonts', 'sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
-  gulp.watch(['./sass/**/*.scss', './sass/**/*.hbs', './template/index.html'], ['sass', 'sass-styleguide', 'kss']);
+  gulp.watch(['./sass/**/*.hbs', './template/index.html'], ['kss'])
+  gulp.watch(['./sass/**/*.scss'], ['sass', 'sass-styleguide']);
   gulp.watch(['./readme.md'], ['kss']);
   gulp.watch('./styleguide/index.html').on('change', browserSync.reload);
 });
