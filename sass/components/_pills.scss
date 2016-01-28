@@ -5,24 +5,29 @@
 // Markup: pills.hbs
 //
 // Style guide: components.pills
-
+%pill,
 .pill {
   @include custom-button;
+
   &--active {
-    @extend .pill;
-    background-color: #4D828E;
+    @extend %pill;
+    background-color: #4d828e;
     color: #fff;
-    &:hover, &:active, &:focus {
-      background-color: #4D828E;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #4d828e;
       color: #fff;
     }
   }
 }
 
 .pills {
-  padding: 20px 0;
   list-style: none;
   margin: 0;
+  padding: 20px 0;
+
   li {
     display: inline-block;
     margin: 0 2px;

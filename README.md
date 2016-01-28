@@ -77,7 +77,13 @@ git clone [repo]
 ```
 
 ```js
-npm install
+1. Install ruby.
+2. gem install bundler
+3. bundle install
+
+1. Install node.
+2. npm install
+
 ```
 ```js
 gulp

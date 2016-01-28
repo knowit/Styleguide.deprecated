@@ -1,41 +1,31 @@
 // http://davidwalsh.name/sass-color-variables-dont-suck
-
 // Profile colors, never use directly.
 // -------------------------
-
-$profile1: #4D828E;
-$profile2: #096F7C;
-$profile3: #186F7A;
-$profile4: #59BAD0;
-$profile5: #AFD9E6;
-
+$profile1: #4d828e;
+$profile2: #096f7c;
+$profile3: #186f7a;
+$profile4: #59bad0;
+$profile5: #afd9e6;
 // Meaningful aliases for profile colors;
 $bg-color: none;
-
 $link-color: $profile2;
 $link-hover-color: darken($link-color, 5%);
 $link-active-color: darken($link-color, 10%);
-
 // Font Colors
 $base-font-color: #575757;
-
 // Border
 $base-border-color: #979797;
 $base-border: 1px solid $base-border-color;
-
 // Background Colors
 $base-background-color: #fff;
 $secondary-background-color: lighten($base-border-color, 40%);
-
 //Main Heading
 $header-background: #f8f8f8;
-
 //Navigation
-$navigation-link-color:           #565656;
-$navigation-link-color-hover:     #096F7C;
-$navigation-link-color-focus:     $navigation-link-color-hover;
-$navigation-link-color-active:    $navigation-link-color-hover;
-
-$navigation-link-background-hover: none;//lighten($profile1, 10%);
-$navigation-link-background-active: none;//darken($navigation-link-background-hover, 5%);
-$navigation-link-background-focus: none;//$navigation-link-background-active;
+$navigation-link-color: #565656;
+$navigation-link-color-hover: #096f7c;
+$navigation-link-color-focus: $navigation-link-color-hover;
+$navigation-link-color-active: $navigation-link-color-hover;
+$navigation-link-background-hover: none;
+$navigation-link-background-active: none;
+$navigation-link-background-focus: none;

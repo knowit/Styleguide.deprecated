@@ -11,17 +11,19 @@
 // Weight: 2.5
 //
 // Style guide: modules.buttons
-
+%btn,
 button,
 .btn {
   @include custom-button;
+
   &--disabled {
-    @extend .btn;
+    @extend %btn;
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: .5;
   }
 }
+
 input[type="submit"],
 input[type="button"] {
-  @extend .btn;
+  @extend %btn;
 }
