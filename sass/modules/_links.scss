@@ -9,17 +9,21 @@
 // Weight: 2
 //
 // Style guide: modules.links
-
 a {
   color: $link-color;
   text-decoration: none;
+
   &:hover {
     color: $link-hover-color;
   }
-  &:hover, &:active {
+
+  &:hover,
+  &:active {
     text-decoration: underline;
   }
-  &:active, &:focus {
+
+  &:active,
+  &:focus {
     color: $link-active-color;
   }
 }

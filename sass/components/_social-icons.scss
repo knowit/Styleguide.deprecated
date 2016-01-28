@@ -23,81 +23,86 @@ $social-default-btn-color: #666;
 $social-icon-size: 40px;
 $social-icon-border: 2px;
 $social-icon-border-radius: 5px;
-
-$brand-color: #006FC2;
+$brand-color: #006fc2;
 
 .icon-link {
-    width: $social-icon-size;
-    height: $social-icon-size;
-    background-color: $social-default-btn-color;
-    line-height: $social-icon-size;
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    margin: 5px;
-    box-sizing: content-box;
+  background-color: $social-default-btn-color;
+  box-sizing: content-box;
+  cursor: pointer;
+  display: inline-block;
+  height: $social-icon-size;
+  line-height: $social-icon-size;
+  margin: 5px;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  width: $social-icon-size;
 
-    &.fill {
-      @each $social-alias, $social-color in $social-color-pallete {
-        &.#{$social-alias} {
-          background-color: $social-color;
-          &:hover {
-            background-color: #fff;
-            .fa-#{$social-alias} {
-              color: $social-color;
-              @include transition(color 150ms ease-in-out);
-            }
+  &.fill {
+    @each $social-alias,
+    $social-color in $social-color-pallete {
+      &.#{$social-alias} {
+        background-color: $social-color;
+
+        &:hover {
+          background-color: #fff;
+
+          .fa-#{$social-alias} {
+            @include transition(color 150ms ease-in-out);
+            color: $social-color;
           }
         }
       }
     }
+  }
 
   &.brand {
     background-color: #fff;
+
     .fa {
       color: $brand-color;
     }
   }
 
-    &.round {
-      border-radius: 50%;
-    }
-
-    &.round-corner {
-      border-radius: $social-icon-border-radius;
-    }
-
-    &:hover {
-      @include transition(background-color 150ms ease-in-out);
-      height: $social-icon-size - $social-icon-border * 2;
-      line-height: $social-icon-size - $social-icon-border * 2;
-      width: $social-icon-size - $social-icon-border * 2;
-      background-color: #fff;
-
-      @each $social-alias, $social-color in $social-color-pallete {
-        &.#{$social-alias} {
-          border: $social-icon-border solid $social-color;
-        }
-      }
-
-      .fa {
-        line-height: $social-icon-size - $social-icon-border * 2;
-      }
-
-      @each $social-alias, $social-color in $social-color-pallete {
-        .fa-#{$social-alias} {
-            color: $social-color;
-            @include transition(color 150ms ease-in-out);
-        }
-      }
+  &.round {
+    border-radius: 50%;
   }
 
-  .fa{
+  &.round-corner {
+    border-radius: $social-icon-border-radius;
+  }
+
+  &:hover {
+    @include transition(background-color 150ms ease-in-out);
+    background-color: #fff;
+    height: $social-icon-size - $social-icon-border * 2;
+    line-height: $social-icon-size - $social-icon-border * 2;
+    width: $social-icon-size - $social-icon-border * 2;
+
+    @each $social-alias,
+    $social-color in $social-color-pallete {
+      &.#{$social-alias} {
+        border: $social-icon-border solid $social-color;
+      }
+    }
+
+    .fa {
+      line-height: $social-icon-size - $social-icon-border * 2;
+    }
+
+    @each $social-alias,
+    $social-color in $social-color-pallete {
+      .fa-#{$social-alias} {
+        @include transition(color 150ms ease-in-out);
+        color: $social-color;
+      }
+    }
+  }
+
+  .fa {
     color: $social-default-icon-color;
+    font-size: $social-icon-size - $social-icon-size * .40;
     line-height: $social-icon-size;
-    font-size: $social-icon-size - $social-icon-size * 0.40;
   }
 }
 
