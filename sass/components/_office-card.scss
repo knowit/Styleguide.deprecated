@@ -5,65 +5,79 @@
 // Markup: office-card.hbs
 //
 // Style guide: components.office-card
-
 .link {
   display: inline-block;
-  &_icon, &_text {
+
+  &__icon,
+  &__text {
     vertical-align: middle;
   }
-  &_icon {
+
+  &__icon {
+    fill: #565656;
     height: 18px;
     width: 17px;
-    fill: #565656;
+
     &--left {
       margin-right: 10px;
     }
+
     &--right {
       margin-left: 10px;
     }
   }
+
   ~ .link {
     margin-left: 10px;
   }
 }
 
 .office-card {
-  &_heading {
-    @extend .h3;
+  &__heading {
+    @extend %h3;
   }
-  &_element {
+
+  &__element {
     @include media($l-viewport) {
       float: left;
-      width: percentage(1 / 3);
       padding: 0 1px;
+      width: percentage(1 / 3);
     }
   }
-  &_section {
+
+  &__section {
     background: #fff;
     border: 1px solid black;
-    padding: 20px;
     height: 180px;
+    padding: 20px;
   }
-  &_btn {
+
+  &__btn {
     @extend .btn;
     @extend .btn--default;
   }
-  &_actions {
-    ~ .office-card_actions .office-card_btn {
+
+  &__actions {
+    ~ .office-card__actions .office-card__btn {
       margin-top: 15px;
     }
-    .office-card_btn ~ .office-card_btn {
+
+    .office-card__btn ~ .office-card__btn {
       margin-right: 10px;
     }
   }
+
   p {
     margin: 0;
   }
+
   .type {
     display: none;
   }
+
   .tel {
     display: inline-block;
+
     ~ .tel {
       margin-left: 10px;
     }

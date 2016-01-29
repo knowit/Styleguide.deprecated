@@ -5,6 +5,7 @@ var browserSync = require('browser-sync').create();
 var exec = require('child_process').exec;
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
+var scsslint = require('gulp-scss-lint');
 
 var styleguide = {
   sassFilePath: './sass/styleguide.scss',
@@ -34,15 +35,23 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function () {
   gulp.src(style.sassFilePath)
-    .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: require('node-neat').includePaths
     }).on('error', sass.logError))
+    .pipe(sourcemaps.init())
     .pipe(autoprefixer())
     .pipe(concat(style.cssFileName))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(style.cssDirectory))
     .pipe(browserSync.stream());
+});
+
+gulp.task('sass-lint', function() {
+  gulp.src("./sass/**/*.scss")
+    .pipe(scsslint({
+      'bundleExec': true,
+      'config': '.scss-lint.yml'
+    }));
 });
 
 gulp.task('sass-styleguide', function () {
@@ -66,9 +75,9 @@ gulp.task('kss', function () {
   });
 });
 
-gulp.task('default', ['fonts', 'sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
+gulp.task('default', ['fonts', 'sass-lint', 'sass', 'sass-styleguide', 'kss', 'browser-sync'], function() {
   gulp.watch(['./sass/**/*.hbs', './template/index.html'], ['kss'])
-  gulp.watch(['./sass/**/*.scss'], ['sass', 'sass-styleguide']);
+  gulp.watch(['./sass/**/*.scss'], ['sass-lint','sass', 'sass-styleguide']);
   gulp.watch(['./readme.md'], ['kss']);
   gulp.watch('./styleguide/index.html').on('change', browserSync.reload);
 });

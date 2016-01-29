@@ -5,19 +5,20 @@
 // Weight: 3
 //
 // Style guide: modules.headings
-
 @each $value in $font-list {
   #{nth($value, 1)},
+  %#{nth($value, 1)},
   .#{nth($value, 1)} {
+    font-family: $heading-font-family;
     font-size: nth($value, 2);
     font-weight: nth($value, 5);
-    text-rendering: optimizelegibility;
-    font-family: $heading-font-family;
     line-height: $heading-line-height;
+    text-rendering: optimizelegibility;
 
     @include media($m-viewport) {
       font-size: nth($value, 3);
     }
+
     @include media($l-viewport) {
       font-size: nth($value, 4);
     }

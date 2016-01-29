@@ -5,9 +5,8 @@
 // Markup: search.hbs
 //
 // Style guide: components.search
-
 $search-input-height: 40px;
-$search-input-padding: 0px 20px 0px 0px;
+$search-input-padding: 0 20px 0 0;
 $search-font-size: 20px;
 $search-line-height: 1;
 $search-input-icon-size: $search-font-size * $search-line-height;
@@ -21,69 +20,78 @@ $search-close-btn-color: #6d6d6d;
 $search-close-btn-color-active: darken(#6d6d6d, 10%);
 
 .searchbox-container {
-  margin: 0 auto;
-  height: $search-input-height;
   display: inline-block;
+  height: $search-input-height;
+  margin: 0 auto;
 }
 
-.searchbutton, input[type="search"].searchbox {
-  box-sizing: border-box;
-  font-size: $search-font-size;
-  line-height: $search-line-height;
-  color: $search-color;
-  border-radius: 0;
-  float: left;
-  height: $search-input-height;
-  outline: none;
+.searchbutton,
+input[type="search"].searchbox {
   background: $search-background;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: $search-color;
+  float: left;
+  font-size: $search-font-size;
+  height: $search-input-height;
+  line-height: $search-line-height;
+  outline: none;
 }
 
 input[type="search"].searchbox {
-  padding: $search-input-padding;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  @include transition(padding 150ms ease-in-out);
   border-bottom: 2px solid #979797;
-  width: auto;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   box-shadow: none;
   margin: 0;
-  @include transition(padding 150ms ease-in-out);
-  &:focus, &:hover {
+  padding: $search-input-padding;
+  width: auto;
+
+  &:focus,
+  &:hover {
     background-color: $search-background-active;
+
     + .searchbutton {
       background-color: $search-background-active;
     }
   }
+
   &:focus {
+    box-shadow: none;
     outline: thin dotted;
     outline-offset: -1px;
-    box-shadow: none;
-    padding: 0px 20px 0px 20px;
-  }
-  @include input-placeholder {
-    color: $placeholder-color;
+    padding: 0 20px;
   }
 }
 
 .searchbutton {
-  width: 50px;
+  border: 0;
   padding: 0;
   text-align: center;
-  border: none;
-  &:hover, &:focus {
+  width: 50px;
+
+  &:hover,
+  &:focus {
     outline: thin dotted;
     outline-offset: -1px;
   }
+
   &--close {
     color: $search-close-btn-color;
+
     &:active {
       color: $search-close-btn-color-active;
     }
   }
+
   &--search {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $search-background-active;
     }
+
     &:active {
       color: darken($search-btn-active, 20%);
     }
