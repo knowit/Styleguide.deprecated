@@ -1,0 +1,24 @@
+$styleguide-nav-width: 15%;
+.styleguide-main {
+  margin-left: $styleguide-nav-width;
+}
+
+.styleguide-nav {
+  width: $styleguide-nav-width;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  border-right: 1px solid #f4f6f9;
+  padding-top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.styleguide-header {
+  position: fixed;
+  top: 0;
+  border-right: 1px solid #f4f6f9;
+  width: $styleguide-nav-width;
+  height: 100px;
+  text-align: center;
+}
