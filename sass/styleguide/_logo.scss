@@ -1,0 +1,36 @@
+.styleguide-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #999;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background: darken(#ddd, 5%);
+  }
+
+  &:active {
+    background: darken(#ddd, 10%);
+  }
+
+  @include media($l-viewport) {
+    padding: 20px 0;
+  }
+
+  &__text,
+  &__img {
+    display: inline-block;
+  }
+
+  &__img {
+    max-width: 100px;
+    margin-right: 8px;
+  }
+}

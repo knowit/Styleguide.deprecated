@@ -18,85 +18,108 @@
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   {{{styles}}}
 </head>
-
 <body>
-  <header class="styleguide-header">Styleguide</header>
+  <header class="styleguide-header" role="banner">
+    <a href="/" class="styleguide-logo">
+      <img src="/images/logo.png" alt="logo" class="styleguide-logo__img"/>
+      <p class="styleguide-logo__text">design system</p>
+    </a>
+    <a href="#navigation" class="styleguide-navigation-shortcut">Skip to Navigation</a>
+  </header>
   <main class="styleguide-main" role="main">
     {{#if homepage}}
-    <div class="container">
-      <div id="kssref-0">
+    <section class="styleguide-introduction">
         {{{homepage}}}
-      </div>
     </div>
-    {{else}} {{! Display each section, in order. The "root" element comes first in this loop, and can be detected using the "#ifDepth 1" block as seen below. }}
-    <div class="container">
-      {{#eachSection rootName}} {{#ifDepth 1}}
-      <div id="kssref-{{referenceURI}}" class="kss-section--depth-{{depth}}">
+    {{else}}
+    {{! Display each section, in order. The "root" element comes first in this loop, and can be detected using the "#ifDepth 1" block as seen below. }}
+
+    {{#eachSection rootName}}
+    {{#ifDepth 1}}
+      <section id="kssref-{{referenceURI}}" class="styleguide-section kss-section--depth-{{depth}}">
+    {{else}}
+      <section id="kssref-{{referenceURI}}" class="styleguide-subsection kss-section--depth-{{depth}}">
+    {{/ifDepth}}
+        <a class="kss-title__permalink" href="#kssref-{{referenceURI}}" style="display:none;">
+          <span class="kss-title__ref">
+            {{#ifNumeric reference}}
+              {{reference}}
+            {{else}}
+              {{autoincrement}}
+            {{/ifNumeric}}
+          </span>
+          {{header}}
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+        {{#ifDepth 1}}
+          <header class="styleguide-section-header">
+            <h1>{{header}}</h1>
+          </header>
         {{else}}
-        <section id="kssref-{{referenceURI}}" class="kss-section--depth-{{depth}}">
-          {{/ifDepth}}
-          <a class="kss-title__permalink" href="#kssref-{{referenceURI}}" style="display:none;">
-            <span class="kss-title__ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>{{header}}
-            <span class="kss-title__permalink-hash">#permalink</span>
-          </a>
-          {{#ifDepth 1}}
-          <h1 class="styleguide-pageheader-main">{{header}}</h1>
-          {{else}}
-          <h2 class="styleguide-pageheader-sub">
-            {{header}}
-          </h2>
-          {{/ifDepth}} {{#if parameters}}
+        <h2 class="styleguide-pageheader-sub">
+          {{header}}
+        </h2>
+        {{/ifDepth}}
+        {{#if parameters}}
           <ul class="kss-parameters">
             {{#eachParameter}}
-            <li class="kss-parameters__item">
-              <code class="kss-parameters__name">{{name}}</code>
-              <div class="kss-parameters__description">{{{description}}}</div>
-            </li>
+              <li class="kss-parameters__item">
+                <code class="kss-parameters__name">
+                  {{name}}
+                </code>
+                <div class="kss-parameters__description">
+                  {{{description}}}
+                </div>
+              </li>
             {{/eachParameter}}
           </ul>
-          {{/if}} {{#if description}}
-          <div class="styleguide-description">
-            {{{description}}}
+        {{/if}}
+        {{#if description}}
+          {{#ifDepth 1}}
+            <div class="styleguide-section__description">
+              {{{description}}}
+            </div>
+          {{else}}
+            <strong class="styleguide-subsection__description">
+              {{{description}}}
+            </strong>
+          {{/ifDepth}}
+        {{/if}}
+        {{#if markup}}
+          <div class="kss-modifier__wrapper">
+            <div class="kss-modifier__heading kss-style">
+              {{#if modifiers}}
+              {{/if}}
+            </div>
+            {{#if modifiers}}
+              <div class="kss-modifier__default-name kss-style">
+                Default styling
+              </div>
+            {{/if}}
+            <div class="kss-modifier__example">
+              {{{markup}}}
+            </div>
+          {{#eachModifier}}
+            <p class="kss-modifier__name kss-style">
+              {{name}}
+            </p>
+            <p class="kss-modifier__description kss-style">
+              {{{description}}}
+            </p>
+            <div class="kss-modifier__example">
+              {{{markup}}}
+            </div>
+          {{/eachModifier}}
           </div>
-          {{/if}} {{#ifDepth 1}}
-      </div>
-      {{else}}
-      </section>
-      {{/ifDepth}}
-      {{#if markup}}
-        <div class="kss-modifier__wrapper">
-          <div class="kss-modifier__heading kss-style">
-            {{#if modifiers}}{{/if}}
-          </div>
-        {{#if modifiers}}
-          <div class="kss-modifier__default-name kss-style">
-            Default styling
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
           </div>
         {{/if}}
-          <div class="kss-modifier__example">
-            {{{markup}}}
-          </div>
-        {{#eachModifier}}
-          <p class="kss-modifier__name kss-style">
-            {{name}}
-          </p>
-          <p class="kss-modifier__description kss-style">
-            {{{description}}}
-          </p>
-          <div class="kss-modifier__example">
-            {{{markup}}}
-          </div>
-        {{/eachModifier}}
-        </div>
-        <div class="kss-markup kss-style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
-        </div>
-      {{/if}}
-      {{/eachSection}}
-    </div>
+      </section>
+    {{/eachSection}}
     {{/if}}
   </main>
-  <nav class="styleguide-nav">
+  <nav class="styleguide-nav" role="navigation" id="navigation">
     <ul class="styleguide-nav__list">
         <li class="styleguide-nav__element">
           <a href="./">

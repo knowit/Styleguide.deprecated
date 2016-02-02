@@ -7,9 +7,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var scsslint = require('gulp-scss-lint');
 var minifyCss = require('gulp-minify-css');
 
-gulp.task('fonts', function() {
-  gulp.src('./node_modules/font-awesome/fonts/*.*')
-    .pipe(gulp.dest('./styleguide/fonts'));
+gulp.task('copy-assets', function() {
+  gulp.src('./node_modules/font-awesome/fonts/*.*').pipe(gulp.dest('./styleguide/fonts'));
+  gulp.src('./images/**/*').pipe(gulp.dest('./styleguide/images'));
 });
 
 gulp.task('browser-sync', function() {
@@ -50,7 +50,7 @@ gulp.task('kss', function() {
   });
 });
 
-gulp.task('default', ['fonts', 'sass-lint', 'sass', 'kss', 'browser-sync'], function() {
+gulp.task('default', ['copy-assets', 'sass-lint', 'sass', 'kss', 'browser-sync'], function() {
   gulp.watch(['./sass/**/*.hbs', './template/index.html'], ['kss'])
   gulp.watch(['./sass/**/*.scss'], ['sass-lint', 'sass']);
   gulp.watch(['./readme.md'], ['kss']);
