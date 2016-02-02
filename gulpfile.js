@@ -22,7 +22,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function() {
   gulp.src('./sass/screen.scss')
-    .pipe(sourcemaps.init())
+  .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: require('node-neat').includePaths
     }).on('error', sass.logError))
