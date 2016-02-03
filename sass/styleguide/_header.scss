@@ -1,0 +1,41 @@
+$styleguide-section-background: darken(#039783, 3%);
+
+.styleguide-header {
+  @include media($l-viewport) {
+    position: fixed;
+    top: 0;
+    border-right: 1px solid #f4f6f9;
+    width: $styleguide-nav-width;
+    height: 100px;
+    text-align: center;
+  }
+}
+
+.styleguide-navigation-shortcut,
+.styleguide-logo {
+  @include media(new-breakpoint(max-width ($second-breakpoint-value))) {
+    padding: 10px 5%;
+  }
+}
+
+.styleguide-navigation-shortcut {
+  display: block;
+  background: #eef1f6;
+
+  @include media($l-viewport) {
+    display: none;
+  }
+}
+
+.styleguide-section-header {
+  background-color: $styleguide-section-background;
+  padding: 20px 5%;
+
+  @include media($l-viewport) {
+    padding: 30px 5%;
+  }
+
+  h1 {
+    color: #fff;
+  }
+}
