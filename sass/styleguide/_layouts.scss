@@ -24,6 +24,11 @@ $styleguide-nav-width: 250px;
       display: inline-block;
     }
   }
+
+  .kss-modifier__wrapper,
+  .kss-markup {
+    padding: 0 5%;
+  }
 }
 
 .styleguide-subsection {
