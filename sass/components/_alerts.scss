@@ -1,0 +1,43 @@
+// Alerts
+//
+// Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+//
+// Markup: alerts.hbs
+//
+// Weight: 1000
+//
+// Style guide: alerts
+
+.alert {
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px;
+
+  ~ .alert {
+    margin-top: 20px;
+  }
+
+  &--success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+  }
+
+  &--info {
+    background-color: #e6f1f3;
+    border-color: #afd2dd;
+    color: #31708f;
+  }
+
+  &--warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+  }
+
+  &--danger {
+    background-color: #f6e1e1;
+    border-color: #cb2222;
+    color: #d44848;
+  }
+}
