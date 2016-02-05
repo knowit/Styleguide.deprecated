@@ -1,12 +1,5 @@
-$styleguide-section-background: darken(#039783, 3%);
-
 .styleguide-header {
   @include media($l-viewport) {
-    position: fixed;
-    top: 0;
-    border-right: 1px solid #f4f6f9;
-    width: $styleguide-nav-width;
-    height: 100px;
     text-align: center;
   }
 }
@@ -28,7 +21,7 @@ $styleguide-section-background: darken(#039783, 3%);
 }
 
 .styleguide-section-header {
-  background-color: $styleguide-section-background;
+  background-color: #C40000;
   padding: 20px 5%;
 
   @include media($l-viewport) {
@@ -36,6 +29,6 @@ $styleguide-section-background: darken(#039783, 3%);
   }
 
   h1 {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
   }
 }

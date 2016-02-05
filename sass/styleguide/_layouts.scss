@@ -1,4 +1,5 @@
 $styleguide-nav-width: 250px;
+$styleguide-header-height: 63px;
 
 .styleguide-main {
   @include media($l-viewport) {
@@ -40,13 +41,21 @@ $styleguide-nav-width: 250px;
   }
 }
 
+.styleguide-header {
+  @include media($l-viewport) {
+    position: fixed;
+    top: 0;
+    height: $styleguide-header-height;
+    width: $styleguide-nav-width;
+  }
+}
+
 .styleguide-nav {
   @include media($l-viewport) {
     width: $styleguide-nav-width;
     position: fixed;
-    top: 100px;
+    top: $styleguide-header-height;
     bottom: 0;
-    border-right: 1px solid #f4f6f9;
     padding-top: 0;
     overflow: hidden;
     overflow-y: auto;
