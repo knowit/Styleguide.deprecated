@@ -6,6 +6,13 @@
 //
 // Style guide: components.navigation
 $navigation-background: #fff;
+$navigation-link-color: #565656;
+$navigation-link-color-hover: #096f7c;
+$navigation-link-color-focus: $navigation-link-color-hover;
+$navigation-link-color-active: $navigation-link-color-hover;
+$navigation-link-background-hover: none;
+$navigation-link-background-active: none;
+$navigation-link-background-focus: none;
 
 .navigation {
   @include transform-style(preserve-3d);
