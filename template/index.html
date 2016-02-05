@@ -110,7 +110,8 @@
             </div>
           {{/eachModifier}}
           </div>
-          <div class="kss-markup kss-style">
+          <button onclick="toggleMarkup('{{referenceURI}}-markup-js')">Toggle markup</button>
+          <div id="{{referenceURI}}-markup-js" style="display: none" class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
           </div>
         {{/if}}
@@ -168,6 +169,10 @@
     <script src="public/prettify.js"></script>
     <script>
       prettyPrint();
+      function toggleMarkup(id) {
+        var div = document.getElementById(id);
+        div.style.display = div.style.display == "none" ? "block" : "none";
+      }
     </script>
 </body>
 </html>
