@@ -8,6 +8,7 @@
 $hamburger-width: 30px;
 $hamburger-height: 25px;
 $hamburger-color: #565656;
+$hamburger-background: #f8f8f8;
 
 .hamburger {
   color: #fff;
@@ -30,7 +31,7 @@ $hamburger-color: #565656;
 
     &::before,
     &::after {
-      background-color: $header-background;
+      background-color: $hamburger-background;
       content: '';
       height: 20%;
       left: 0;
