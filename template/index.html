@@ -15,6 +15,7 @@
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/screen.css">
+  <link rel="stylesheet" href="css/devices.min.css">
   {{{styles}}}
 </head>
 <body>
@@ -38,6 +39,7 @@
     {{else}}
       <section id="kssref-{{referenceURI}}" class="styleguide-subsection kss-section--depth-{{depth}}">
     {{/ifDepth}}
+
         <a class="kss-title__permalink" href="#kssref-{{referenceURI}}" style="display:none;">
           <span class="kss-title__ref">
             {{#ifNumeric reference}}
@@ -94,9 +96,45 @@
                 Default styling
               </div>
             {{/if}}
-            <div class="kss-modifier__example">
-              {{{markup}}}
+            <div class="styleguide-preview-btn-group">
+              <button onclick="togglePreview('{{referenceURI}}-mobile-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-mobile"></i></button>
+              <button onclick="togglePreview('{{referenceURI}}-tablet-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-tablet"></i></button>
+              <button onclick="togglePreview('{{referenceURI}}-laptop-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-laptop"></i></button>
             </div>
+
+            <div class="kss-modifier__example">
+              <div id="{{referenceURI}}-default-preview-js">
+                {{{markup}}}
+              </div>
+              <div id="{{referenceURI}}-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+                <div class="speaker"></div>
+                <div class="screen">
+                  {{{markup}}}
+                </div>
+                <div class="home"></div>
+                <div class="bottom-bar"></div>
+              </div>
+              <div id="{{referenceURI}}-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                <div class="camera"></div>
+                <div class="screen">
+                  {{{markup}}}
+                </div>
+                <div class="home"></div>
+              </div>
+              <div id="{{referenceURI}}-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                <div class="top-bar"></div>
+                <div class="camera"></div>
+                <div class="screen" style="background: white">
+                  {{{markup}}}
+                </div>
+                <div class="bottom-bar"></div>
+            </div>
+          </div>
           {{#eachModifier}}
             <p class="kss-modifier__name kss-style">
               {{name}}
@@ -105,11 +143,13 @@
               {{{description}}}
             </p>
             <div class="kss-modifier__example">
-              {{{markup}}}
+                {{{markup}}}
+              </div>
             </div>
           {{/eachModifier}}
           </div>
-          <div class="kss-markup kss-style">
+          <button onclick="toggle('{{referenceURI}}-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
+          <div id="{{referenceURI}}-markup-js" style="display: none" class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
           </div>
         {{/if}}
@@ -167,6 +207,15 @@
     <script src="public/prettify.js"></script>
     <script>
       prettyPrint();
+      function toggle(id) {
+        var div = document.getElementById(id);
+        div.style.display = div.style.display == "none" ? "block" : "none";
+      }
+      function togglePreview(selectedPreview, defaultPreview) {
+        toggle(selectedPreview);
+        var defaultPreview = document.getElementById(defaultPreview);
+        defaultPreview.style.display = defaultPreview.style.display = "none";
+      }
     </script>
 </body>
 </html>
