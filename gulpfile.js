@@ -10,7 +10,7 @@ var minifyCss = require('gulp-minify-css');
 gulp.task('copy-assets', function() {
   gulp.src('./node_modules/font-awesome/fonts/*.*').pipe(gulp.dest('./styleguide/fonts'));
   gulp.src('./images/**/*').pipe(gulp.dest('./styleguide/images'));
-  gulp.src('./vendor/devices.min.css').pipe(gulp.dest('./styleguide/css/'));
+  gulp.src('./fonts/**/*').pipe(gulp.dest('./styleguide/fonts'));
 });
 
 gulp.task('browser-sync', function() {
