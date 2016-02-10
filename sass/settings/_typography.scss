@@ -1,21 +1,23 @@
-// Typography
-$base-font-family: 'Arial';
-$heading-font-family: 'Arial';
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,400,400italic,300);
+
+$base-font-family: 'Roboto', helvetica, arial, sans-serif;
+$heading-font-family: 'Oswald', helvetica, arial, sans-serif;
 
 // **, **, mobil, m-viewport, l-viewport, font-weight
 $font-list: (
-  (h1, em(35px), em(40px), em(47px), 100),
-  (h2, em(25px), em(25px), em(30px), 100),
-  (h3, em(20px), em(20px), em(24px), 100),
-  (h4, em(18px), em(18px), em(20px), 100),
-  (h5, em(15px), em(15px), em(15px), 100),
-  (h6, em(14px), em(14px), em(14px), 100)
+  (h1, em(35px), em(40px), em(47px), 700),
+  (h2, em(25px), em(25px), em(30px), 700),
+  (h3, em(20px), em(20px), em(24px), 700),
+  (h4, em(18px), em(18px), em(20px), 700),
+  (h5, em(15px), em(15px), em(15px), 700),
+  (h6, em(14px), em(14px), em(14px), 700)
 );
 
 // Font Colors
-$base-font-color: #575757;
+$base-font-color: #444;
 // Font sizes
-$base-font-size: em(16px);
+$base-font-size: 1em;
 
 // Line height
 $base-line-height: 1.5;
