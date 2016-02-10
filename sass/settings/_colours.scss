@@ -1,18 +1,18 @@
-// Colors
+// Colours
 //
-// Color palette. Note: These classes are only meant for preview purposes.
+// Colour palette. Note: These classes are only meant for preview purposes.
 //
 // Weight: 1
 //
-// Style guide: colors
+// Style guide: colours
 
-// Primary 
+// Primary
 //
 //Den røde fargen er Sparebanken Vest sin hovedfarge. Denne rødfargen brukes i alt materiell. Den skal brukes i tekst inni boblen, på boblen med hvit tekst, tekst som utheves i rødt i brødtekst o.l. På røde bunner skal det legges til en vignett som gjør fargen delvis mørkere dess lenger man kommer fra sentrum.
 //
 // Markup: <div class="profile-color profile-color--primary"></div>
 //
-// Style guide: colors.primary
+// Style guide: colours.primary
 
 // Secondary
 //
@@ -23,12 +23,11 @@
 // .profile-color--3        - French Gray, #bbb
 // .profile-color--4        - Wild Sand, #eeee
 //
-// Markup: colors.hbs
+// Markup: colours.hbs
 //
-// Style guide: colors.secondary
+// Style guide: colours.secondary
 
-//Naming colors: http://davidwalsh.name/sass-color-variables-dont-suck
-
+//Naming colours: http://davidwalsh.name/sass-color-variables-dont-suck
 $primary-color: #c40000;
 $mine-shaft: #444;
 $silver-chalice: #6d6d6d;
