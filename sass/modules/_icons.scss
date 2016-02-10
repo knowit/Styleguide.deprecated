@@ -5,6 +5,12 @@
 // Weight: 1
 //
 // Style guide: icons
+
+.icon-grid {
+  i {
+    font-size: 100px;
+  }
+}
 @font-face {
   font-family: 'SpvIcons';
   src: url('../fonts/SpvIcons.eot?ooza24');
@@ -12,6 +18,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 [class^='icon-'],
 [class*=' icon-'] {
