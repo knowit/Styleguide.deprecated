@@ -64,7 +64,7 @@ BEM (block, element, modifier)
 ```
 #### Descendent that helps form .module as a whole
 ```css
-.module_element {}
+.module__element {}
 ```
 #### Different state or version of .module
 ```css
