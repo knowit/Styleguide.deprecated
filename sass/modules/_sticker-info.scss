@@ -32,11 +32,18 @@
   &__remove-btn {
     background: none;
     border: 0;
+    color: #c40000;
     flex: 0 0 30px;
     padding-right: 10px;
 
-    i {
+    &:hover,
+    &:active,
+    &:focus {
+      background: none;
       color: #c40000;
+    }
+
+    i {
       display: block;
       font-size: 22px;
       font-weight: bold;
