@@ -2,19 +2,41 @@
 //
 // Markup: buttons.hbs
 //
-// .btn             - Call to action
-// .btn:hover       - Call to action hover
-// .btn:active      - Call to action active
-// .btn--disabled   - Disabled button
-// .btn--large      - Large button
+// .btn                        - Default button
+// .btn--primary:hover         - Call to action hover
+// .btn--primary:focus         - Call to action focus
+// .btn--primary:active        - Call to action active
+// .btn--primary--disabled     - Disabled button
+// .btn--cancel                - Call to action hover
+// .btn--cancel:hover          - Call to action hover
+// .btn--cancel:focus          - Call to action focus
+// .btn--cancel:active         - Call to action active
 //
 // Weight: 2.5
 //
 // Style guide: modules.buttons
-%btn,
 button,
 .btn {
   @include custom-button;
+
+  &--primary,
+  &--cancel {
+    padding: 16px;
+  }
+
+  &--cancel {
+    background: #f3f3f3;
+    border-color: #9b9b9b;
+    color: #444;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #e6e6e6;
+      border: 1px solid #bbb;
+      color: #666;
+    }
+  }
 
   &--disabled {
     @extend %btn;

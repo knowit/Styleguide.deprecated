@@ -1,26 +1,43 @@
 @mixin custom-button($border-radius: 0) {
   box-sizing: border-box;
   border: 1px solid #979797;
-  color: #565656;
+  color: #fff;
   border-radius: $border-radius;
   line-height: 1;
-  padding: 7.5px 10px;
+  padding: 10px;
   appearance: none;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: $btn-font-family;
   font-size: $base-font-size;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  background-color: #fff;
+  background-color: #7aa129;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #5e8116;
+  }
+
+  &:active {
+    background-color: darken(#5e8116, 2%);
+  }
 
   &:hover,
   &:active,
   &:focus {
-    color: #186f7a;
     text-decoration: none;
+  }
+
+  i,
+  .fa {
+    font-weight: bold;
   }
 }
