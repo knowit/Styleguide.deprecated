@@ -90,17 +90,16 @@
               {{#if modifiers}}
               {{/if}}
             </div>
-            {{#if modifiers}}
-              <div class="kss-modifier__default-name kss-style">
-                Default styling
-              </div>
-            {{/if}}
             <div class="styleguide-preview-btn-group">
               <button onclick="togglePreview('{{referenceURI}}-mobile-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-mobile"></i></button>
               <button onclick="togglePreview('{{referenceURI}}-tablet-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-tablet"></i></button>
               <button onclick="togglePreview('{{referenceURI}}-laptop-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-laptop"></i></button>
             </div>
-
+            {{#if modifiers}}
+              <div class="kss-modifier__default-name kss-style">
+                Default styling
+              </div>
+            {{/if}}
             <div class="kss-modifier__example">
               <div id="{{referenceURI}}-default-preview-js">
                 {{{markup}}}
