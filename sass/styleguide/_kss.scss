@@ -1,0 +1,32 @@
+.kss-modifier {
+  &__default-name,
+  &__name {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  &__name {
+    border-top: 1px solid #ddd;
+  }
+
+  &_default-name {}
+
+  &__example {
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: oblique;
+  }
+}
+
+.kss-style,
+.kss-markup {
+  margin-top: 20px;
+  clear: both;
+}
