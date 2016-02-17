@@ -7,17 +7,17 @@
 
   &:hover,
   &:active,
-  &:focus {
+  &:focus { 
     text-decoration: none;
   }
 
   &:hover,
   &:focus {
-    background: darken(#ddd, 5%);
+    background: #eee;
   }
 
   &:active {
-    background: darken(#ddd, 10%);
+    background: darken(#eee, 10%);
   }
 
   @include media($l-viewport) {
@@ -30,7 +30,7 @@
   }
 
   &__img {
-    max-width: 100px;
+    max-width: 140px;
     margin-right: 8px;
   }
 }

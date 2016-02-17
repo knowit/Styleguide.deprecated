@@ -1,0 +1,166 @@
+// Icons
+//
+// Markup: icons.hbs
+//
+// Weight: 1
+//
+// Style guide: icons
+
+.icon-grid {
+  i {
+    font-size: 100px;
+  }
+}
+
+@font-face {
+  font-family: 'SpvIcons';
+  src: url('../fonts/SpvIcons.eot?ooza24');
+  src: url('../fonts/SpvIcons.eot?ooza24#iefix') format('embedded-opentype'), url('../fonts/SpvIcons.ttf?ooza24') format('truetype'), url('../fonts/SpvIcons.woff?ooza24') format('woff'), url('../fonts/SpvIcons.svg?ooza24#SpvIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'SpvIcons';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.icon-pencil::before {
+  content: '\e90f';
+}
+
+.icon-chevron-down::before {
+  content: '\e90d';
+}
+
+.icon-chevron-up::before {
+  content: '\e90e';
+}
+
+.icon-book::before {
+  content: '\e908';
+}
+
+.icon-card2::before {
+  content: '\e909';
+}
+
+.icon-graph::before {
+  content: '\e90a';
+}
+
+.icon-handing::before {
+  content: '\e90b';
+}
+
+.icon-umbrella::before {
+  content: '\e90c';
+}
+
+.icon-check::before {
+  content: '\e907';
+}
+
+.icon-camera::before {
+  content: '\e904';
+}
+
+.icon-delete::before {
+  content: '\e905';
+}
+
+.icon-edit::before {
+  content: '\e906';
+}
+
+.icon-account::before {
+  content: '\e900';
+}
+
+.icon-calendar::before {
+  content: '\e901';
+}
+
+.icon-caret-down::before {
+  content: '\e902';
+}
+
+.icon-caret-up::before {
+  content: '\e903';
+}
+
+.icon-settings::before {
+  content: '\e810';
+}
+
+.icon-menu::before {
+  content: '\e80f';
+}
+
+.icon-card::before {
+  content: '\e800';
+}
+
+.icon-chart::before {
+  content: '\e801';
+}
+
+.icon-chat::before {
+  content: '\e802';
+}
+
+.icon-chevron-left::before {
+  content: '\e803';
+}
+
+.icon-chevron-right::before {
+  content: '\e804';
+}
+
+.icon-ellipsis::before {
+  content: '\e805';
+}
+
+.icon-home::before {
+  content: '\e806';
+}
+
+.icon-list::before {
+  content: '\e807';
+}
+
+.icon-lock::before {
+  content: '\e808';
+}
+
+.icon-mail::before {
+  content: '\e809';
+}
+
+.icon-money::before {
+  content: '\e80a';
+}
+
+.icon-movements-outlined::before {
+  content: '\e80b';
+}
+
+.icon-movements::before {
+  content: '\e80c';
+}
+
+.icon-shield::before {
+  content: '\e80d';
+}
+
+.icon-user::before {
+  content: '\e80e';
+}

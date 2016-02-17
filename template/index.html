@@ -15,12 +15,12 @@
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/screen.css">
+  {{{styles}}}
 </head>
 <body>
   <header class="styleguide-header" role="banner">
     <a href="/" class="styleguide-logo">
-      <img src="/images/logo.png" alt="logo" class="styleguide-logo__img"/>
-      <p class="styleguide-logo__text">design system</p>
+      <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/>
     </a>
     <a href="#navigation" class="styleguide-navigation-shortcut">Skip to Navigation</a>
   </header>
@@ -79,9 +79,9 @@
               {{{description}}}
             </div>
           {{else}}
-            <strong class="styleguide-subsection__description">
+            <p class="styleguide-subsection__description">
               {{{description}}}
-            </strong>
+            </p>
           {{/ifDepth}}
         {{/if}}
         {{#if markup}}
