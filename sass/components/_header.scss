@@ -1,0 +1,88 @@
+// Header
+//
+// Weight: 100
+//
+// Markup: header.hbs
+//
+// Style guide: header
+
+.header {
+  $background: $primary-color;
+  padding: 10px 15px;
+  width: 100%;
+  background: $background;
+  box-sizing: border-box;
+
+  @media (min-width: 660px) {
+    padding: 30px 15px;
+  }
+
+  &__nav {
+    display: table;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__logo,
+  &__links {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__logo {
+    width: 150px;
+
+    @media (min-width: 660px) {
+      width: 250px;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__links {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-block;
+
+    ~ .header__link {
+      margin-left: 10px;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: 660px) {
+        display: inline-block;
+      }
+    }
+
+    a {
+      color: #fff;
+
+      @media(min-width: 660px) {
+        padding: 5px 10px;
+        background: darken($background, 5%);
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        color: #fff;
+
+        @media(min-width: 660px) {
+          padding: 5px 10px;
+          background: darken($background, 8%);
+        }
+      }
+    }
+  }
+}
