@@ -12,8 +12,7 @@
     border-radius: 1px;
 		-webkit-box-shadow: 0 0 0 3px #111;
 		box-shadow: 0 0 0 3px #111;
-		overflow-x: hidden;
-		overflow-y: scroll;
+		overflow: auto;
 	}
 
 	.top-bar, .bottom-bar {
