@@ -9,3 +9,4 @@
 #aws
 /aws-credentials.json
 /.awspublish-spv-styleguide.kyber.land
+.DS_Store
