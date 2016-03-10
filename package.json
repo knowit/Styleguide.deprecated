@@ -34,7 +34,8 @@
       "node": ">= 0.12.0"
     },
     "scripts": {
-      "kss": "kss-node --source sass --destination styleguide --template template"
+      "kss": "kss-node --source sass --destination styleguide --template template",
+      "gh-pages": "git push origin `git subtree split --prefix styleguide master`:gh-pages --force"
     },
     "dependencies": {
       "font-awesome": "^4.4.0"
