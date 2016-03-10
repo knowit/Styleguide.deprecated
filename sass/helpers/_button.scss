@@ -1,4 +1,5 @@
 @mixin custom-button($border-radius: 0) {
+  $background: lighten(#199c87, 5%);
   box-sizing: border-box;
   border: 1px solid #979797;
   color: #fff;
@@ -18,16 +19,16 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  background-color: #7aa129;
+  background-color: $background;
   outline: none;
 
   &:hover,
   &:focus {
-    background-color: #5e8116;
+    background-color: darken($background, 5%);
   }
 
   &:active {
-    background-color: darken(#5e8116, 2%);
+    background-color: darken($background, 2%);
   }
 
   &:hover,

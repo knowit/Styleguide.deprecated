@@ -1,0 +1,74 @@
+// Checkboxes
+//
+// Checkboxes allow users to select one or more options from a visible list.
+//
+// Markup: checkbox.hbs
+//
+// Weight: 3
+//
+// Style guide: form.checkboxes
+
+.checkbox {
+  $square-size: 20px;
+  $outer-square-background: #eee;
+  $outer-square-background-active: $primary-color;
+  $inner-square-background: $outer-square-background;
+  $inner-square-background-active: $outer-square-background-active;
+  $padding-left: 10px;
+  $line-height-adjusting-pixels: 2px;
+
+  position: absolute;
+  left: -999em;
+
+  &:checked + .checkbox__label {
+    &::before {
+      background: $outer-square-background-active;
+      border: 1px solid darken($outer-square-background-active, 5%);
+    }
+
+    &::after {
+      background: $inner-square-background-active;
+    }
+  }
+
+  &:focus + .checkbox__label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px lighten($outer-square-background-active, 5%);
+  }
+
+  &__label {
+    position: relative;
+    user-select: none;
+    padding-left: $square-size + $padding-left;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      height: $square-size;
+      width: $square-size;
+      background: $outer-square-background;
+      top: $line-height-adjusting-pixels;
+      left: 0;
+    }
+
+    &::after {
+      left: 6px;
+      top: 3px;
+
+      // Make it a small rectangle so the border will create an L-shape
+      width: 8px;
+      height: 16px;
+
+      // Add a white border on the bottom and left, creating that 'L'
+      border: solid $inner-square-background;
+      border-width: 0 3px 3px 0;
+
+      // Rotate the L 45 degrees to turn it into a checkmark
+      transform: rotate(45deg);
+    }
+  }
+}

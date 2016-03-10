@@ -1,14 +1,15 @@
-// Form
+// Form controls
 //
-// Markup: form.hbs
+// Form controls allow users to enter information into a page.
 //
 // Weight: 3
 //
 // Style guide: form
-$form-action-color: #33c3f0;
+
+$form-action-color: #0073b2;
 $form-box-shadow: none;
 $form-box-shadow-focus: none;
-$form-border-radius: none;
+$form-border-radius: 0;
 $form-border-color: #d1d1d1;
 $form-border: 1px solid $form-border-color;
 $form-background-color: #fff;

@@ -176,7 +176,7 @@ linters:
     enabled: true
 
   SpaceAfterComma:
-    enabled: true
+    enabled: false
     style: one_space # or 'no_space', or 'at_least_one_space'
 
   SpaceAfterPropertyColon:

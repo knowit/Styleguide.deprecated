@@ -63,5 +63,6 @@ $styleguide-header-height: 63px;
 }
 
 .styleguide-btn--markup {
+  @include custom-button;
   margin: 20px 0 0;
 }
