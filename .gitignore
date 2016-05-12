@@ -2,8 +2,4 @@
 #npm
 /node_modules
 *.log
-
-#aws
-/aws-credentials.json
-/.awspublish-spv-styleguide.kyber.land
 .DS_Store
