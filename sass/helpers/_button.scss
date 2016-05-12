@@ -1,45 +1,69 @@
-@mixin custom-button($border-radius: 0) {
-  $background: lighten(#199c87, 5%);
+@import '../settings/settings';
+
+@mixin custom-button($border-radius: 0, $border: 0, $padding: 10px, $font-family: $btn-font-family, $text-transform: uppercase, $font-size: em(18px)) {
+  @include disable-highlighting;
+  $box-shadow-active: 0 2px 4px 0 rgba(0, 0, 0, .3);
   box-sizing: border-box;
-  border: 1px solid #979797;
-  color: #fff;
+  display: inline-block;
+  border: $border;
   border-radius: $border-radius;
   line-height: 1;
-  padding: 10px;
+  padding: $padding;
   appearance: none;
   cursor: pointer;
-  display: inline-block;
-  font-family: $btn-font-family;
-  font-size: $base-font-size;
+  font-family: $font-family;
+  font-size: $font-size;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: $text-transform;
   user-select: none;
-  vertical-align: middle;
   white-space: nowrap;
-  background-color: $background;
   outline: none;
+  transition: box-shadow 150ms ease-out;
 
   &:hover,
-  &:focus {
-    background-color: darken($background, 5%);
-  }
-
+  &:focus,
   &:active {
-    background-color: darken($background, 2%);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: #fff;
+    box-shadow: $box-shadow-active;
     text-decoration: none;
   }
+}
 
-  i,
-  .fa {
-    font-weight: bold;
+@mixin primary-button {
+  @include custom-button;
+  $color: #000;
+  $background-color: #9eb5cb;
+  padding: 16px;
+  color: $color;
+  background-color: $background-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color;
   }
+}
+
+@mixin edit-button {
+  @include custom-button($font-family: $base-font-family, $text-transform: none);
+  $background: #e6e6e6;
+  $color: $base-font-color;
+
+  background-color: $background;
+  color: $color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color;
+  }
+}
+
+@mixin disabled-button {
+  @include custom-button;
+  padding: 15px;
+  cursor: not-allowed;
+  opacity: .25;
 }

@@ -1,7 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+@font-face {
+  font-family: 'brush-up';
+  src: url('/fonts/brushup-webfont.woff2') format('woff2'); // Super Modern Browsers
+}
 
-$base-font-family: 'Open Sans', sans-serif;
-$heading-font-family: 'Open Sans', sans-serif;
+$base-font-family: 'Raleway', Helvetica, Arial, sans-serif;
+$heading-font-family: $base-font-family;
 $btn-font-family: $heading-font-family;
 
 // **, **, mobil, m-viewport, l-viewport, font-weight

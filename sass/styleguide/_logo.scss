@@ -7,7 +7,7 @@
 
   &:hover,
   &:active,
-  &:focus { 
+  &:focus {
     text-decoration: none;
   }
 
@@ -20,17 +20,8 @@
     background: darken(#eee, 10%);
   }
 
-  @include media($l-viewport) {
-    padding: 20px 0;
-  }
-
   &__text,
   &__img {
     display: inline-block;
-  }
-
-  &__img {
-    max-width: 140px;
-    margin-right: 8px;
   }
 }

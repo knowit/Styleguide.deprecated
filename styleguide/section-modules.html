@@ -10,356 +10,383 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Styleguide</title>
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
+  <title>Knowit Living Style Guide Kickstarter</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/screen.css">
-  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="styleguide-header" role="banner">
+  <header class="styleguide-header" role="banner" id="header">
     <a href="/" class="styleguide-logo">
-      Logo
-      <!-- <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/> -->
+      <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/>
     </a>
-    <a href="#navigation" class="styleguide-navigation-shortcut">Skip to Navigation</a>
+    <a href="#navigation" class="styleguide-navigation-shortcut">Go to Navigation</a>
   </header>
-  <main class="styleguide-main" role="main">
+  <main class="styleguide-main" role="main" id="main">
 
-      <section id="kssref-modules" class="styleguide-section kss-section--depth-1">
-
-        <a class="kss-title__permalink" href="#kssref-modules" style="display:none;">
-          <span class="kss-title__ref">
-              3
-          </span>
-          Modules
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-          <header class="styleguide-section-header">
-            <h1>Modules</h1>
-          </header>
-            <div class="styleguide-section__description">
-              <p>Simple reusable UI modules.</p>
-
-            </div>
-      </section>
-      <section id="kssref-modules-paragraph" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-paragraph" style="display:none;">
-          <span class="kss-title__ref">
-              3.1
-          </span>
-          Paragraph
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Paragraph
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
-            </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-paragraph-mobile-preview-js', 'modules-paragraph-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-paragraph-tablet-preview-js', 'modules-paragraph-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-paragraph-laptop-preview-js', 'modules-paragraph-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-paragraph-default-preview-js">
-                <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.</p>
+        <section id="kssref-modules" class="styleguide-section kss-section--depth-1">
+          <a class="kss-title__permalink" href="#kssref-modules" style="display:none;">
+            <span class="kss-title__ref">
+                2
+            </span>
+            Modules
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+            <header class="styleguide-section-header">
+              <h1>Modules</h1>
+            </header>
+              <div class="styleguide-section__description">
+                <p>Simple reusable UI modules.</p>
 
               </div>
-              <div id="modules-paragraph-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+        </section>
+        <section id="kssref-modules-paragraph" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-paragraph" style="display:none;">
+            <span class="kss-title__ref">
+                2.1
+            </span>
+            Paragraph
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-paragraph">
+              Paragraph
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
+              </div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-paragraph-mobile-preview-js', 'modules-paragraph-default-preview-js', '#kssref-modules-paragraph')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-paragraph-tablet-preview-js', 'modules-paragraph-default-preview-js', '#kssref-modules-paragraph')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-paragraph-laptop-preview-js', 'modules-paragraph-default-preview-js', '#kssref-modules-paragraph')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-paragraph#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-paragraph-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-paragraph-default-preview-js">
                   <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.</p>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-paragraph-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-paragraph-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-paragraph-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-paragraph-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.</p>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-paragraph-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.</p>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('modules-paragraph-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-paragraph-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.&lt;/p&gt;
+            <div id="modules-paragraph-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.&lt;/p&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-links" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-links" style="display:none;">
-          <span class="kss-title__ref">
-              3.2
-          </span>
-          Links
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Links
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-links-mobile-preview-js', 'modules-links-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-links-tablet-preview-js', 'modules-links-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-links-laptop-preview-js', 'modules-links-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-              <div class="kss-modifier__default-name kss-style">
-                Default styling
+        </section>
+        <section id="kssref-modules-links" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-links" style="display:none;">
+            <span class="kss-title__ref">
+                2.2
+            </span>
+            Links
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-links">
+              Links
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-            <div class="kss-modifier__example">
-              <div id="modules-links-default-preview-js">
-                <a href="#">Klikk her!</a>
-
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-links-mobile-preview-js', 'modules-links-default-preview-js', '#kssref-modules-links')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-links-tablet-preview-js', 'modules-links-default-preview-js', '#kssref-modules-links')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-links-laptop-preview-js', 'modules-links-default-preview-js', '#kssref-modules-links')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-links#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-links-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
               </div>
-              <div id="modules-links-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+                <div class="kss-modifier__default-name kss-style">
+                  Default styling
+                </div>
+              <div class="kss-modifier__example">
+                <div id="modules-links-default-preview-js">
                   <a href="#">Klikk her!</a>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-links-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-links-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-links-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-links-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
+              <p class="kss-modifier__name kss-style">
+                a:hover
+              </p>
+              <p class="kss-modifier__description kss-style">
+                When a link is hovered
+              </p>
+              <div class="kss-modifier__example">
                   <a href="#">Klikk her!</a>
 
-                </div>
-                <div class="home"></div>
               </div>
-              <div id="modules-links-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
+              <p class="kss-modifier__name kss-style">
+                a:active
+              </p>
+              <p class="kss-modifier__description kss-style">
+                When a link is active
+              </p>
+              <div class="kss-modifier__example">
                   <a href="#">Klikk her!</a>
 
-                </div>
-                <div class="bottom-bar"></div>
-            </div>
-          </div>
-            <p class="kss-modifier__name kss-style">
-              a:hover
-            </p>
-            <p class="kss-modifier__description kss-style">
-              When a link is hovered
-            </p>
-            <div class="kss-modifier__example">
-                <a href="#">Klikk her!</a>
+              </div>
+              <p class="kss-modifier__name kss-style">
+                a:focus
+              </p>
+              <p class="kss-modifier__description kss-style">
+                When a link is focused
+              </p>
+              <div class="kss-modifier__example">
+                  <a href="#">Klikk her!</a>
 
               </div>
             </div>
-            <p class="kss-modifier__name kss-style">
-              a:active
-            </p>
-            <p class="kss-modifier__description kss-style">
-              When a link is active
-            </p>
-            <div class="kss-modifier__example">
-                <a href="#">Klikk her!</a>
-
-              </div>
-            </div>
-            <p class="kss-modifier__name kss-style">
-              a:focus
-            </p>
-            <p class="kss-modifier__description kss-style">
-              When a link is focused
-            </p>
-            <div class="kss-modifier__example">
-                <a href="#">Klikk her!</a>
-
-              </div>
-            </div>
-
-          <button onclick="toggle('modules-links-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-links-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot;&gt;Klikk her!&lt;/a&gt;
+            <div id="modules-links-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot;&gt;Klikk her!&lt;/a&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-buttons" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-buttons" style="display:none;">
-          <span class="kss-title__ref">
-              3.3
-          </span>
-          Buttons
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Buttons
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-buttons-mobile-preview-js', 'modules-buttons-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-buttons-tablet-preview-js', 'modules-buttons-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-buttons-laptop-preview-js', 'modules-buttons-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-              <div class="kss-modifier__default-name kss-style">
-                Default styling
+        </section>
+        <section id="kssref-modules-buttons" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-buttons" style="display:none;">
+            <span class="kss-title__ref">
+                2.3
+            </span>
+            Buttons
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-buttons">
+              Buttons
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-            <div class="kss-modifier__example">
-              <div id="modules-buttons-default-preview-js">
-                <button class="btn [modifier class]">Text</button>
-
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-buttons-mobile-preview-js', 'modules-buttons-default-preview-js', '#kssref-modules-buttons')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-buttons-tablet-preview-js', 'modules-buttons-default-preview-js', '#kssref-modules-buttons')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-buttons-laptop-preview-js', 'modules-buttons-default-preview-js', '#kssref-modules-buttons')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-buttons#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-buttons-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
               </div>
-              <div id="modules-buttons-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+                <div class="kss-modifier__default-name kss-style">
+                  Default styling
+                </div>
+              <div class="kss-modifier__example">
+                <div id="modules-buttons-default-preview-js">
                   <button class="btn [modifier class]">Text</button>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-buttons-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-buttons-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-buttons-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-buttons-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <button class="btn [modifier class]">Text</button>
+              <p class="kss-modifier__name kss-style">
+                .btn--primary
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Default button
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--primary">Text</button>
 
-                </div>
-                <div class="home"></div>
               </div>
-              <div id="modules-buttons-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <button class="btn [modifier class]">Text</button>
+              <p class="kss-modifier__name kss-style">
+                .btn--primary:hover
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action hover
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--primary pseudo-class-hover">Text</button>
 
-                </div>
-                <div class="bottom-bar"></div>
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--primary:focus
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action focus
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--primary pseudo-class-focus">Text</button>
+
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--primary:active
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action active
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--primary pseudo-class-active">Text</button>
+
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--edit
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action hover
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--edit">Text</button>
+
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--edit:hover
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action hover
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--edit pseudo-class-hover">Text</button>
+
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--edit:focus
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action focus
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--edit pseudo-class-focus">Text</button>
+
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--edit:active
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Call to action active
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--edit pseudo-class-active">Text</button>
+
+              </div>
+              <p class="kss-modifier__name kss-style">
+                .btn--disabled
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Disabled button
+              </p>
+              <div class="kss-modifier__example">
+                  <button class="btn btn--disabled">Text</button>
+
+              </div>
             </div>
-          </div>
-            <p class="kss-modifier__name kss-style">
-              .btn:hover
-            </p>
-            <p class="kss-modifier__description kss-style">
-              Hover
-            </p>
-            <div class="kss-modifier__example">
-                <button class="btn btn pseudo-class-hover">Text</button>
-
-              </div>
-            </div>
-            <p class="kss-modifier__name kss-style">
-              .btn:focus
-            </p>
-            <p class="kss-modifier__description kss-style">
-              Focus
-            </p>
-            <div class="kss-modifier__example">
-                <button class="btn btn pseudo-class-focus">Text</button>
-
-              </div>
-            </div>
-            <p class="kss-modifier__name kss-style">
-              .btn:active
-            </p>
-            <p class="kss-modifier__description kss-style">
-              Active
-            </p>
-            <div class="kss-modifier__example">
-                <button class="btn btn pseudo-class-active">Text</button>
-
-              </div>
-            </div>
-            <p class="kss-modifier__name kss-style">
-              .btn--disabled
-            </p>
-            <p class="kss-modifier__description kss-style">
-              Disabled
-            </p>
-            <div class="kss-modifier__example">
-                <button class="btn btn--disabled">Text</button>
-
-              </div>
-            </div>
-
-          <button onclick="toggle('modules-buttons-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-buttons-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;btn [modifier class]&quot;&gt;Text&lt;/button&gt;
+            <div id="modules-buttons-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;btn [modifier class]&quot;&gt;Text&lt;/button&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-headings" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-headings" style="display:none;">
-          <span class="kss-title__ref">
-              3.4
-          </span>
-          Headings
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Headings
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-headings-mobile-preview-js', 'modules-headings-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-headings-tablet-preview-js', 'modules-headings-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-headings-laptop-preview-js', 'modules-headings-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-headings-default-preview-js">
-                <h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
+        </section>
+        <section id="kssref-modules-headings" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-headings" style="display:none;">
+            <span class="kss-title__ref">
+                2.4
+            </span>
+            Headings
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-headings">
+              Headings
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="modules-headings-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-headings-mobile-preview-js', 'modules-headings-default-preview-js', '#kssref-modules-headings')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-headings-tablet-preview-js', 'modules-headings-default-preview-js', '#kssref-modules-headings')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-headings-laptop-preview-js', 'modules-headings-default-preview-js', '#kssref-modules-headings')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-headings#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-headings-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-headings-default-preview-js">
                   <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -368,358 +395,302 @@
 <h6>Heading 6</h6>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-headings-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-headings-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-headings-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-headings-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-headings-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('modules-headings-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-headings-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+            <div id="modules-headings-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;
 &lt;h6&gt;Heading 6&lt;/h6&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-lists" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-lists" style="display:none;">
-          <span class="kss-title__ref">
-              3.5
-          </span>
-          List Types
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          List Types
-        </h2>
-            <p class="styleguide-subsection__description">
-              <p>Different types of lists</p>
-
-            </p>
-      </section>
-      <section id="kssref-modules-lists-definitionlist" class="styleguide-subsection kss-section--depth-3">
-
-        <a class="kss-title__permalink" href="#kssref-modules-lists-definitionlist" style="display:none;">
-          <span class="kss-title__ref">
-              3.5.1
-          </span>
-          Definition List
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Definition List
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-lists-definitionlist-mobile-preview-js', 'modules-lists-definitionlist-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-lists-definitionlist-tablet-preview-js', 'modules-lists-definitionlist-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-lists-definitionlist-laptop-preview-js', 'modules-lists-definitionlist-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-lists-definitionlist-default-preview-js">
-                <dl>
-  <dt>Definition List Title</dt>
-  <dd>This is a definition list division.</dd>
-</dl>
-              </div>
-              <div id="modules-lists-definitionlist-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
-                  <dl>
-  <dt>Definition List Title</dt>
-  <dd>This is a definition list division.</dd>
-</dl>
-                </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
-              </div>
-              <div id="modules-lists-definitionlist-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <dl>
-  <dt>Definition List Title</dt>
-  <dd>This is a definition list division.</dd>
-</dl>
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-lists-definitionlist-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <dl>
-  <dt>Definition List Title</dt>
-  <dd>This is a definition list division.</dd>
-</dl>
-                </div>
-                <div class="bottom-bar"></div>
-            </div>
-          </div>
+        </section>
+        <section id="kssref-modules-lists" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-lists" style="display:none;">
+            <span class="kss-title__ref">
+                2.5
+            </span>
+            List Types
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-lists">
+              List Types
+            </a>
+          </h2>
+              <div class="styleguide-subsection__description">
+                <p>Different types of lists</p>
 
-          <button onclick="toggle('modules-lists-definitionlist-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-lists-definitionlist-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;dl&gt;
+              </div>
+        </section>
+        <section id="kssref-modules-lists-definitionlist" class="styleguide-subsection kss-section--depth-3">
+          <a class="kss-title__permalink" href="#kssref-modules-lists-definitionlist" style="display:none;">
+            <span class="kss-title__ref">
+                2.5.1
+            </span>
+            Definition List
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-lists-definitionlist">
+              Definition List
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
+              </div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-definitionlist-mobile-preview-js', 'modules-lists-definitionlist-default-preview-js', '#kssref-modules-lists-definitionlist')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-definitionlist-tablet-preview-js', 'modules-lists-definitionlist-default-preview-js', '#kssref-modules-lists-definitionlist')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-definitionlist-laptop-preview-js', 'modules-lists-definitionlist-default-preview-js', '#kssref-modules-lists-definitionlist')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-lists-definitionlist#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-lists-definitionlist-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-lists-definitionlist-default-preview-js">
+                  <dl>
+  <dt>Definition List Title</dt>
+  <dd>This is a definition list division.</dd>
+</dl>
+                </div>
+                <section id="device-preview-js">
+                  <div id="modules-lists-definitionlist-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-lists-definitionlist-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-lists-definitionlist-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div id="modules-lists-definitionlist-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;dl&gt;
   &lt;dt&gt;Definition List Title&lt;/dt&gt;
   &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-lists-orderedlist" class="styleguide-subsection kss-section--depth-3">
-
-        <a class="kss-title__permalink" href="#kssref-modules-lists-orderedlist" style="display:none;">
-          <span class="kss-title__ref">
-              3.5.2
-          </span>
-          Ordered List
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Ordered List
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-lists-orderedlist-mobile-preview-js', 'modules-lists-orderedlist-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-lists-orderedlist-tablet-preview-js', 'modules-lists-orderedlist-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-lists-orderedlist-laptop-preview-js', 'modules-lists-orderedlist-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-lists-orderedlist-default-preview-js">
-                <ol>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ol>
+        </section>
+        <section id="kssref-modules-lists-orderedlist" class="styleguide-subsection kss-section--depth-3">
+          <a class="kss-title__permalink" href="#kssref-modules-lists-orderedlist" style="display:none;">
+            <span class="kss-title__ref">
+                2.5.2
+            </span>
+            Ordered List
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-lists-orderedlist">
+              Ordered List
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="modules-lists-orderedlist-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-orderedlist-mobile-preview-js', 'modules-lists-orderedlist-default-preview-js', '#kssref-modules-lists-orderedlist')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-orderedlist-tablet-preview-js', 'modules-lists-orderedlist-default-preview-js', '#kssref-modules-lists-orderedlist')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-orderedlist-laptop-preview-js', 'modules-lists-orderedlist-default-preview-js', '#kssref-modules-lists-orderedlist')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-lists-orderedlist#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-lists-orderedlist-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-lists-orderedlist-default-preview-js">
                   <ol>
   <li>List Item 1</li>
   <li>List Item 2</li>
   <li>List Item 3</li>
 </ol>
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-lists-orderedlist-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-lists-orderedlist-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-lists-orderedlist-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-lists-orderedlist-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <ol>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ol>
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-lists-orderedlist-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <ol>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ol>
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('modules-lists-orderedlist-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-lists-orderedlist-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
+            <div id="modules-lists-orderedlist-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
   &lt;li&gt;List Item 1&lt;/li&gt;
   &lt;li&gt;List Item 2&lt;/li&gt;
   &lt;li&gt;List Item 3&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-lists-unorderedlist" class="styleguide-subsection kss-section--depth-3">
-
-        <a class="kss-title__permalink" href="#kssref-modules-lists-unorderedlist" style="display:none;">
-          <span class="kss-title__ref">
-              3.5.3
-          </span>
-          Unordered List
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Unordered List
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-lists-unorderedlist-mobile-preview-js', 'modules-lists-unorderedlist-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-lists-unorderedlist-tablet-preview-js', 'modules-lists-unorderedlist-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-lists-unorderedlist-laptop-preview-js', 'modules-lists-unorderedlist-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-lists-unorderedlist-default-preview-js">
-                <ul>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ul>
+        </section>
+        <section id="kssref-modules-lists-unorderedlist" class="styleguide-subsection kss-section--depth-3">
+          <a class="kss-title__permalink" href="#kssref-modules-lists-unorderedlist" style="display:none;">
+            <span class="kss-title__ref">
+                2.5.3
+            </span>
+            Unordered List
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-lists-unorderedlist">
+              Unordered List
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="modules-lists-unorderedlist-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-unorderedlist-mobile-preview-js', 'modules-lists-unorderedlist-default-preview-js', '#kssref-modules-lists-unorderedlist')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-unorderedlist-tablet-preview-js', 'modules-lists-unorderedlist-default-preview-js', '#kssref-modules-lists-unorderedlist')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-lists-unorderedlist-laptop-preview-js', 'modules-lists-unorderedlist-default-preview-js', '#kssref-modules-lists-unorderedlist')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-lists-unorderedlist#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-lists-unorderedlist-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-lists-unorderedlist-default-preview-js">
                   <ul>
   <li>List Item 1</li>
   <li>List Item 2</li>
   <li>List Item 3</li>
 </ul>
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-lists-unorderedlist-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-lists-unorderedlist-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-lists-unorderedlist-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-lists-unorderedlist-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <ul>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ul>
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-lists-unorderedlist-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <ul>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-</ul>
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('modules-lists-unorderedlist-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-lists-unorderedlist-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
+            <div id="modules-lists-unorderedlist-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
   &lt;li&gt;List Item 1&lt;/li&gt;
   &lt;li&gt;List Item 2&lt;/li&gt;
   &lt;li&gt;List Item 3&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-tables" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-tables" style="display:none;">
-          <span class="kss-title__ref">
-              3.6
-          </span>
-          Tables
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Tables
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-tables-mobile-preview-js', 'modules-tables-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-tables-tablet-preview-js', 'modules-tables-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-tables-laptop-preview-js', 'modules-tables-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-tables-default-preview-js">
-                <table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <th>Table Header 1</th>
-      <th>Table Header 2</th>
-      <th>Table Header 3</th>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-  </tbody>
-</table>
-
+        </section>
+        <section id="kssref-modules-tables" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-tables" style="display:none;">
+            <span class="kss-title__ref">
+                2.6
+            </span>
+            Tables
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-tables">
+              Tables
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="modules-tables-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-tables-mobile-preview-js', 'modules-tables-default-preview-js', '#kssref-modules-tables')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-tables-tablet-preview-js', 'modules-tables-default-preview-js', '#kssref-modules-tables')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-tables-laptop-preview-js', 'modules-tables-default-preview-js', '#kssref-modules-tables')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-tables#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-tables-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-tables-default-preview-js">
                   <table cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
@@ -746,78 +717,40 @@
 </table>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-tables-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-tables-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-tables-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-tables-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <th>Table Header 1</th>
-      <th>Table Header 2</th>
-      <th>Table Header 3</th>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-  </tbody>
-</table>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-tables-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <th>Table Header 1</th>
-      <th>Table Header 2</th>
-      <th>Table Header 3</th>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td>
-      <td>Division 2</td>
-      <td>Division 3</td>
-    </tr>
-  </tbody>
-</table>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('modules-tables-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-tables-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            <div id="modules-tables-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;th&gt;Table Header 1&lt;/th&gt;
@@ -842,276 +775,232 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-hamburger" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-hamburger" style="display:none;">
-          <span class="kss-title__ref">
-              3.7
-          </span>
-          Hamburger with bacon
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Hamburger with bacon
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-hamburger-mobile-preview-js', 'modules-hamburger-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-hamburger-tablet-preview-js', 'modules-hamburger-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-hamburger-laptop-preview-js', 'modules-hamburger-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="modules-hamburger-default-preview-js">
-                <div class="hamburger">
-  <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
-</div>
-
+        </section>
+        <section id="kssref-modules-hamburger" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-hamburger" style="display:none;">
+            <span class="kss-title__ref">
+                2.7
+            </span>
+            Hamburger with bacon
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-hamburger">
+              Hamburger with bacon
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="modules-hamburger-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-hamburger-mobile-preview-js', 'modules-hamburger-default-preview-js', '#kssref-modules-hamburger')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-hamburger-tablet-preview-js', 'modules-hamburger-default-preview-js', '#kssref-modules-hamburger')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-hamburger-laptop-preview-js', 'modules-hamburger-default-preview-js', '#kssref-modules-hamburger')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-hamburger#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-hamburger-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="modules-hamburger-default-preview-js">
                   <div class="hamburger">
   <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
 </div>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-hamburger-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-hamburger-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-hamburger-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-hamburger-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <div class="hamburger">
-  <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
-</div>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="modules-hamburger-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <div class="hamburger">
-  <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
-</div>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('modules-hamburger-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-hamburger-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;hamburger&quot;&gt;
+            <div id="modules-hamburger-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;hamburger&quot;&gt;
   &lt;i class=&quot;hamburger-meat&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hamburger-side&quot;&gt;Meny&lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-modules-avatar" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-modules-avatar" style="display:none;">
-          <span class="kss-title__ref">
-              3.8
-          </span>
-          Avatar
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Avatar
-        </h2>
-            <p class="styleguide-subsection__description">
-              <p>Awesome avatars</p>
-
-            </p>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('modules-avatar-mobile-preview-js', 'modules-avatar-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('modules-avatar-tablet-preview-js', 'modules-avatar-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('modules-avatar-laptop-preview-js', 'modules-avatar-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-              <div class="kss-modifier__default-name kss-style">
-                Default styling
-              </div>
-            <div class="kss-modifier__example">
-              <div id="modules-avatar-default-preview-js">
-                <div class="avatar [modifier class]"></div>
+        </section>
+        <section id="kssref-modules-avatar" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-modules-avatar" style="display:none;">
+            <span class="kss-title__ref">
+                2.8
+            </span>
+            Avatar
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-modules-avatar">
+              Avatar
+            </a>
+          </h2>
+              <div class="styleguide-subsection__description">
+                <p>Awesome avatars</p>
 
               </div>
-              <div id="modules-avatar-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
+              </div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-avatar-mobile-preview-js', 'modules-avatar-default-preview-js', '#kssref-modules-avatar')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-avatar-tablet-preview-js', 'modules-avatar-default-preview-js', '#kssref-modules-avatar')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('modules-avatar-laptop-preview-js', 'modules-avatar-default-preview-js', '#kssref-modules-avatar')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-modules-avatar#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('modules-avatar-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+                <div class="kss-modifier__default-name kss-style">
+                  Default styling
+                </div>
+              <div class="kss-modifier__example">
+                <div id="modules-avatar-default-preview-js">
                   <div class="avatar [modifier class]"></div>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="modules-avatar-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="modules-avatar-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="modules-avatar-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="modules-avatar-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <div class="avatar [modifier class]"></div>
+              <p class="kss-modifier__name kss-style">
+                .avatar--male
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Male presentation
+              </p>
+              <div class="kss-modifier__example">
+                  <div class="avatar avatar--male"></div>
 
-                </div>
-                <div class="home"></div>
               </div>
-              <div id="modules-avatar-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <div class="avatar [modifier class]"></div>
+              <p class="kss-modifier__name kss-style">
+                .avatar--female
+              </p>
+              <p class="kss-modifier__description kss-style">
+                Female presentation
+              </p>
+              <div class="kss-modifier__example">
+                  <div class="avatar avatar--female"></div>
 
-                </div>
-                <div class="bottom-bar"></div>
+              </div>
             </div>
-          </div>
-            <p class="kss-modifier__name kss-style">
-              .avatar--male
-            </p>
-            <p class="kss-modifier__description kss-style">
-              Male presentation
-            </p>
-            <div class="kss-modifier__example">
-                <div class="avatar avatar--male"></div>
-
-              </div>
-            </div>
-            <p class="kss-modifier__name kss-style">
-              .avatar--female
-            </p>
-            <p class="kss-modifier__description kss-style">
-              Female presentation
-            </p>
-            <div class="kss-modifier__example">
-                <div class="avatar avatar--female"></div>
-
-              </div>
-            </div>
-
-          <button onclick="toggle('modules-avatar-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="modules-avatar-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;avatar [modifier class]&quot;&gt;&lt;/div&gt;
+            <div id="modules-avatar-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;avatar [modifier class]&quot;&gt;&lt;/div&gt;
 </code></pre>
-          </div>
-      </section>
+            </div>
+        </section>
   </main>
   <nav class="styleguide-nav" role="navigation" id="navigation">
     <ul class="styleguide-nav__list">
         <li class="styleguide-nav__element">
           <a href="./">
-            <!-- <span class="styleguide-number">0</span> -->
             <span>Overview</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-colours.html">
-            <!-- <span class="styleguide-number">              1
-            </span> -->
             <span>Colours</span>
-          </a>
-        </li>
-          <li class="styleguide-nav__element">
-          <a href="section-icons.html">
-            <!-- <span class="styleguide-number">              2
-            </span> -->
-            <span>Icons</span>
           </a>
         </li>
           <li class="styleguide-nav__element styleguide-nav__element--active">
           <a href="section-modules.html">
-            <!-- <span class="styleguide-number">              3
-            </span> -->
             <span>Modules</span>
           </a>
           <ul class="styleguide-nav__sublist">
                
             <li>
               <a href="section-modules.html#kssref-modules-paragraph">
-                <!-- <span class="styleguide-number">
-                  3.1
-                </span> -->
                 <span>Paragraph</span>
               </a>
             </li>
               
             <li>
               <a href="section-modules.html#kssref-modules-links">
-                <!-- <span class="styleguide-number">
-                  3.2
-                </span> -->
                 <span>Links</span>
               </a>
             </li>
               
             <li>
               <a href="section-modules.html#kssref-modules-buttons">
-                <!-- <span class="styleguide-number">
-                  3.3
-                </span> -->
                 <span>Buttons</span>
               </a>
             </li>
               
             <li>
               <a href="section-modules.html#kssref-modules-headings">
-                <!-- <span class="styleguide-number">
-                  3.4
-                </span> -->
                 <span>Headings</span>
               </a>
             </li>
               
             <li>
               <a href="section-modules.html#kssref-modules-lists">
-                <!-- <span class="styleguide-number">
-                  3.5
-                </span> -->
                 <span>List Types</span>
               </a>
             </li>
                     
             <li>
               <a href="section-modules.html#kssref-modules-tables">
-                <!-- <span class="styleguide-number">
-                  3.6
-                </span> -->
                 <span>Tables</span>
               </a>
             </li>
               
             <li>
               <a href="section-modules.html#kssref-modules-hamburger">
-                <!-- <span class="styleguide-number">
-                  3.7
-                </span> -->
                 <span>Hamburger with bacon</span>
               </a>
             </li>
               
             <li>
               <a href="section-modules.html#kssref-modules-avatar">
-                <!-- <span class="styleguide-number">
-                  3.8
-                </span> -->
                 <span>Avatar</span>
               </a>
             </li>
@@ -1120,38 +1009,159 @@
         </li>
           <li class="styleguide-nav__element">
           <a href="section-components.html">
-            <!-- <span class="styleguide-number">              4
-            </span> -->
             <span>Components</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-form.html">
-            <!-- <span class="styleguide-number">              5
-            </span> -->
             <span>Form controls</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-alerts.html">
-            <!-- <span class="styleguide-number">              6
-            </span> -->
             <span>Alerts</span>
           </a>
         </li>
       </ul>
+      <div class="styleguide-nav__footer">
+        <p>v.1.0.0</p>
+      </div>
   </nav>
+  <section id="preview-section-js">
+       
+      <div id="kssref-modules-paragraph-preview-js" style="display: none"><p>Suspendisse non nisl sit amet velit hendrerit rutrum. Nam ipsum risus, rutrum vitae, vestibulum eu.</p>
+</div>
+      
+      <div id="kssref-modules-links-preview-js" style="display: none"><a href="#">Klikk her!</a>
+</div>
+      
+      <div id="kssref-modules-buttons-preview-js" style="display: none"><button class="btn [modifier class]">Text</button>
+</div>
+      
+      <div id="kssref-modules-headings-preview-js" style="display: none"><h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</div>
+        
+      <div id="kssref-modules-lists-definitionlist-preview-js" style="display: none"><dl>
+  <dt>Definition List Title</dt>
+  <dd>This is a definition list division.</dd>
+</dl></div>
+      
+      <div id="kssref-modules-lists-orderedlist-preview-js" style="display: none"><ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ol></div>
+      
+      <div id="kssref-modules-lists-unorderedlist-preview-js" style="display: none"><ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ul></div>
+      
+      <div id="kssref-modules-tables-preview-js" style="display: none"><table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <th>Table Header 1</th>
+      <th>Table Header 2</th>
+      <th>Table Header 3</th>
+    </tr>
+    <tr>
+      <td>Division 1</td>
+      <td>Division 2</td>
+      <td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td>
+      <td>Division 2</td>
+      <td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td>
+      <td>Division 2</td>
+      <td>Division 3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      
+      <div id="kssref-modules-hamburger-preview-js" style="display: none"><div class="hamburger">
+  <i class="hamburger-meat"></i> <span class="hamburger-side">Meny</span>
+</div>
+</div>
+      
+      <div id="kssref-modules-avatar-preview-js" style="display: none"><div class="avatar [modifier class]"></div>
+</div>
+     
+  </section>
+
+
     <!-- SCRIPTS -->
     <script src="public/kss.js"></script>
     <script src="public/prettify.js"></script>
     <script>
-      prettyPrint();
-      function toggle(id) {
-        var div = document.getElementById(id);
-        div.style.display = div.style.display == "none" ? "block" : "none";
+    function isDescendant(parent, child) {
+      var node = child.parentNode;
+      while (node != null) {
+       if (node === parent) {
+           return true;
+       }
+       node = node.parentNode;
       }
-      function togglePreview(selectedPreview, defaultPreview) {
-        toggle(selectedPreview);
+      return false;
+    }
+
+    function locationHashChanged() {
+      if (location.hash.indexOf("#preview") > -1) {
+          preview();
+      }
+    }
+    window.onhashchange = locationHashChanged;
+
+      prettyPrint();
+      preview();
+      function preview() {
+        // Check if preview is enabled
+        if(window.location.hash.indexOf("#preview") > -1) {
+          // Check if element is selected
+          if(window.location.hash.indexOf("#kssref") > -1) {
+            // Remove header, navigation and main content
+            document.getElementById('header').remove();
+            document.getElementById('main').remove();
+            document.getElementById('navigation').remove();
+
+            var hashValues = window.location.hash.split("#").filter(Boolean);
+            var elementName = hashValues.filter((x) => x.indexOf('kssref-') > -1)[0];
+            var previewElementId = elementName + '-preview-js';
+            var DOMElement = document.getElementById(previewElementId);
+            var previewDOMElement = document.getElementById('preview-section-js');
+            var items = previewDOMElement.getElementsByTagName('*');
+            DOMElement.style.display = 'block';
+            for (var i = 0, len = items.length; i < len; i++) {
+              //check if item is defined
+              if(items[i] && items[i] !== DOMElement) {
+                // Check if current item is child of preview element
+                if(!isDescendant(DOMElement, items[i])) {
+                  items[i].remove();
+                }
+              }
+            }
+          }
+        }
+      }
+      function toggle(id, preview) {
+        console.log(id);
+        var div = $('#' + id);
+        div.toggle();
+
+        div.find('iframe').attr('src', preview + '#preview');
+      }
+      function togglePreview(selectedPreview, defaultPreview, preview) {
+        toggle(selectedPreview, preview);
         var defaultPreview = document.getElementById(defaultPreview);
         defaultPreview.style.display = defaultPreview.style.display = "none";
       }

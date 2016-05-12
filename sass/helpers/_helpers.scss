@@ -1,2 +1,7 @@
 @import 'box';
 @import 'button';
+
+// Disable quick blinking effect when a link has been hit
+@mixin disable-highlighting {
+  -webkit-tap-highlight-color: transparent;
+}

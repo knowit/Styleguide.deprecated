@@ -1,3 +1,8 @@
+$styleguide-heading-color: #fff;
+$styleguide-heading-font-family: 'brush-up', Helvetica, Arial, sans-serif;
+$stylguide-header-background: #a0d1ca;
+$styleguide-header-color: #000;
+
 .styleguide-header {
   @include media($l-viewport) {
     text-align: center;
@@ -21,7 +26,7 @@
 }
 
 .styleguide-section-header {
-  background-color: #199c87;
+  background-color: $stylguide-header-background;
   padding: 20px 5%;
 
   @include media($l-viewport) {
@@ -29,6 +34,7 @@
   }
 
   h1 {
-    color: rgba(255, 255, 255, 0.9);
+    color: $styleguide-header-color;
+    font-family: $styleguide-heading-font-family;
   }
 }

@@ -2,20 +2,31 @@
 //
 // Markup: buttons.hbs
 //
-// .btn:hover         - Hover
-// .btn:focus         - Focus
-// .btn:active        - Active
-// .btn--disabled     - Disabled
+// .btn--primary               - Default button
+// .btn--primary:hover         - Call to action hover
+// .btn--primary:focus         - Call to action focus
+// .btn--primary:active        - Call to action active
+// .btn--edit                  - Call to action hover
+// .btn--edit:hover            - Call to action hover
+// .btn--edit:focus            - Call to action focus
+// .btn--edit:active           - Call to action active
+// .btn--disabled              - Disabled button
 //
 // Weight: 2.5
 //
 // Style guide: modules.buttons
+@import '../helpers/helpers', '../settings/settings';
 
 .btn {
-  @include custom-button;
+  &--primary {
+    @include primary-button;
+  }
+
+  &--edit {
+    @include edit-button;
+  }
 
   &--disabled {
-    cursor: not-allowed;
-    opacity: .5;
+    @include disabled-button;
   }
 }

@@ -1,5 +1,3 @@
-# Living Style Guide Kickstarter
-
 ## Benefits
 
 - Useful in both development and maintenance
@@ -55,7 +53,6 @@ sass
 ```
 
 ## Naming Pattern
-
 BEM (block, element, modifier)
 
 #### The higher level of an module.
@@ -72,20 +69,12 @@ BEM (block, element, modifier)
 ```
 
 ## Install
-```js
-git clone [repo]
-```
-
-```js
-npm install
-```
-```js
-gulp
-
-```
+1. git clone git@github.com:knowit/Styleguide.git
+5. [Install node](https://nodejs.org/en/)
+6. npm install
+7. gulp
 
 ### To BE(M) or not to BE(M)?
-
 - [Getting your head round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 - [Organizing CSS OOCSS SMACSS and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
 - [SCSS styleguide with BEM OOCSS SMACSS](http://geek-rocket.de/frontend-development/scss-styleguide-with-bem-oocss-smacss/)

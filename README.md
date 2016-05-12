@@ -72,9 +72,6 @@ BEM (block, element, modifier)
 
 ## Install
 1. git clone git@github.com:knowit/Styleguide.git
-2. [Install ruby](https://www.ruby-lang.org/en/downloads/)
-3. gem install bundler
-4. bundle install
 5. [Install node](https://nodejs.org/en/)
 6. npm install
 7. gulp

@@ -1,5 +1,13 @@
 $styleguide-nav-width: 250px;
 $styleguide-header-height: 63px;
+$styleguide-name-font-family: 'brush-up', Helvetica, Arial, sans-serif;
+
+.styleguide-logo {
+  height: $styleguide-header-height;
+  &__img {
+    height: $styleguide-header-height;
+  }
+}
 
 .styleguide-main {
   @include media($l-viewport) {
@@ -9,6 +17,9 @@ $styleguide-header-height: 63px;
 
 .styleguide-introduction {
   padding: 0 5%;
+  h1 {
+    font-family: $styleguide-name-font-family;
+  }
 }
 
 .styleguide-section {
@@ -62,7 +73,34 @@ $styleguide-header-height: 63px;
   }
 }
 
+.styleguide-btn--markup,
+.styleguide-btn--preview {
+  @include custom-button($font-size: em(16px));
+  $background: #e6e6e6;
+  background-color: $background;
+  color: $base-font-color;
+
+  &:hover,
+  &:focus {
+    background-color: darken($background, 10%);
+  }
+
+  &:active {
+    background-color: darken($background, 15%);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $base-font-color;
+    text-decoration: none;
+  }
+}
+
 .styleguide-btn--markup {
-  @include custom-button;
   margin: 20px 0 0;
+}
+
+.styleguide-btn--preview {
+  text-align: center;
 }

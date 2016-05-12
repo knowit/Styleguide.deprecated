@@ -1,53 +1,62 @@
 {
   "name": "knowit-styleguide",
+  "ui-name": "Knowit Living Style Guide Kickstarter",
   "repository": "https://github.knowit.no/knowit/Styleguide/",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Base styleguide with browser-sync, source-maps, autoprefixer, concat and kss (styleguide)",
   "author": {
     "name": "Torleif Halseth",
     "email": "torleif.halseth@knowit.no",
     "url": "http://github.com/thalseth"
   },
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Jesper Haug Karsrud"
-    }, {
+    },
+    {
       "name": "David Mellum"
-    }, {
+    },
+    {
       "name": "Ivar Borthen"
-    }],
-    "license": "Apache-2.0",
-    "devDependencies": {
-      "browser-sync": "^2.11.1",
-      "gulp": "^3.9.0",
-      "gulp-autoprefixer": "^3.1.0",
-      "gulp-awspublish": "^3.0.1",
-      "gulp-exec": "^2.1.2",
-      "gulp-minify-css": "^1.2.3",
-      "gulp-sass": "^2.1.1",
-      "gulp-scss-lint": "^0.3.9",
-      "gulp-sourcemaps": "^1.6.0",
-      "kss": "^2.4.0",
-      "node-bourbon": "^4.2.3",
-      "node-neat": "^1.7.2"
     },
-    "engines": {
-      "node": ">= 0.12.0"
-    },
-    "scripts": {
-      "kss": "kss-node --source sass --destination styleguide --template template",
-      "gh-pages": "git push origin `git subtree split --prefix styleguide master`:gh-pages --force"
-    },
-    "dependencies": {
-      "font-awesome": "^4.4.0"
-    },
-    "keywords": [
-      "browser sync",
-      "css",
-      "live reload",
-      "sync",
-      "autoprefixer",
-      "source-maps",
-      "styleguide",
-      "kss"
-    ]
-  }
+    {
+      "name": "Erlend Røsjø",
+      "email": "erlend@erlend.net"
+    }
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-awspublish": "^3.0.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-exec": "^2.1.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "kss": "^2.4.0"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "kss": "kss-node --source sass --destination styleguide --template template  --helpers template/helpers",
+    "gh-pages": "git push origin `git subtree split --prefix styleguide master`:gh-pages --force "
+  },
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "font-awesome": "^4.4.0"
+  },
+  "keywords": [
+    "browser sync",
+    "css",
+    "live reload",
+    "sync",
+    "autoprefixer",
+    "source-maps",
+    "styleguide",
+    "kss"
+  ]
+}

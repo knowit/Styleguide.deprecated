@@ -10,158 +10,158 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Styleguide</title>
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
+  <title>{{ui-name}}</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/screen.css">
-  {{{styles}}}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="styleguide-header" role="banner">
+  <header class="styleguide-header" role="banner" id="header">
     <a href="/" class="styleguide-logo">
-      Logo
-      <!-- <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/> -->
+      <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/>
     </a>
-    <a href="#navigation" class="styleguide-navigation-shortcut">Skip to Navigation</a>
+    <a href="#navigation" class="styleguide-navigation-shortcut">Go to Navigation</a>
   </header>
-  <main class="styleguide-main" role="main">
+  <main class="styleguide-main" role="main" id="main">
     {{#if homepage}}
     <section class="styleguide-introduction">
+        <h1>{{ui-name}} {{package-version}}</h1>
         {{{homepage}}}
-    </div>
+    </section>
     {{else}}
-    {{! Display each section, in order. The "root" element comes first in this loop, and can be detected using the "#ifDepth 1" block as seen below. }}
+      {{! Display each section, in order. The "root" element comes first in this loop, and can be detected using the "#ifDepth 1" block as seen below. }}
 
-    {{#eachSection rootName}}
-    {{#ifDepth 1}}
-      <section id="kssref-{{referenceURI}}" class="styleguide-section kss-section--depth-{{depth}}">
-    {{else}}
-      <section id="kssref-{{referenceURI}}" class="styleguide-subsection kss-section--depth-{{depth}}">
-    {{/ifDepth}}
-
-        <a class="kss-title__permalink" href="#kssref-{{referenceURI}}" style="display:none;">
-          <span class="kss-title__ref">
-            {{#ifNumeric reference}}
-              {{reference}}
-            {{else}}
-              {{autoincrement}}
-            {{/ifNumeric}}
-          </span>
-          {{header}}
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        {{#ifDepth 1}}
-          <header class="styleguide-section-header">
-            <h1>{{header}}</h1>
-          </header>
-        {{else}}
-        <h2>
-          {{header}}
-        </h2>
-        {{/ifDepth}}
-        {{#if parameters}}
-          <ul class="kss-parameters">
-            {{#eachParameter}}
-              <li class="kss-parameters__item">
-                <code class="kss-parameters__name">
-                  {{name}}
-                </code>
-                <div class="kss-parameters__description">
-                  {{{description}}}
-                </div>
-              </li>
-            {{/eachParameter}}
-          </ul>
-        {{/if}}
-        {{#if description}}
+      {{#eachSection rootName}}
+      {{#ifDepth 1}}
+        <section id="kssref-{{referenceURI}}" class="styleguide-section kss-section--depth-{{depth}}">
+      {{else}}
+        <section id="kssref-{{referenceURI}}" class="styleguide-subsection kss-section--depth-{{depth}}">
+      {{/ifDepth}}
+          <a class="kss-title__permalink" href="#kssref-{{referenceURI}}" style="display:none;">
+            <span class="kss-title__ref">
+              {{#ifNumeric reference}}
+                {{reference}}
+              {{else}}
+                {{autoincrement}}
+              {{/ifNumeric}}
+            </span>
+            {{header}}
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
           {{#ifDepth 1}}
-            <div class="styleguide-section__description">
-              {{{description}}}
-            </div>
+            <header class="styleguide-section-header">
+              <h1>{{header}}</h1>
+            </header>
           {{else}}
-            <p class="styleguide-subsection__description">
-              {{{description}}}
-            </p>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-{{referenceURI}}">
+              {{header}}
+            </a>
+          </h2>
           {{/ifDepth}}
-        {{/if}}
-        {{#if markup}}
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
+          {{#if parameters}}
+            <ul class="kss-parameters">
+              {{#eachParameter}}
+                <li class="kss-parameters__item">
+                  <code class="kss-parameters__name">
+                    {{name}}
+                  </code>
+                  <div class="kss-parameters__description">
+                    {{{description}}}
+                  </div>
+                </li>
+              {{/eachParameter}}
+            </ul>
+          {{/if}}
+          {{#if description}}
+            {{#ifDepth 1}}
+              <div class="styleguide-section__description">
+                {{{description}}}
+              </div>
+            {{else}}
+              <div class="styleguide-subsection__description">
+                {{{description}}}
+              </div>
+            {{/ifDepth}}
+          {{/if}}
+          {{#if markup}}
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
+                {{#if modifiers}}
+                {{/if}}
+              </div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('{{referenceURI}}-mobile-preview-js', '{{referenceURI}}-default-preview-js', '#kssref-{{referenceURI}}')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('{{referenceURI}}-tablet-preview-js', '{{referenceURI}}-default-preview-js', '#kssref-{{referenceURI}}')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('{{referenceURI}}-laptop-preview-js', '{{referenceURI}}-default-preview-js', '#kssref-{{referenceURI}}')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-{{referenceURI}}#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('{{referenceURI}}-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
               {{#if modifiers}}
+                <div class="kss-modifier__default-name kss-style">
+                  Default styling
+                </div>
               {{/if}}
-            </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('{{referenceURI}}-mobile-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('{{referenceURI}}-tablet-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('{{referenceURI}}-laptop-preview-js', '{{referenceURI}}-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            {{#if modifiers}}
-              <div class="kss-modifier__default-name kss-style">
-                Default styling
-              </div>
-            {{/if}}
-            <div class="kss-modifier__example">
-              <div id="{{referenceURI}}-default-preview-js">
-                {{{markup}}}
-              </div>
-              <div id="{{referenceURI}}-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="kss-modifier__example">
+                <div id="{{referenceURI}}-default-preview-js">
                   {{{markup}}}
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="{{referenceURI}}-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="{{referenceURI}}-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="{{referenceURI}}-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="{{referenceURI}}-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
+            {{#eachModifier}}
+              <p class="kss-modifier__name kss-style">
+                {{name}}
+              </p>
+              <p class="kss-modifier__description kss-style">
+                {{{description}}}
+              </p>
+              <div class="kss-modifier__example">
                   {{{markup}}}
-                </div>
-                <div class="home"></div>
               </div>
-              <div id="{{referenceURI}}-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  {{{markup}}}
-                </div>
-                <div class="bottom-bar"></div>
+            {{/eachModifier}}
             </div>
-          </div>
-          {{#eachModifier}}
-            <p class="kss-modifier__name kss-style">
-              {{name}}
-            </p>
-            <p class="kss-modifier__description kss-style">
-              {{{description}}}
-            </p>
-            <div class="kss-modifier__example">
-                {{{markup}}}
-              </div>
+            <div id="{{referenceURI}}-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
             </div>
-          {{/eachModifier}}
-
-          <button onclick="toggle('{{referenceURI}}-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="{{referenceURI}}-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
-          </div>
-        {{/if}}
-      </section>
-    {{/eachSection}}
+          {{/if}}
+        </section>
+      {{/eachSection}}
     {{/if}}
   </main>
   <nav class="styleguide-nav" role="navigation" id="navigation">
     <ul class="styleguide-nav__list">
         <li class="styleguide-nav__element">
           <a href="./">
-            <!-- <span class="styleguide-number">0</span> -->
             <span>Overview</span>
           </a>
         </li>
@@ -172,12 +172,6 @@
           <li class="styleguide-nav__element">
         {{/ifReference}}
           <a href="section-{{referenceURI}}.html">
-            <!-- <span class="styleguide-number">{{#ifNumeric reference}}
-              {{reference}}
-              {{else}}
-              {{autoincrement}}
-              {{/ifNumeric}}
-            </span> -->
             <span>{{header}}</span>
           </a>
           {{#ifReference ../rootName}}
@@ -185,13 +179,6 @@
             {{#eachSection reference}} {{#ifDepth 2}}
             <li>
               <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
-                <!-- <span class="styleguide-number">
-                  {{#ifNumeric reference}}
-                  {{reference}}
-                  {{else}}
-                  {{autoincrement}}
-                  {{/ifNumeric}}
-                </span> -->
                 <span>{{header}}</span>
               </a>
             </li>
@@ -201,18 +188,79 @@
         </li>
         {{/eachRoot}}
       </ul>
+      <div class="styleguide-nav__footer">
+        <p>v.{{package-version}}</p>
+      </div>
   </nav>
+  <section id="preview-section-js">
+    {{#eachSection rootName}} {{#if markup}}
+      <div id="kssref-{{referenceURI}}-preview-js" style="display: none">{{{markup}}}</div>
+    {{/if}} {{/eachSection}}
+  </section>
+
+
     <!-- SCRIPTS -->
     <script src="public/kss.js"></script>
     <script src="public/prettify.js"></script>
     <script>
-      prettyPrint();
-      function toggle(id) {
-        var div = document.getElementById(id);
-        div.style.display = div.style.display == "none" ? "block" : "none";
+    function isDescendant(parent, child) {
+      var node = child.parentNode;
+      while (node != null) {
+       if (node === parent) {
+           return true;
+       }
+       node = node.parentNode;
       }
-      function togglePreview(selectedPreview, defaultPreview) {
-        toggle(selectedPreview);
+      return false;
+    }
+
+    function locationHashChanged() {
+      if (location.hash.indexOf("#preview") > -1) {
+          preview();
+      }
+    }
+    window.onhashchange = locationHashChanged;
+
+      prettyPrint();
+      preview();
+      function preview() {
+        // Check if preview is enabled
+        if(window.location.hash.indexOf("#preview") > -1) {
+          // Check if element is selected
+          if(window.location.hash.indexOf("#kssref") > -1) {
+            // Remove header, navigation and main content
+            document.getElementById('header').remove();
+            document.getElementById('main').remove();
+            document.getElementById('navigation').remove();
+
+            var hashValues = window.location.hash.split("#").filter(Boolean);
+            var elementName = hashValues.filter((x) => x.indexOf('kssref-') > -1)[0];
+            var previewElementId = elementName + '-preview-js';
+            var DOMElement = document.getElementById(previewElementId);
+            var previewDOMElement = document.getElementById('preview-section-js');
+            var items = previewDOMElement.getElementsByTagName('*');
+            DOMElement.style.display = 'block';
+            for (var i = 0, len = items.length; i < len; i++) {
+              //check if item is defined
+              if(items[i] && items[i] !== DOMElement) {
+                // Check if current item is child of preview element
+                if(!isDescendant(DOMElement, items[i])) {
+                  items[i].remove();
+                }
+              }
+            }
+          }
+        }
+      }
+      function toggle(id, preview) {
+        console.log(id);
+        var div = $('#' + id);
+        div.toggle();
+
+        div.find('iframe').attr('src', preview + '#preview');
+      }
+      function togglePreview(selectedPreview, defaultPreview, preview) {
+        toggle(selectedPreview, preview);
         var defaultPreview = document.getElementById(defaultPreview);
         defaultPreview.style.display = defaultPreview.style.display = "none";
       }

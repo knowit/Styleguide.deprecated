@@ -4,7 +4,7 @@
   $color: #16325c;
   background-color: $background-color;
   list-style: none;
-  
+
   &__list, &__sublist {
     list-style: none;
     padding: 0;
@@ -31,6 +31,14 @@
     &:hover, &:active, &:focus {
       background-color: $background-color--active;
       text-decoration: none;
+    }
+  }
+  &__footer {
+    padding: 10px 20px;
+    font-size: em(14px);
+    @media(min-width: $first-breakpoint-value) {
+        position: absolute;
+        bottom: 0;
     }
   }
 }
