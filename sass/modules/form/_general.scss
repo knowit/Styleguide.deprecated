@@ -34,8 +34,10 @@ label {
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
 
-  &.required::after {
-    content: '*';
+  &.required {
+    &::after {
+      content: '*';
+    }
   }
 
   abbr {
@@ -44,7 +46,6 @@ label {
 }
 
 #{$all-text-inputs},
-select[multiple=multiple],
 select,
 textarea {
   background-color: $form-background-color;
@@ -86,16 +87,14 @@ textarea {
   resize: vertical;
 }
 
-input[type="search"] {
-  @include appearance(none);
-}
+input {
+  &[type='file'] {
+    padding-bottom: $small-spacing;
+    width: 100%;
+  }
 
-input[type="checkbox"] {
-  display: inline;
-  margin-right: $small-spacing / 2;
-}
-
-input[type="file"] {
-  padding-bottom: $small-spacing;
-  width: 100%;
+  &[type='checkbox'] {
+    display: inline;
+    margin-right: $small-spacing / 2;
+  }
 }

@@ -1,17 +1,17 @@
 $styleguide-heading-color: #fff;
 $styleguide-heading-font-family: 'brush-up', Helvetica, Arial, sans-serif;
-$stylguide-header-background: #a0d1ca;
-$styleguide-header-color: #000;
+$stylguide-header-background: #614b79; // #a0d1ca;
+$styleguide-header-color: #fff;
 
 .styleguide-header {
-  @include media($l-viewport) {
+  @media (min-width: $first-breakpoint-value) {
     text-align: center;
   }
 }
 
-.styleguide-navigation-shortcut,
-.styleguide-logo {
-  @include media(new-breakpoint(max-width ($second-breakpoint-value))) {
+.styleguide-logo,
+.styleguide-navigation-shortcut {
+  @media (max-width: $second-breakpoint-value) {
     padding: 10px 5%;
   }
 }
@@ -19,8 +19,7 @@ $styleguide-header-color: #000;
 .styleguide-navigation-shortcut {
   display: block;
   background: #eef1f6;
-
-  @include media($l-viewport) {
+  @media (min-width: $first-breakpoint-value) {
     display: none;
   }
 }
@@ -28,13 +27,13 @@ $styleguide-header-color: #000;
 .styleguide-section-header {
   background-color: $stylguide-header-background;
   padding: 20px 5%;
-
-  @include media($l-viewport) {
+  @media (min-width: $first-breakpoint-value) {
     padding: 30px 5%;
   }
 
   h1 {
     color: $styleguide-header-color;
     font-family: $styleguide-heading-font-family;
+    margin: 10px 0;
   }
 }

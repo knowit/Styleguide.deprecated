@@ -17,23 +17,30 @@
   $inner-circle-background-active: #fff;
   $padding-left: 10px;
   $line-height-adjusting-pixels: 2px;
+  $outer-cirle-box-shadow-focus: 0 0 0 1px #fff, 0 0 0 2px lighten($outer-circle-background-active, 5%);
 
   position: absolute;
   left: -999em;
 
-  &:checked + .radio__label {
-    &::before {
-      background: $outer-circle-background-active;
-      border: 1px solid darken($outer-circle-background-active, 5%);
-    }
+  &:checked {
+    + .radio__label {
+      &::before {
+        background: $outer-circle-background-active;
+        border: 1px solid darken($outer-circle-background-active, 5%);
+      }
 
-    &::after {
-      background: $inner-circle-background-active;
+      &::after {
+        background: $inner-circle-background-active;
+      }
     }
   }
 
-  &:focus + .radio__label::before {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 2px lighten($outer-circle-background-active, 5%);
+  &:focus {
+    + .radio__label {
+      &::before {
+        box-shadow: $outer-cirle-box-shadow-focus;
+      }
+    }
   }
 
   &__label {

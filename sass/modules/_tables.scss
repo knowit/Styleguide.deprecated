@@ -5,6 +5,9 @@
 // Weight: 4.5
 //
 // Style guide: modules.tables
+$table-border-color: #979797;
+$th-border-bottom: 1px solid darken($table-border-color, 15%);
+$td-border-bottom: 1px solid $table-border-color;
 
 table {
   border-collapse: collapse;
@@ -14,19 +17,19 @@ table {
 }
 
 th {
-  border-bottom: 1px solid darken(#979797, 15%);
+  border-bottom: $th-border-bottom;
   font-weight: 600;
   padding: $small-spacing 0;
   text-align: left;
 }
 
 td {
-  border-bottom: 1px solid #979797;
+  border-bottom: $td-border-bottom;
   padding: $small-spacing 0;
 }
 
-tr,
 td,
-th {
+th,
+tr {
   vertical-align: middle;
 }

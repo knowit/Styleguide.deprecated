@@ -10,7 +10,7 @@ $styleguide-name-font-family: 'brush-up', Helvetica, Arial, sans-serif;
 }
 
 .styleguide-main {
-  @include media($l-viewport) {
+  @media (min-width: $first-breakpoint-value) {
     margin-left: $styleguide-nav-width;
   }
 }
@@ -19,6 +19,8 @@ $styleguide-name-font-family: 'brush-up', Helvetica, Arial, sans-serif;
   padding: 0 5%;
   h1 {
     font-family: $styleguide-name-font-family;
+    margin: 20px 0;
+    font-size: em(45px);
   }
 }
 
@@ -28,7 +30,7 @@ $styleguide-name-font-family: 'brush-up', Helvetica, Arial, sans-serif;
     font-size: 1.3em;
     color: #868686;
 
-    @include media($l-viewport) {
+    @media (min-width: $first-breakpoint-value) {
       padding: 30px 5% 0;
     }
 
@@ -53,7 +55,7 @@ $styleguide-name-font-family: 'brush-up', Helvetica, Arial, sans-serif;
 }
 
 .styleguide-header {
-  @include media($l-viewport) {
+  @media (min-width: $first-breakpoint-value) {
     position: fixed;
     top: 0;
     height: $styleguide-header-height;
@@ -62,7 +64,7 @@ $styleguide-name-font-family: 'brush-up', Helvetica, Arial, sans-serif;
 }
 
 .styleguide-nav {
-  @include media($l-viewport) {
+  @media (min-width: $first-breakpoint-value) {
     width: $styleguide-nav-width;
     position: fixed;
     top: $styleguide-header-height;

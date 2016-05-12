@@ -10,10 +10,11 @@
 
 
 .select {
+  $background: #fff;
   appearance: none;
   cursor: pointer;
   background-image: url('/images/arrow-down.svg');
-  background-color: #fff;
+  background-color: $background;
   background-repeat: no-repeat;
   background-size: 45px;
   background-position: right;

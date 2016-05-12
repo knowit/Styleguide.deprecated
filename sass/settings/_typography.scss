@@ -9,12 +9,12 @@ $btn-font-family: $heading-font-family;
 
 // **, **, mobil, m-viewport, l-viewport, font-weight
 $font-list: (
-  (h1, em(35px), em(40px), em(47px), 700),
-  (h2, em(25px), em(25px), em(30px), 700),
-  (h3, em(20px), em(20px), em(24px), 700),
-  (h4, em(18px), em(18px), em(20px), 700),
-  (h5, em(15px), em(15px), em(15px), 700),
-  (h6, em(14px), em(14px), em(14px), 700)
+  (h1, em(24px), em(26px), em(30px), 400, #6c6c6c, $heading-font-family),
+  (h2, em(20px), em(22px), em(24px), 400, #6c6c6c, $heading-font-family),
+  (h3, em(18px), em(18px), em(20px), 400, #6c6c6c, $heading-font-family),
+  (h4, em(16px), em(18px), em(18px), bold, #4a4a4a, $heading-font-family),
+  (h5, em(14px), em(16px), em(16px), bold, #4a4a4a, $heading-font-family),
+  (h6, em(12px), em(14px), em(14px), bold, #4a4a4a, $heading-font-family)
 );
 
 // Font Colors

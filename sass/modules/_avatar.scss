@@ -12,19 +12,22 @@
 // Style guide: modules.avatar
 .avatar {
   $size: 100px;
-  background-color: white;
-  border: 2px solid #ddd;
+  $background: #fff;
+  $border: 2px solid #ddd;
+
+  background: $background;
+  border: $border;
   border-radius: 50%;
   height: $size;
   width: $size;
 
   &--male {
-    background: url('http://www.knowit.no/Global/Knowit%20NO/Medarbeidere/Bergen/Torleif_Halseth.jpg');
+    background: url('www.knowit.no/Global/Knowit%20NO/Medarbeidere/Bergen/Torleif_Halseth.jpg');
     background-size: cover;
   }
 
   &--female {
-    background: url('http://www.knowit.no/Global/Knowit%20NO/Medarbeidere/Bergen/Kristin%20L%c3%b6fgren.jpg');
+    background: url('www.knowit.no/Global/Knowit%20NO/Medarbeidere/Bergen/Kristin%20L%c3%b6fgren.jpg');
     background-size: cover;
   }
 }
