@@ -41,7 +41,6 @@ gulp.task('sass', function() {
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie9'}))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('css'))
     .pipe(gulp.dest('styleguide/css'))
     .pipe(browserSync.stream());
 });
