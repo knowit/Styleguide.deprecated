@@ -10,93 +10,66 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Styleguide</title>
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
+  <title>Knowit Living Style Guide Kickstarter</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/screen.css">
-  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="styleguide-header" role="banner">
+  <header class="styleguide-header" role="banner" id="header">
     <a href="/" class="styleguide-logo">
-      Logo
-      <!-- <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/> -->
+      <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/>
     </a>
-    <a href="#navigation" class="styleguide-navigation-shortcut">Skip to Navigation</a>
+    <a href="#navigation" class="styleguide-navigation-shortcut">Go to Navigation</a>
   </header>
-  <main class="styleguide-main" role="main">
+  <main class="styleguide-main" role="main" id="main">
 
-      <section id="kssref-components" class="styleguide-section kss-section--depth-1">
-
-        <a class="kss-title__permalink" href="#kssref-components" style="display:none;">
-          <span class="kss-title__ref">
-              4
-          </span>
-          Components
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-          <header class="styleguide-section-header">
-            <h1>Components</h1>
-          </header>
-            <div class="styleguide-section__description">
-              <p>Components compose complex/larger reusable UI components. Components is often composed by modules.</p>
-
-            </div>
-      </section>
-      <section id="kssref-components-navigation" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-components-navigation" style="display:none;">
-          <span class="kss-title__ref">
-              4.1
-          </span>
-          Navigation
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Navigation
-        </h2>
-            <p class="styleguide-subsection__description">
-              <p>Main navigation</p>
-
-            </p>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
-            </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('components-navigation-mobile-preview-js', 'components-navigation-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('components-navigation-tablet-preview-js', 'components-navigation-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('components-navigation-laptop-preview-js', 'components-navigation-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="components-navigation-default-preview-js">
-                <nav role="navigation" class="navigation">
-  <ul class="navigation__list">
-    <li class="navigation__element"><a href="#">Element 1</a></li>
-    <li class="navigation__element"><a href="#">Element 2</a></li>
-    <li class="navigation__element navigation__element--active">
-      <a href="#">
-        <span class="navigation__element__text">Element 3</span>
-        <svg class="navigation__element__arrow" viewbox="0 0 8 18">
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="navigation__element"><a href="#">Element 4</a></li>
-    <li class="navigation__element"><a href="#">Element 5</a></li>
-    <li class="navigation__element"><a href="#">Element 6</a></li>
-  </ul>
-</nav>
+        <section id="kssref-components" class="styleguide-section kss-section--depth-1">
+          <a class="kss-title__permalink" href="#kssref-components" style="display:none;">
+            <span class="kss-title__ref">
+                3
+            </span>
+            Components
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+            <header class="styleguide-section-header">
+              <h1>Components</h1>
+            </header>
+              <div class="styleguide-section__description">
+                <p>Components compose complex/larger reusable UI components. Components is often composed by modules.</p>
 
               </div>
-              <div id="components-navigation-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+        </section>
+        <section id="kssref-components-navigation" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-components-navigation" style="display:none;">
+            <span class="kss-title__ref">
+                3.1
+            </span>
+            Navigation
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-components-navigation">
+              Navigation
+            </a>
+          </h2>
+              <div class="styleguide-subsection__description">
+                <p>Main navigation</p>
+
+              </div>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
+              </div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-navigation-mobile-preview-js', 'components-navigation-default-preview-js', '#kssref-components-navigation')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-navigation-tablet-preview-js', 'components-navigation-default-preview-js', '#kssref-components-navigation')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-navigation-laptop-preview-js', 'components-navigation-default-preview-js', '#kssref-components-navigation')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-components-navigation#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('components-navigation-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="components-navigation-default-preview-js">
                   <nav role="navigation" class="navigation">
   <ul class="navigation__list">
     <li class="navigation__element"><a href="#">Element 1</a></li>
@@ -116,64 +89,40 @@
 </nav>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="components-navigation-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="components-navigation-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="components-navigation-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="components-navigation-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <nav role="navigation" class="navigation">
-  <ul class="navigation__list">
-    <li class="navigation__element"><a href="#">Element 1</a></li>
-    <li class="navigation__element"><a href="#">Element 2</a></li>
-    <li class="navigation__element navigation__element--active">
-      <a href="#">
-        <span class="navigation__element__text">Element 3</span>
-        <svg class="navigation__element__arrow" viewbox="0 0 8 18">
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="navigation__element"><a href="#">Element 4</a></li>
-    <li class="navigation__element"><a href="#">Element 5</a></li>
-    <li class="navigation__element"><a href="#">Element 6</a></li>
-  </ul>
-</nav>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="components-navigation-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <nav role="navigation" class="navigation">
-  <ul class="navigation__list">
-    <li class="navigation__element"><a href="#">Element 1</a></li>
-    <li class="navigation__element"><a href="#">Element 2</a></li>
-    <li class="navigation__element navigation__element--active">
-      <a href="#">
-        <span class="navigation__element__text">Element 3</span>
-        <svg class="navigation__element__arrow" viewbox="0 0 8 18">
-          <use xlink:href="#arrow-right"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="navigation__element"><a href="#">Element 4</a></li>
-    <li class="navigation__element"><a href="#">Element 5</a></li>
-    <li class="navigation__element"><a href="#">Element 6</a></li>
-  </ul>
-</nav>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('components-navigation-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="components-navigation-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav role=&quot;navigation&quot; class=&quot;navigation&quot;&gt;
+            <div id="components-navigation-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav role=&quot;navigation&quot; class=&quot;navigation&quot;&gt;
   &lt;ul class=&quot;navigation__list&quot;&gt;
     &lt;li class=&quot;navigation__element&quot;&gt;&lt;a href=&quot;#&quot;&gt;Element 1&lt;/a&gt;&lt;/li&gt;
     &lt;li class=&quot;navigation__element&quot;&gt;&lt;a href=&quot;#&quot;&gt;Element 2&lt;/a&gt;&lt;/li&gt;
@@ -191,413 +140,37 @@
   &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-components-office-card" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-components-office-card" style="display:none;">
-          <span class="kss-title__ref">
-              4.2
-          </span>
-          Office Card
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Office Card
-        </h2>
-            <p class="styleguide-subsection__description">
-              <p>Office presentation</p>
-
-            </p>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('components-office-card-mobile-preview-js', 'components-office-card-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('components-office-card-tablet-preview-js', 'components-office-card-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('components-office-card-laptop-preview-js', 'components-office-card-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="components-office-card-default-preview-js">
-                <div class="office-card vcard">
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Oslo</div>
-      <div class="adr">
-        <span class="type">HOME</span>
-        <p class="street-address">Universitetsgata 7</p>
-        <p>
-          <span class="postal-code">0164</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Postadresse</div>
-      <div class="adr">
-        <span class="type">POSTAL</span>
-        <p class="post-office-box">Postbox 123</p>
-        <p class="street-address">Karl Johansgt 1</p>
-        <p>
-          <span class="postal-code">0020</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__actions">
-        <div class="tel">
-          <span class="type">HOME</span>
-          <a class="link" href="tel:004702486">
-            <svg class="link__icon link__icon--left" viewbox="0 0 12 18">
-              <use xlink:href="#icon-mobile"></use>
-            </svg>
-            <span class="link__text">+47 02486</span>
+        </section>
+        <section id="kssref-components-pills" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-components-pills" style="display:none;">
+            <span class="kss-title__ref">
+                3.2
+            </span>
+            Pills
+            <span class="kss-title__permalink-hash">#permalink</span>
           </a>
-        </div>
-        <div class="tel">
-          <span class="type">WORK</span>
-          <a class="link" href="tel:004741421829">
-            <svg class="link__icon link__icon--left" viewbox="0 0 17 18">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-            <span class="link__text">+47 414 21 829</span>
-          </a>
-        </div>
-      </div>
-      <div class="office-card__actions">
-        <a class="email office-card__btn" href="mailto:torleif.halseth@knowit.no">Send e-post</a>
-        <button class="office-card__btn">Send SMS</button>
-      </div>
-    </div>
-  </div>
-</div>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-components-pills">
+              Pills
+            </a>
+          </h2>
+              <div class="styleguide-subsection__description">
+                <p>Group of tags / relations</p>
 
               </div>
-              <div id="components-office-card-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
-                  <div class="office-card vcard">
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Oslo</div>
-      <div class="adr">
-        <span class="type">HOME</span>
-        <p class="street-address">Universitetsgata 7</p>
-        <p>
-          <span class="postal-code">0164</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Postadresse</div>
-      <div class="adr">
-        <span class="type">POSTAL</span>
-        <p class="post-office-box">Postbox 123</p>
-        <p class="street-address">Karl Johansgt 1</p>
-        <p>
-          <span class="postal-code">0020</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__actions">
-        <div class="tel">
-          <span class="type">HOME</span>
-          <a class="link" href="tel:004702486">
-            <svg class="link__icon link__icon--left" viewbox="0 0 12 18">
-              <use xlink:href="#icon-mobile"></use>
-            </svg>
-            <span class="link__text">+47 02486</span>
-          </a>
-        </div>
-        <div class="tel">
-          <span class="type">WORK</span>
-          <a class="link" href="tel:004741421829">
-            <svg class="link__icon link__icon--left" viewbox="0 0 17 18">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-            <span class="link__text">+47 414 21 829</span>
-          </a>
-        </div>
-      </div>
-      <div class="office-card__actions">
-        <a class="email office-card__btn" href="mailto:torleif.halseth@knowit.no">Send e-post</a>
-        <button class="office-card__btn">Send SMS</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-                </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="components-office-card-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <div class="office-card vcard">
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Oslo</div>
-      <div class="adr">
-        <span class="type">HOME</span>
-        <p class="street-address">Universitetsgata 7</p>
-        <p>
-          <span class="postal-code">0164</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Postadresse</div>
-      <div class="adr">
-        <span class="type">POSTAL</span>
-        <p class="post-office-box">Postbox 123</p>
-        <p class="street-address">Karl Johansgt 1</p>
-        <p>
-          <span class="postal-code">0020</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__actions">
-        <div class="tel">
-          <span class="type">HOME</span>
-          <a class="link" href="tel:004702486">
-            <svg class="link__icon link__icon--left" viewbox="0 0 12 18">
-              <use xlink:href="#icon-mobile"></use>
-            </svg>
-            <span class="link__text">+47 02486</span>
-          </a>
-        </div>
-        <div class="tel">
-          <span class="type">WORK</span>
-          <a class="link" href="tel:004741421829">
-            <svg class="link__icon link__icon--left" viewbox="0 0 17 18">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-            <span class="link__text">+47 414 21 829</span>
-          </a>
-        </div>
-      </div>
-      <div class="office-card__actions">
-        <a class="email office-card__btn" href="mailto:torleif.halseth@knowit.no">Send e-post</a>
-        <button class="office-card__btn">Send SMS</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-                </div>
-                <div class="home"></div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-pills-mobile-preview-js', 'components-pills-default-preview-js', '#kssref-components-pills')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-pills-tablet-preview-js', 'components-pills-default-preview-js', '#kssref-components-pills')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-pills-laptop-preview-js', 'components-pills-default-preview-js', '#kssref-components-pills')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-components-pills#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('components-pills-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
               </div>
-              <div id="components-office-card-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <div class="office-card vcard">
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Oslo</div>
-      <div class="adr">
-        <span class="type">HOME</span>
-        <p class="street-address">Universitetsgata 7</p>
-        <p>
-          <span class="postal-code">0164</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__heading org">Postadresse</div>
-      <div class="adr">
-        <span class="type">POSTAL</span>
-        <p class="post-office-box">Postbox 123</p>
-        <p class="street-address">Karl Johansgt 1</p>
-        <p>
-          <span class="postal-code">0020</span>
-          <span class="region">Oslo</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="office-card__element">
-    <div class="office-card__section">
-      <div class="office-card__actions">
-        <div class="tel">
-          <span class="type">HOME</span>
-          <a class="link" href="tel:004702486">
-            <svg class="link__icon link__icon--left" viewbox="0 0 12 18">
-              <use xlink:href="#icon-mobile"></use>
-            </svg>
-            <span class="link__text">+47 02486</span>
-          </a>
-        </div>
-        <div class="tel">
-          <span class="type">WORK</span>
-          <a class="link" href="tel:004741421829">
-            <svg class="link__icon link__icon--left" viewbox="0 0 17 18">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-            <span class="link__text">+47 414 21 829</span>
-          </a>
-        </div>
-      </div>
-      <div class="office-card__actions">
-        <a class="email office-card__btn" href="mailto:torleif.halseth@knowit.no">Send e-post</a>
-        <button class="office-card__btn">Send SMS</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-                </div>
-                <div class="bottom-bar"></div>
-            </div>
-          </div>
-
-          <button onclick="toggle('components-office-card-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="components-office-card-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;office-card vcard&quot;&gt;
-  &lt;div class=&quot;office-card__element&quot;&gt;
-    &lt;div class=&quot;office-card__section&quot;&gt;
-      &lt;div class=&quot;office-card__heading org&quot;&gt;Oslo&lt;/div&gt;
-      &lt;div class=&quot;adr&quot;&gt;
-        &lt;span class=&quot;type&quot;&gt;HOME&lt;/span&gt;
-        &lt;p class=&quot;street-address&quot;&gt;Universitetsgata 7&lt;/p&gt;
-        &lt;p&gt;
-          &lt;span class=&quot;postal-code&quot;&gt;0164&lt;/span&gt;
-          &lt;span class=&quot;region&quot;&gt;Oslo&lt;/span&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;office-card__element&quot;&gt;
-    &lt;div class=&quot;office-card__section&quot;&gt;
-      &lt;div class=&quot;office-card__heading org&quot;&gt;Postadresse&lt;/div&gt;
-      &lt;div class=&quot;adr&quot;&gt;
-        &lt;span class=&quot;type&quot;&gt;POSTAL&lt;/span&gt;
-        &lt;p class=&quot;post-office-box&quot;&gt;Postbox 123&lt;/p&gt;
-        &lt;p class=&quot;street-address&quot;&gt;Karl Johansgt 1&lt;/p&gt;
-        &lt;p&gt;
-          &lt;span class=&quot;postal-code&quot;&gt;0020&lt;/span&gt;
-          &lt;span class=&quot;region&quot;&gt;Oslo&lt;/span&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;office-card__element&quot;&gt;
-    &lt;div class=&quot;office-card__section&quot;&gt;
-      &lt;div class=&quot;office-card__actions&quot;&gt;
-        &lt;div class=&quot;tel&quot;&gt;
-          &lt;span class=&quot;type&quot;&gt;HOME&lt;/span&gt;
-          &lt;a class=&quot;link&quot; href=&quot;tel:004702486&quot;&gt;
-            &lt;svg class=&quot;link__icon link__icon--left&quot; viewbox=&quot;0 0 12 18&quot;&gt;
-              &lt;use xlink:href=&quot;#icon-mobile&quot;&gt;&lt;/use&gt;
-            &lt;/svg&gt;
-            &lt;span class=&quot;link__text&quot;&gt;+47 02486&lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;tel&quot;&gt;
-          &lt;span class=&quot;type&quot;&gt;WORK&lt;/span&gt;
-          &lt;a class=&quot;link&quot; href=&quot;tel:004741421829&quot;&gt;
-            &lt;svg class=&quot;link__icon link__icon--left&quot; viewbox=&quot;0 0 17 18&quot;&gt;
-              &lt;use xlink:href=&quot;#icon-phone&quot;&gt;&lt;/use&gt;
-            &lt;/svg&gt;
-            &lt;span class=&quot;link__text&quot;&gt;+47 414 21 829&lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;office-card__actions&quot;&gt;
-        &lt;a class=&quot;email office-card__btn&quot; href=&quot;mailto:torleif.halseth@knowit.no&quot;&gt;Send e-post&lt;/a&gt;
-        &lt;button class=&quot;office-card__btn&quot;&gt;Send SMS&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-          </div>
-      </section>
-      <section id="kssref-components-pills" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-components-pills" style="display:none;">
-          <span class="kss-title__ref">
-              4.3
-          </span>
-          Pills
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Pills
-        </h2>
-            <p class="styleguide-subsection__description">
-              <p>Group of tags / relations</p>
-
-            </p>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
-            </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('components-pills-mobile-preview-js', 'components-pills-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('components-pills-tablet-preview-js', 'components-pills-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('components-pills-laptop-preview-js', 'components-pills-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="components-pills-default-preview-js">
-                <ul class="pills">
-  <li>
-    <button class="pill--active">All</button>
-  </li>
-  <li>
-    <button class="pill">Stavanger</button>
-  </li>
-  <li>
-    <button class="pill">Oslo</button>
-  </li>
-  <li>
-    <button class="pill">Bergen</button>
-  </li>
-  <li>
-    <button class="pill">Kristiansand</button>
-  </li>
-  <li>
-    <button class="pill">Stockholm</button>
-  </li>
-</ul>
-
-              </div>
-              <div id="components-pills-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="kss-modifier__example">
+                <div id="components-pills-default-preview-js">
                   <ul class="pills">
   <li>
     <button class="pill--active">All</button>
@@ -620,70 +193,40 @@
 </ul>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="components-pills-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="components-pills-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="components-pills-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="components-pills-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <ul class="pills">
-  <li>
-    <button class="pill--active">All</button>
-  </li>
-  <li>
-    <button class="pill">Stavanger</button>
-  </li>
-  <li>
-    <button class="pill">Oslo</button>
-  </li>
-  <li>
-    <button class="pill">Bergen</button>
-  </li>
-  <li>
-    <button class="pill">Kristiansand</button>
-  </li>
-  <li>
-    <button class="pill">Stockholm</button>
-  </li>
-</ul>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="components-pills-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <ul class="pills">
-  <li>
-    <button class="pill--active">All</button>
-  </li>
-  <li>
-    <button class="pill">Stavanger</button>
-  </li>
-  <li>
-    <button class="pill">Oslo</button>
-  </li>
-  <li>
-    <button class="pill">Bergen</button>
-  </li>
-  <li>
-    <button class="pill">Kristiansand</button>
-  </li>
-  <li>
-    <button class="pill">Stockholm</button>
-  </li>
-</ul>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('components-pills-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="components-pills-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;pills&quot;&gt;
+            <div id="components-pills-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;pills&quot;&gt;
   &lt;li&gt;
     &lt;button class=&quot;pill--active&quot;&gt;All&lt;/button&gt;
   &lt;/li&gt;
@@ -704,49 +247,37 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-components-search" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-components-search" style="display:none;">
-          <span class="kss-title__ref">
-              4.4
-          </span>
-          Search input
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Search input
-        </h2>
-            <p class="styleguide-subsection__description">
-              <p>Standard search input</p>
-
-            </p>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('components-search-mobile-preview-js', 'components-search-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('components-search-tablet-preview-js', 'components-search-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('components-search-laptop-preview-js', 'components-search-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="components-search-default-preview-js">
-                <form class="searchbox-container">
-  <button type="reset" class="searchbutton searchbutton--close fa fa-times"></button>
-  <input type="search" class="searchbox" name="q" autocomplete="off" placeholder="Search" />
-  <button type="submit" class="searchbutton searchbutton--search fa fa-search"></button>
-</form>
+        </section>
+        <section id="kssref-components-search" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-components-search" style="display:none;">
+            <span class="kss-title__ref">
+                3.3
+            </span>
+            Search input
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-components-search">
+              Search input
+            </a>
+          </h2>
+              <div class="styleguide-subsection__description">
+                <p>Standard search input</p>
 
               </div>
-              <div id="components-search-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
+              </div>
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-search-mobile-preview-js', 'components-search-default-preview-js', '#kssref-components-search')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-search-tablet-preview-js', 'components-search-default-preview-js', '#kssref-components-search')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-search-laptop-preview-js', 'components-search-default-preview-js', '#kssref-components-search')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-components-search#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('components-search-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="components-search-default-preview-js">
                   <form class="searchbox-container">
   <button type="reset" class="searchbutton searchbutton--close fa fa-times"></button>
   <input type="search" class="searchbox" name="q" autocomplete="off" placeholder="Search" />
@@ -754,90 +285,72 @@
 </form>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="components-search-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="components-search-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="components-search-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="components-search-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <form class="searchbox-container">
-  <button type="reset" class="searchbutton searchbutton--close fa fa-times"></button>
-  <input type="search" class="searchbox" name="q" autocomplete="off" placeholder="Search" />
-  <button type="submit" class="searchbutton searchbutton--search fa fa-search"></button>
-</form>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="components-search-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <form class="searchbox-container">
-  <button type="reset" class="searchbutton searchbutton--close fa fa-times"></button>
-  <input type="search" class="searchbox" name="q" autocomplete="off" placeholder="Search" />
-  <button type="submit" class="searchbutton searchbutton--search fa fa-search"></button>
-</form>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('components-search-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="components-search-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form class=&quot;searchbox-container&quot;&gt;
+            <div id="components-search-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form class=&quot;searchbox-container&quot;&gt;
   &lt;button type=&quot;reset&quot; class=&quot;searchbutton searchbutton--close fa fa-times&quot;&gt;&lt;/button&gt;
   &lt;input type=&quot;search&quot; class=&quot;searchbox&quot; name=&quot;q&quot; autocomplete=&quot;off&quot; placeholder=&quot;Search&quot; /&gt;
   &lt;button type=&quot;submit&quot; class=&quot;searchbutton searchbutton--search fa fa-search&quot;&gt;&lt;/button&gt;
 &lt;/form&gt;
 </code></pre>
-          </div>
-      </section>
-      <section id="kssref-components-social-icons" class="styleguide-subsection kss-section--depth-2">
-
-        <a class="kss-title__permalink" href="#kssref-components-social-icons" style="display:none;">
-          <span class="kss-title__ref">
-              4.5
-          </span>
-          Social icons
-          <span class="kss-title__permalink-hash">#permalink</span>
-        </a>
-        <h2>
-          Social icons
-        </h2>
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__heading kss-style">
             </div>
-            <!-- <div class="styleguide-preview-btn-group">
-              <button onclick="togglePreview('components-social-icons-mobile-preview-js', 'components-social-icons-default-preview-js')"><i class="fa fa-mobile"></i></button>
-              <button onclick="togglePreview('components-social-icons-tablet-preview-js', 'components-social-icons-default-preview-js')"><i class="fa fa-tablet"></i></button>
-              <button onclick="togglePreview('components-social-icons-laptop-preview-js', 'components-social-icons-default-preview-js')"><i class="fa fa-laptop"></i></button>
-            </div> -->
-            <div class="kss-modifier__example">
-              <div id="components-social-icons-default-preview-js">
-                <a class="icon-link facebook fill"><i class="fa fa-facebook"></i></a>
-<a class="icon-link tumblr fill"><i class="fa fa-tumblr"></i></a>
-<a class="icon-link linkedin fill"><i class="fa fa-linkedin"></i></a>
-<a class="icon-link twitter fill"><i class="fa fa-twitter"></i></a>
-<a class="icon-link google-plus fill"><i class="fa fa-google-plus"></i></a>
-<a class="icon-link reddit fill"><i class="fa fa-reddit"></i></a>
-<a class="icon-link youtube fill"><i class="fa fa-youtube"></i></a>
-<a class="icon-link pinterest fill"><i class="fa fa-pinterest"></i></a>
-<a class="icon-link github fill"><i class="fa fa-github"></i></a>
-<a class="icon-link envelope fill"><i class="fa fa-envelope"></i></a>
-<a class="icon-link soundcloud fill"><i class="fa fa-soundcloud"></i></a>
-
+        </section>
+        <section id="kssref-components-social-icons" class="styleguide-subsection kss-section--depth-2">
+          <a class="kss-title__permalink" href="#kssref-components-social-icons" style="display:none;">
+            <span class="kss-title__ref">
+                3.4
+            </span>
+            Social icons
+            <span class="kss-title__permalink-hash">#permalink</span>
+          </a>
+          <h2 class="styleguide-subsection__heading">
+            <a class="styleguide-subsection__heading-link" href="#kssref-components-social-icons">
+              Social icons
+            </a>
+          </h2>
+            <div class="kss-modifier__wrapper">
+              <div class="kss-modifier__heading kss-style">
               </div>
-              <div id="components-social-icons-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
-                <div class="top-bar"></div>
-                <div class="sleep"></div>
-                <div class="volume"></div>
-                <div class="camera"></div>
-                <div class="sensor"></div>
-                <div class="speaker"></div>
-                <div class="screen">
+              <div class="styleguide-preview-btn-group">
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-social-icons-mobile-preview-js', 'components-social-icons-default-preview-js', '#kssref-components-social-icons')"><i class="fa fa-mobile"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-social-icons-tablet-preview-js', 'components-social-icons-default-preview-js', '#kssref-components-social-icons')"><i class="fa fa-tablet"></i></button>
+                <button class="styleguide-btn--preview" onclick="togglePreview('components-social-icons-laptop-preview-js', 'components-social-icons-default-preview-js', '#kssref-components-social-icons')"><i class="fa fa-laptop"></i></button>
+                <a class="styleguide-btn--preview" href="#kssref-components-social-icons#preview"><i class="fa fa-expand"></i></a>
+                <button onclick="toggle('components-social-icons-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i></button>
+              </div>
+              <div class="kss-modifier__example">
+                <div id="components-social-icons-default-preview-js">
                   <a class="icon-link facebook fill"><i class="fa fa-facebook"></i></a>
 <a class="icon-link tumblr fill"><i class="fa fa-tumblr"></i></a>
 <a class="icon-link linkedin fill"><i class="fa fa-linkedin"></i></a>
@@ -851,52 +364,40 @@
 <a class="icon-link soundcloud fill"><i class="fa fa-soundcloud"></i></a>
 
                 </div>
-                <div class="home"></div>
-                <div class="bottom-bar"></div>
+                <section id="device-preview-js">
+                  <div id="components-social-icons-mobile-preview-js" class="marvel-device iphone6 silver" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="sleep"></div>
+                    <div class="volume"></div>
+                    <div class="camera"></div>
+                    <div class="sensor"></div>
+                    <div class="speaker"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                  <div id="components-social-icons-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
+                    <div class="camera"></div>
+                    <div class="screen">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="home"></div>
+                  </div>
+                  <div id="components-social-icons-laptop-preview-js" class="marvel-device macbook" style="display: none">
+                    <div class="top-bar"></div>
+                    <div class="camera"></div>
+                    <div class="screen" style="background: white">
+                      <iframe src="" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="bottom-bar"></div>
+                  </div>
+                </section>
               </div>
-              <div id="components-social-icons-tablet-preview-js" class="marvel-device ipad silver" style="display: none">
-                <div class="camera"></div>
-                <div class="screen">
-                  <a class="icon-link facebook fill"><i class="fa fa-facebook"></i></a>
-<a class="icon-link tumblr fill"><i class="fa fa-tumblr"></i></a>
-<a class="icon-link linkedin fill"><i class="fa fa-linkedin"></i></a>
-<a class="icon-link twitter fill"><i class="fa fa-twitter"></i></a>
-<a class="icon-link google-plus fill"><i class="fa fa-google-plus"></i></a>
-<a class="icon-link reddit fill"><i class="fa fa-reddit"></i></a>
-<a class="icon-link youtube fill"><i class="fa fa-youtube"></i></a>
-<a class="icon-link pinterest fill"><i class="fa fa-pinterest"></i></a>
-<a class="icon-link github fill"><i class="fa fa-github"></i></a>
-<a class="icon-link envelope fill"><i class="fa fa-envelope"></i></a>
-<a class="icon-link soundcloud fill"><i class="fa fa-soundcloud"></i></a>
-
-                </div>
-                <div class="home"></div>
-              </div>
-              <div id="components-social-icons-laptop-preview-js" class="marvel-device macbook" style="display: none">
-                <div class="top-bar"></div>
-                <div class="camera"></div>
-                <div class="screen" style="background: white">
-                  <a class="icon-link facebook fill"><i class="fa fa-facebook"></i></a>
-<a class="icon-link tumblr fill"><i class="fa fa-tumblr"></i></a>
-<a class="icon-link linkedin fill"><i class="fa fa-linkedin"></i></a>
-<a class="icon-link twitter fill"><i class="fa fa-twitter"></i></a>
-<a class="icon-link google-plus fill"><i class="fa fa-google-plus"></i></a>
-<a class="icon-link reddit fill"><i class="fa fa-reddit"></i></a>
-<a class="icon-link youtube fill"><i class="fa fa-youtube"></i></a>
-<a class="icon-link pinterest fill"><i class="fa fa-pinterest"></i></a>
-<a class="icon-link github fill"><i class="fa fa-github"></i></a>
-<a class="icon-link envelope fill"><i class="fa fa-envelope"></i></a>
-<a class="icon-link soundcloud fill"><i class="fa fa-soundcloud"></i></a>
-
-                </div>
-                <div class="bottom-bar"></div>
             </div>
-          </div>
-
-          <button onclick="toggle('components-social-icons-markup-js')" class="styleguide-btn--markup"><i class="fa fa-code"></i> Toggle markup</button>
-          </div>
-          <div id="components-social-icons-markup-js" style="display: none" class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a class=&quot;icon-link facebook fill&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            <div id="components-social-icons-markup-js" style="display: none" class="kss-markup kss-style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a class=&quot;icon-link facebook fill&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class=&quot;icon-link tumblr fill&quot;&gt;&lt;i class=&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class=&quot;icon-link linkedin fill&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class=&quot;icon-link twitter fill&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
@@ -908,87 +409,52 @@
 &lt;a class=&quot;icon-link envelope fill&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class=&quot;icon-link soundcloud fill&quot;&gt;&lt;i class=&quot;fa fa-soundcloud&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 </code></pre>
-          </div>
-      </section>
+            </div>
+        </section>
   </main>
   <nav class="styleguide-nav" role="navigation" id="navigation">
     <ul class="styleguide-nav__list">
         <li class="styleguide-nav__element">
           <a href="./">
-            <!-- <span class="styleguide-number">0</span> -->
             <span>Overview</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-colours.html">
-            <!-- <span class="styleguide-number">              1
-            </span> -->
             <span>Colours</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
-          <a href="section-icons.html">
-            <!-- <span class="styleguide-number">              2
-            </span> -->
-            <span>Icons</span>
-          </a>
-        </li>
-          <li class="styleguide-nav__element">
           <a href="section-modules.html">
-            <!-- <span class="styleguide-number">              3
-            </span> -->
             <span>Modules</span>
           </a>
         </li>
           <li class="styleguide-nav__element styleguide-nav__element--active">
           <a href="section-components.html">
-            <!-- <span class="styleguide-number">              4
-            </span> -->
             <span>Components</span>
           </a>
           <ul class="styleguide-nav__sublist">
                
             <li>
               <a href="section-components.html#kssref-components-navigation">
-                <!-- <span class="styleguide-number">
-                  4.1
-                </span> -->
                 <span>Navigation</span>
               </a>
             </li>
               
             <li>
-              <a href="section-components.html#kssref-components-office-card">
-                <!-- <span class="styleguide-number">
-                  4.2
-                </span> -->
-                <span>Office Card</span>
-              </a>
-            </li>
-              
-            <li>
               <a href="section-components.html#kssref-components-pills">
-                <!-- <span class="styleguide-number">
-                  4.3
-                </span> -->
                 <span>Pills</span>
               </a>
             </li>
               
             <li>
               <a href="section-components.html#kssref-components-search">
-                <!-- <span class="styleguide-number">
-                  4.4
-                </span> -->
                 <span>Search input</span>
               </a>
             </li>
               
             <li>
               <a href="section-components.html#kssref-components-social-icons">
-                <!-- <span class="styleguide-number">
-                  4.5
-                </span> -->
                 <span>Social icons</span>
               </a>
             </li>
@@ -997,31 +463,147 @@
         </li>
           <li class="styleguide-nav__element">
           <a href="section-form.html">
-            <!-- <span class="styleguide-number">              5
-            </span> -->
             <span>Form controls</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-alerts.html">
-            <!-- <span class="styleguide-number">              6
-            </span> -->
             <span>Alerts</span>
           </a>
         </li>
       </ul>
+      <div class="styleguide-nav__footer">
+        <p>v.1.0.0</p>
+      </div>
   </nav>
+  <section id="preview-section-js">
+       
+      <div id="kssref-components-navigation-preview-js" style="display: none"><nav role="navigation" class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__element"><a href="#">Element 1</a></li>
+    <li class="navigation__element"><a href="#">Element 2</a></li>
+    <li class="navigation__element navigation__element--active">
+      <a href="#">
+        <span class="navigation__element__text">Element 3</span>
+        <svg class="navigation__element__arrow" viewbox="0 0 8 18">
+          <use xlink:href="#arrow-right"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="navigation__element"><a href="#">Element 4</a></li>
+    <li class="navigation__element"><a href="#">Element 5</a></li>
+    <li class="navigation__element"><a href="#">Element 6</a></li>
+  </ul>
+</nav>
+</div>
+      
+      <div id="kssref-components-pills-preview-js" style="display: none"><ul class="pills">
+  <li>
+    <button class="pill--active">All</button>
+  </li>
+  <li>
+    <button class="pill">Stavanger</button>
+  </li>
+  <li>
+    <button class="pill">Oslo</button>
+  </li>
+  <li>
+    <button class="pill">Bergen</button>
+  </li>
+  <li>
+    <button class="pill">Kristiansand</button>
+  </li>
+  <li>
+    <button class="pill">Stockholm</button>
+  </li>
+</ul>
+</div>
+      
+      <div id="kssref-components-search-preview-js" style="display: none"><form class="searchbox-container">
+  <button type="reset" class="searchbutton searchbutton--close fa fa-times"></button>
+  <input type="search" class="searchbox" name="q" autocomplete="off" placeholder="Search" />
+  <button type="submit" class="searchbutton searchbutton--search fa fa-search"></button>
+</form>
+</div>
+      
+      <div id="kssref-components-social-icons-preview-js" style="display: none"><a class="icon-link facebook fill"><i class="fa fa-facebook"></i></a>
+<a class="icon-link tumblr fill"><i class="fa fa-tumblr"></i></a>
+<a class="icon-link linkedin fill"><i class="fa fa-linkedin"></i></a>
+<a class="icon-link twitter fill"><i class="fa fa-twitter"></i></a>
+<a class="icon-link google-plus fill"><i class="fa fa-google-plus"></i></a>
+<a class="icon-link reddit fill"><i class="fa fa-reddit"></i></a>
+<a class="icon-link youtube fill"><i class="fa fa-youtube"></i></a>
+<a class="icon-link pinterest fill"><i class="fa fa-pinterest"></i></a>
+<a class="icon-link github fill"><i class="fa fa-github"></i></a>
+<a class="icon-link envelope fill"><i class="fa fa-envelope"></i></a>
+<a class="icon-link soundcloud fill"><i class="fa fa-soundcloud"></i></a>
+</div>
+     
+  </section>
+
+
     <!-- SCRIPTS -->
     <script src="public/kss.js"></script>
     <script src="public/prettify.js"></script>
     <script>
-      prettyPrint();
-      function toggle(id) {
-        var div = document.getElementById(id);
-        div.style.display = div.style.display == "none" ? "block" : "none";
+    function isDescendant(parent, child) {
+      var node = child.parentNode;
+      while (node != null) {
+       if (node === parent) {
+           return true;
+       }
+       node = node.parentNode;
       }
-      function togglePreview(selectedPreview, defaultPreview) {
-        toggle(selectedPreview);
+      return false;
+    }
+
+    function locationHashChanged() {
+      if (location.hash.indexOf("#preview") > -1) {
+          preview();
+      }
+    }
+    window.onhashchange = locationHashChanged;
+
+      prettyPrint();
+      preview();
+      function preview() {
+        // Check if preview is enabled
+        if(window.location.hash.indexOf("#preview") > -1) {
+          // Check if element is selected
+          if(window.location.hash.indexOf("#kssref") > -1) {
+            // Remove header, navigation and main content
+            document.getElementById('header').remove();
+            document.getElementById('main').remove();
+            document.getElementById('navigation').remove();
+
+            var hashValues = window.location.hash.split("#").filter(Boolean);
+            var elementName = hashValues.filter((x) => x.indexOf('kssref-') > -1)[0];
+            var previewElementId = elementName + '-preview-js';
+            var DOMElement = document.getElementById(previewElementId);
+            var previewDOMElement = document.getElementById('preview-section-js');
+            var items = previewDOMElement.getElementsByTagName('*');
+            DOMElement.style.display = 'block';
+            for (var i = 0, len = items.length; i < len; i++) {
+              //check if item is defined
+              if(items[i] && items[i] !== DOMElement) {
+                // Check if current item is child of preview element
+                if(!isDescendant(DOMElement, items[i])) {
+                  items[i].remove();
+                }
+              }
+            }
+          }
+        }
+      }
+      function toggle(id, preview) {
+        console.log(id);
+        var div = $('#' + id);
+        div.toggle();
+
+        div.find('iframe').attr('src', preview + '#preview');
+      }
+      function togglePreview(selectedPreview, defaultPreview, preview) {
+        toggle(selectedPreview, preview);
         var defaultPreview = document.getElementById(defaultPreview);
         defaultPreview.style.display = defaultPreview.style.display = "none";
       }

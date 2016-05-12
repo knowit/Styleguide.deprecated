@@ -10,25 +10,23 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Styleguide</title>
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
+  <title>Knowit Living Style Guide Kickstarter</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/screen.css">
-  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="styleguide-header" role="banner">
+  <header class="styleguide-header" role="banner" id="header">
     <a href="/" class="styleguide-logo">
-      Logo
-      <!-- <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/> -->
+      <img src="/images/logo.svg" alt="logo" class="styleguide-logo__img" width="140" height="23"/>
     </a>
-    <a href="#navigation" class="styleguide-navigation-shortcut">Skip to Navigation</a>
+    <a href="#navigation" class="styleguide-navigation-shortcut">Go to Navigation</a>
   </header>
-  <main class="styleguide-main" role="main">
+  <main class="styleguide-main" role="main" id="main">
     <section class="styleguide-introduction">
-         <h1 id="living-style-guide-kickstarter">Living Style Guide Kickstarter</h1>
-<h2 id="benefits">Benefits</h2>
+        <h1>Knowit Living Style Guide Kickstarter 1.0.0</h1>
+         <h2 id="benefits">Benefits</h2>
 <ul>
 <li>Useful in both development and maintenance</li>
 <li>Prevent lack of consistency in design</li>
@@ -92,12 +90,12 @@ If you need to specify a component values (background, width etc.) in a layout y
 <pre><code class="lang-css">.module--modifier {}
 </code></pre>
 <h2 id="install">Install</h2>
-<pre><code class="lang-js">git clone [repo]
-</code></pre>
-<pre><code class="lang-js">npm install
-</code></pre>
-<pre><code class="lang-js">gulp
-</code></pre>
+<ol>
+<li>git clone git@github.com:knowit/Styleguide.git</li>
+<li><a href="https://nodejs.org/en/">Install node</a></li>
+<li>npm install</li>
+<li>gulp</li>
+</ol>
 <h3 id="to-be-m-or-not-to-be-m-">To BE(M) or not to BE(M)?</h3>
 <ul>
 <li><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">Getting your head round BEM syntax</a></li>
@@ -105,71 +103,112 @@ If you need to specify a component values (background, width etc.) in a layout y
 <li><a href="http://geek-rocket.de/frontend-development/scss-styleguide-with-bem-oocss-smacss/">SCSS styleguide with BEM OOCSS SMACSS</a></li>
 </ul>
 
-    </div>
+    </section>
   </main>
   <nav class="styleguide-nav" role="navigation" id="navigation">
     <ul class="styleguide-nav__list">
         <li class="styleguide-nav__element">
           <a href="./">
-            <!-- <span class="styleguide-number">0</span> -->
             <span>Overview</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-colours.html">
-            <!-- <span class="styleguide-number">              1
-            </span> -->
             <span>Colours</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
-          <a href="section-icons.html">
-            <!-- <span class="styleguide-number">              2
-            </span> -->
-            <span>Icons</span>
-          </a>
-        </li>
-          <li class="styleguide-nav__element">
           <a href="section-modules.html">
-            <!-- <span class="styleguide-number">              3
-            </span> -->
             <span>Modules</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-components.html">
-            <!-- <span class="styleguide-number">              4
-            </span> -->
             <span>Components</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-form.html">
-            <!-- <span class="styleguide-number">              5
-            </span> -->
             <span>Form controls</span>
           </a>
         </li>
           <li class="styleguide-nav__element">
           <a href="section-alerts.html">
-            <!-- <span class="styleguide-number">              6
-            </span> -->
             <span>Alerts</span>
           </a>
         </li>
       </ul>
+      <div class="styleguide-nav__footer">
+        <p>v.1.0.0</p>
+      </div>
   </nav>
+  <section id="preview-section-js">
+    
+  </section>
+
+
     <!-- SCRIPTS -->
     <script src="public/kss.js"></script>
     <script src="public/prettify.js"></script>
     <script>
-      prettyPrint();
-      function toggle(id) {
-        var div = document.getElementById(id);
-        div.style.display = div.style.display == "none" ? "block" : "none";
+    function isDescendant(parent, child) {
+      var node = child.parentNode;
+      while (node != null) {
+       if (node === parent) {
+           return true;
+       }
+       node = node.parentNode;
       }
-      function togglePreview(selectedPreview, defaultPreview) {
-        toggle(selectedPreview);
+      return false;
+    }
+
+    function locationHashChanged() {
+      if (location.hash.indexOf("#preview") > -1) {
+          preview();
+      }
+    }
+    window.onhashchange = locationHashChanged;
+
+      prettyPrint();
+      preview();
+      function preview() {
+        // Check if preview is enabled
+        if(window.location.hash.indexOf("#preview") > -1) {
+          // Check if element is selected
+          if(window.location.hash.indexOf("#kssref") > -1) {
+            // Remove header, navigation and main content
+            document.getElementById('header').remove();
+            document.getElementById('main').remove();
+            document.getElementById('navigation').remove();
+
+            var hashValues = window.location.hash.split("#").filter(Boolean);
+            var elementName = hashValues.filter((x) => x.indexOf('kssref-') > -1)[0];
+            var previewElementId = elementName + '-preview-js';
+            var DOMElement = document.getElementById(previewElementId);
+            var previewDOMElement = document.getElementById('preview-section-js');
+            var items = previewDOMElement.getElementsByTagName('*');
+            DOMElement.style.display = 'block';
+            for (var i = 0, len = items.length; i < len; i++) {
+              //check if item is defined
+              if(items[i] && items[i] !== DOMElement) {
+                // Check if current item is child of preview element
+                if(!isDescendant(DOMElement, items[i])) {
+                  items[i].remove();
+                }
+              }
+            }
+          }
+        }
+      }
+      function toggle(id, preview) {
+        console.log(id);
+        var div = $('#' + id);
+        div.toggle();
+
+        div.find('iframe').attr('src', preview + '#preview');
+      }
+      function togglePreview(selectedPreview, defaultPreview, preview) {
+        toggle(selectedPreview, preview);
         var defaultPreview = document.getElementById(defaultPreview);
         defaultPreview.style.display = defaultPreview.style.display = "none";
       }
