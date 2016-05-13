@@ -1,0 +1,41 @@
+// Person Card
+//
+// Present awesome people!
+//
+// Markup: person-card.hbs
+
+@import '../settings/settings', '../helpers/helpers';
+
+.person-card {
+  $base-color: #fff;
+  $background: darken($base-color, 5%);
+  $border: 1px solid #ddd;
+  $color: #333;
+  $image-border: $border;
+  background: $background;
+  border: $border;
+  border-radius: 4px;
+  color: $color;
+  padding: 30px 0;
+  text-align: center;
+
+  &__heading {
+    font-size: em(22px);
+    margin: 10px 0;
+    color: $color;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: $image-border;
+  }
+
+  &__btn {
+    @include primary-button;
+    font-size: em(14px);
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
