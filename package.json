@@ -29,7 +29,6 @@
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-awspublish": "^3.0.1",
     "gulp-clean-css": "^2.0.7",
     "gulp-exec": "^2.1.2",
     "gulp-sass": "^2.1.1",
@@ -50,13 +49,16 @@
     "font-awesome": "^4.4.0"
   },
   "keywords": [
-    "browser sync",
-    "css",
-    "live reload",
-    "sync",
+    "gulp",
+    "sass",
+    "sass-lint",
     "autoprefixer",
-    "source-maps",
+    "clean-css",
+    "minifier",
+    "sourcemaps",
+    "browser-sync",
+    "kss",
     "styleguide",
-    "kss"
+    "ui-library"
   ]
 }
