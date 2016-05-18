@@ -3,7 +3,7 @@
   "ui-name": "Knowit Living Style Guide Kickstarter",
   "repository": "https://github.knowit.no/knowit/Styleguide/",
   "version": "1.0.0",
-  "description": "Base styleguide with browser-sync, source-maps, autoprefixer, concat and kss (styleguide)",
+  "description": "Automatically generate a styleguide",
   "author": {
     "name": "Torleif Halseth",
     "email": "torleif.halseth@knowit.no",
@@ -18,6 +18,9 @@
     },
     {
       "name": "Ivar Borthen"
+    },
+    {
+      "name": "Daniel Hallqvist"
     },
     {
       "name": "Erlend Røsjø",
