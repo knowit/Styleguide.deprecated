@@ -1,3 +1,8 @@
+#Deprecated
+* New [Style Starter Kit](https://github.com/knowit/style-starterkit)
+* New [Style Guide Starter Kit](https://github.com/knowit/style-guide-starterkit)
+* New [Style Starter Kit assets](https://github.com/knowit/style-starterkit-assets)
+
 # Living Style Guide Kickstarter
 
 ## Benefits
